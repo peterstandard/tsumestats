@@ -81,15 +81,15 @@
         }
       },
       legend: {
+        top: 2,
+        left: 'center',
         data: ['Tests Count', 'Accuracy (%)'],
-        textStyle: { color: '#3D2A1F', fontSize: 11 },
-        top: 0,
-        right: 10
+        textStyle: { color: '#3D2A1F', fontSize: 11 }
       },
       grid: {
-        top: 35,
+        top: 48,
         left: 45,
-        right: 45,
+        right: 55,
         bottom: 35
       },
       xAxis: {
@@ -116,7 +116,9 @@
         {
           type: 'value',
           name: 'Tests Count',
-          nameTextStyle: { color: '#8B5E3C', fontWeight: 'bold', fontSize: 11 },
+          nameLocation: 'end',
+          nameGap: 12,
+          nameTextStyle: { color: '#8B5E3C', fontWeight: 'bold', fontSize: 11, align: 'right' },
           min: 0,
           axisLine: { show: true, lineStyle: { color: '#8B5E3C' } },
           splitLine: { show: false },
@@ -180,15 +182,15 @@
         }
       },
       legend: {
+        top: 2,
+        left: 'center',
         data: ['Tests Count', 'Accuracy (%)'],
-        textStyle: { color: '#3D2A1F', fontSize: 11 },
-        top: 0,
-        right: 10
+        textStyle: { color: '#3D2A1F', fontSize: 11 }
       },
       grid: {
-        top: 35,
+        top: 48,
         left: 45,
-        right: 45,
+        right: 55,
         bottom: 35
       },
       xAxis: {
@@ -215,7 +217,9 @@
         {
           type: 'value',
           name: 'Tests Count',
-          nameTextStyle: { color: '#8B5E3C', fontWeight: 'bold', fontSize: 11 },
+          nameLocation: 'end',
+          nameGap: 12,
+          nameTextStyle: { color: '#8B5E3C', fontWeight: 'bold', fontSize: 11, align: 'right' },
           min: 0,
           axisLine: { show: true, lineStyle: { color: '#8B5E3C' } },
           splitLine: { show: false },
