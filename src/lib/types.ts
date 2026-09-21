@@ -78,3 +78,29 @@ export interface RegressionResult {
   points: [number, number][]; // [x, y]
   trendPoints: [number, number][]; // line start and end points [x, y]
 }
+
+export type TimeGranularity = 'month' | 'week' | 'day' | 'hour';
+
+export interface DrillStep {
+  level: TimeGranularity;
+  key: string;       // e.g. "2026-08" or "2026-09-12"
+  label: string;     // e.g. "August 2026" or "Sep 12, 2026"
+}
+
+export interface AggregatedBucket {
+  key: string;
+  label: string;
+  shortLabel: string;
+  subLabel?: string;
+  timestamp: number;
+  testsCount: number;
+  problemsCount: number;
+  correctCount: number;
+  totalTimeSeconds: number;
+  passCount: number;
+  failCount: number;
+  passRatePct: number | null;
+  accuracyPct: number | null;
+  avgSecondsPerProblem: number | null;
+  records: ProcessedRecord[];
+}

@@ -21,7 +21,7 @@ Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" des
 - **Easy Ingestion & Bookmarklet**:
   - Drag-and-drop `.json` file upload or direct text paste.
   - Automatic deduplication by `guanid` so importing multiple exports merges seamlessly without duplicates.
-  - Built-in one-click bookmarklet script to export records directly from 101weiqi.
+  - Built-in one-click bookmarklet script to copy test records directly from 101weiqi (`https://www.101weiqi.com/guan/my/`) to your clipboard.
 
 ---
 

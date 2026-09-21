@@ -54,7 +54,7 @@
       {#if recordsStore.isDemo}
         <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-[#eaf6dc] text-[#55821c] border border-[#88C13F]/50">
           <Sparkles class="w-3.5 h-3.5" />
-          Demo Dataset (Peter 2mo)
+          Demo Dataset (Sample 2mo)
         </span>
       {:else if recordsStore.allRecords.length > 0}
         <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-[#FAF0DA] text-[#3D2A1F] border border-[#D6BA96]">

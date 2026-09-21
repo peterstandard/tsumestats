@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const rawData = JSON.parse(fs.readFileSync('2026-09-13_peter_standard.json', 'utf8'));
+const rawData = JSON.parse(fs.readFileSync('src/lib/data/sampleData.json', 'utf8'));
 
 console.log('--- Testing Dataset Loading ---');
 console.log('Total records in JSON:', rawData.length);

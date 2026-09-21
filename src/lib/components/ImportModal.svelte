@@ -35,7 +35,7 @@
     }
   });
 
-  const BOOKMARKLET_CODE = `javascript:(function(){try{if(typeof records!=='undefined'&&Array.isArray(records)){const b=new Blob([JSON.stringify(records,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='101weiqi_history_'+Date.now()+'.json';a.click();URL.revokeObjectURL(a.href);}else{alert('101weiqi records variable not found. Please navigate to your 101weiqi test history page first.');}}catch(e){alert('Export failed: '+e.message);}})();`;
+  const BOOKMARKLET_CODE = `javascript:(function(){try{if(typeof records!=='undefined'&&Array.isArray(records)){var s=JSON.stringify(records);var done=function(){alert('Copied '+records.length+' 101weiqi test records to clipboard! Paste into tsumestats.')};var fb=function(){var t=document.createElement('textarea');t.value=s;t.style.position='fixed';t.style.left='-9999px';document.body.appendChild(t);t.focus();t.select();var ok=document.execCommand('copy');document.body.removeChild(t);return ok;};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(done).catch(function(){if(fb()){done()}else{prompt('Press Ctrl+C to copy records:',s)}});}else if(fb()){done()}else{prompt('Press Ctrl+C to copy records:',s);}}else{alert('101weiqi records variable not found. Please navigate to https://www.101weiqi.com/guan/my/ first.');}}catch(e){alert('Copy failed: '+e.message);}})();`;
 
   function handlePasteImport() {
     importError = null;
@@ -225,9 +225,9 @@
           <!-- Bookmarklet Guide Tab -->
           <div class="space-y-4 text-xs text-[#3D2A1F]">
             <div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4">
-              <h3 class="font-bold text-sm text-[#3D2A1F] mb-1">How to export your 101weiqi test history</h3>
+              <h3 class="font-bold text-sm text-[#3D2A1F] mb-1">How to copy your 101weiqi test history</h3>
               <p class="text-[11px] text-[#5e4537] leading-relaxed">
-                101weiqi loads your complete checkpoint history into an internal JavaScript variable (<code class="bg-[#FDF5E6] px-1 py-0.5 rounded text-[#8B5E3C]">records</code>). You can download it with one click using this bookmarklet.
+                101weiqi loads your complete checkpoint history into an internal JavaScript variable (<code class="bg-[#FDF5E6] px-1 py-0.5 rounded text-[#8B5E3C]">records</code>). This bookmarklet copies all your test records directly to your clipboard with one click.
               </p>
             </div>
 
@@ -266,7 +266,7 @@
                 <span>Create a Browser Bookmark</span>
               </div>
               <p class="text-[11px] text-[#5e4537] ml-7">
-                Bookmark any page in your browser (e.g. press Ctrl+D or Cmd+D). Name it <strong>"Export 101weiqi"</strong>, and paste the code above into the <strong>URL / Location</strong> field.
+                Bookmark any page in your browser (e.g. press <kbd class="px-1 border border-[#D6BA96] rounded bg-[#FAF0DA]">Ctrl+D</kbd> or <kbd class="px-1 border border-[#D6BA96] rounded bg-[#FAF0DA]">Cmd+D</kbd>). Name it <strong>"Copy 101weiqi Records"</strong>, and paste the code above into the <strong>URL / Location</strong> field.
               </p>
             </div>
 
@@ -274,10 +274,21 @@
             <div class="space-y-1">
               <div class="font-bold flex items-center gap-2 text-[#8B5E3C]">
                 <span class="w-5 h-5 rounded-full bg-[#8B5E3C] text-white text-[10px] flex items-center justify-center font-black">3</span>
-                <span>Click on 101weiqi</span>
+                <span>Click on Your 101weiqi History Page</span>
               </div>
               <p class="text-[11px] text-[#5e4537] ml-7">
-                Go to <a href="https://www.101weiqi.com/guan/" target="_blank" rel="noopener noreferrer" class="text-[#8B5E3C] underline font-semibold">101weiqi.com checkpoint challenges</a> or test history page. Click your bookmark! A JSON file will instantly download.
+                Go to your <a href="https://www.101weiqi.com/guan/my/" target="_blank" rel="noopener noreferrer" class="text-[#8B5E3C] underline font-semibold">101weiqi test history page (https://www.101weiqi.com/guan/my/)</a>. Click your bookmark! All your test records will be instantly copied to your clipboard.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="space-y-1">
+              <div class="font-bold flex items-center gap-2 text-[#8B5E3C]">
+                <span class="w-5 h-5 rounded-full bg-[#8B5E3C] text-white text-[10px] flex items-center justify-center font-black">4</span>
+                <span>Paste & Import</span>
+              </div>
+              <p class="text-[11px] text-[#5e4537] ml-7">
+                Return to this modal, switch to the <strong>Paste JSON / Upload File</strong> tab, paste (<kbd class="px-1 border border-[#D6BA96] rounded bg-[#FAF0DA]">Ctrl+V</kbd> or <kbd class="px-1 border border-[#D6BA96] rounded bg-[#FAF0DA]">Cmd+V</kbd>), and click <strong>Import Records</strong>.
               </p>
             </div>
 
@@ -285,7 +296,7 @@
             <div class="bg-[#FDF5E6] border border-[#D6BA96] rounded-xl p-3 mt-3">
               <div class="font-bold text-[11px] text-[#3D2A1F] mb-1">Developer Console Alternative:</div>
               <p class="text-[11px] text-[#5e4537]">
-                Alternatively, open Chrome DevTools (<kbd class="px-1 border border-[#D6BA96] rounded bg-[#FAF0DA]">F12</kbd>), go to the <strong>Console</strong> tab, and type:
+                Alternatively, open Chrome DevTools (<kbd class="px-1 border border-[#D6BA96] rounded bg-[#FAF0DA]">F12</kbd>) on <a href="https://www.101weiqi.com/guan/my/" target="_blank" rel="noopener noreferrer" class="text-[#8B5E3C] underline font-semibold">https://www.101weiqi.com/guan/my/</a>, go to the <strong>Console</strong> tab, and run:
               </p>
               <code class="block bg-[#FAF0DA] border border-[#D6BA96] rounded p-2 text-xs font-mono text-[#8B5E3C] mt-1.5 select-all">
                 copy(records)

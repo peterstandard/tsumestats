@@ -6,9 +6,10 @@
     options: echarts.EChartsOption;
     height?: string;
     class?: string;
+    onchartclick?: (params: any) => void;
   }
 
-  let { options, height = '360px', class: className = '' }: Props = $props();
+  let { options, height = '360px', class: className = '', onchartclick }: Props = $props();
 
   let chartDom: HTMLDivElement | null = $state(null);
   let chartInstance: echarts.ECharts | null = null;
@@ -24,6 +25,10 @@
     if (options) {
       chartInstance.setOption(options, true);
     }
+
+    chartInstance.on('click', (params) => {
+      onchartclick?.(params);
+    });
 
     resizeObserver = new ResizeObserver(() => {
       chartInstance?.resize();

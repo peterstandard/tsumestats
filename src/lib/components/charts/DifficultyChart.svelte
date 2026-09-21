@@ -25,6 +25,10 @@
     const passRates = diffStats.map((d) => d.passRatePct);
     const speeds = diffStats.map((d) => d.avgSecondsPerProblem);
 
+    const maxSpeed = Math.max(...speeds, 0);
+    const speedMax = maxSpeed > 50 ? Math.ceil(maxSpeed / 10) * 10 : 50;
+    const maxCount = Math.max(...counts, 1);
+
     return {
       backgroundColor: 'transparent',
       tooltip: {
@@ -74,57 +78,75 @@
         axisLabel: { color: '#3D2A1F', fontSize: 10, fontWeight: 'bold' }
       },
       yAxis: [
+        // Left: Percentage (0% - 100%)
         {
           type: 'value',
           name: 'Percentage (%)',
           nameTextStyle: { color: '#88C13F', fontWeight: 'bold', fontSize: 11 },
           min: 0,
           max: 100,
+          interval: 20,
           axisLine: { show: true, lineStyle: { color: '#88C13F' } },
           splitLine: { lineStyle: { color: '#ebdcc9', type: 'dashed' } },
           axisLabel: { color: '#5e4537', fontSize: 10, formatter: '{value}%' }
         },
+        // Right: Speed (0s - 50s, aligned 10s intervals with 20% grid lines)
         {
           type: 'value',
-          name: 'Count / Speed',
+          name: 'Speed (s/prob)',
           nameLocation: 'end',
           nameGap: 12,
-          nameTextStyle: { color: '#8B5E3C', fontWeight: 'bold', fontSize: 11, align: 'right' },
+          nameTextStyle: { color: '#c84b31', fontWeight: 'bold', fontSize: 11, align: 'right' },
           min: 0,
-          axisLine: { show: true, lineStyle: { color: '#8B5E3C' } },
+          max: speedMax,
+          interval: 10,
+          axisLine: { show: true, lineStyle: { color: '#c84b31' } },
           splitLine: { show: false },
-          axisLabel: { color: '#8B5E3C', fontSize: 10 }
+          axisLabel: { color: '#c84b31', fontSize: 10, formatter: '{value}s' }
+        },
+        // Hidden: Tests Count volume scale so background bars stay in lower portion
+        {
+          type: 'value',
+          name: 'Tests Count',
+          show: false,
+          min: 0,
+          max: maxCount * 2.8
         }
       ],
       series: [
         {
           name: 'Tests Count',
           type: 'bar',
-          yAxisIndex: 1,
+          yAxisIndex: 2,
           data: counts,
           barMaxWidth: 32,
           itemStyle: {
             color: '#ebdcc9',
             borderRadius: [4, 4, 0, 0]
-          }
+          },
+          z: 1
         },
         {
           name: 'Accuracy (%)',
           type: 'line',
+          yAxisIndex: 0,
           data: accuracies,
           smooth: true,
           symbolSize: 7,
           lineStyle: { color: '#88C13F', width: 3 },
-          itemStyle: { color: '#88C13F' }
+          itemStyle: { color: '#88C13F' },
+          z: 3
         },
         {
           name: 'Pass Rate (%)',
           type: 'line',
+          yAxisIndex: 0,
           data: passRates,
           smooth: true,
           symbolSize: 6,
           lineStyle: { color: '#8B5E3C', width: 2 },
-          itemStyle: { color: '#8B5E3C' }
+          itemStyle: { color: '#8B5E3C' },
+          z: 3
         },
         {
           name: 'Avg Speed (s/prob)',
@@ -134,7 +156,8 @@
           smooth: true,
           symbolSize: 6,
           lineStyle: { color: '#c84b31', width: 2, type: 'dashed' },
-          itemStyle: { color: '#c84b31' }
+          itemStyle: { color: '#c84b31' },
+          z: 4
         }
       ]
     };

@@ -4,7 +4,7 @@ import { parseAndValidateRaw, deduplicateAndSortRecords } from '$lib/utils/recor
 import { computeKpis } from '$lib/utils/stats';
 import { SAMPLE_RECORDS } from '$lib/data/sample';
 
-const STORAGE_KEY = 'tsumestats_records_v1';
+const STORAGE_KEY = 'tsumestats_records_v2';
 const IS_DEMO_KEY = 'tsumestats_is_demo';
 
 function createRecordsStore() {
@@ -69,14 +69,28 @@ function createRecordsStore() {
     isInitialized = true;
 
     try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      const storedIsDemo = localStorage.getItem(IS_DEMO_KEY);
+      let stored = localStorage.getItem(STORAGE_KEY);
+      let storedIsDemo = localStorage.getItem(IS_DEMO_KEY);
+
+      // Migration from v1: if v1 had user-imported records, preserve them; if it was demo, refresh
+      if (!stored) {
+        const v1Stored = localStorage.getItem('tsumestats_records_v1');
+        const v1IsDemo = localStorage.getItem('tsumestats_is_demo');
+        if (v1Stored && v1IsDemo !== 'true') {
+          stored = v1Stored;
+          storedIsDemo = 'false';
+        }
+      }
 
       if (stored) {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
+          if (storedIsDemo === 'true') {
+            loadDemo();
+            return;
+          }
           rawRecords = parsed;
-          isDemo = storedIsDemo === 'true';
+          isDemo = false;
           return;
         }
       }

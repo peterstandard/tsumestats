@@ -1,3154 +1,3154 @@
 [
     {
-        "t": 1789307194,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 300,
-        "guanid": 9124478,
-        "number": 10
-    },
-    {
-        "t": 1789268965,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 322,
-        "guanid": 9120789,
-        "number": 10
-    },
-    {
-        "t": 1789268376,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 296,
-        "guanid": 9120728,
-        "number": 10
-    },
-    {
-        "t": 1789267860,
-        "status": 1,
-        "oknum": 3,
-        "totaltime": 336,
-        "guanid": 9120644,
-        "number": 10
-    },
-    {
-        "t": 1789248171,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 240,
-        "guanid": 9119754,
-        "number": 10
-    },
-    {
-        "t": 1789247761,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 267,
-        "guanid": 8130229,
-        "number": 9
-    },
-    {
-        "t": 1789236502,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 239,
-        "guanid": 8130226,
-        "number": 9
-    },
-    {
-        "t": 1789218787,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 275,
-        "guanid": 8129124,
-        "number": 9
-    },
-    {
-        "t": 1789217136,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 276,
-        "guanid": 8128903,
-        "number": 9
-    },
-    {
-        "t": 1789216348,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 183,
-        "guanid": 8128792,
-        "number": 9
-    },
-    {
-        "t": 1789180790,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 221,
-        "guanid": 8125469,
-        "number": 9
-    },
-    {
-        "t": 1789178850,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 294,
-        "guanid": 8125275,
-        "number": 9
-    },
-    {
-        "t": 1789178451,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 260,
-        "guanid": 10302766,
-        "number": 6
-    },
-    {
-        "t": 1789150108,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 196,
-        "guanid": 10302034,
-        "number": 6
-    },
-    {
-        "t": 1789148069,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 185,
-        "guanid": 10301988,
-        "number": 6
-    },
-    {
-        "t": 1789147796,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 157,
-        "guanid": 10301986,
-        "number": 6
-    },
-    {
-        "t": 1789147560,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 194,
-        "guanid": 10301984,
-        "number": 6
-    },
-    {
-        "t": 1789147299,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 191,
-        "guanid": 10301980,
-        "number": 6
-    },
-    {
-        "t": 1789146719,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 195,
-        "guanid": 10301968,
-        "number": 6
-    },
-    {
-        "t": 1789146394,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 173,
-        "guanid": 10301872,
-        "number": 6
-    },
-    {
-        "t": 1789138040,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 229,
-        "guanid": 10301665,
-        "number": 6
-    },
-    {
-        "t": 1789137763,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 161,
-        "guanid": 10301654,
-        "number": 6
-    },
-    {
-        "t": 1789137509,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 234,
-        "guanid": 10301631,
-        "number": 6
-    },
-    {
-        "t": 1789092112,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 326,
-        "guanid": 8121203,
-        "number": 9
-    },
-    {
-        "t": 1789091511,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 328,
-        "guanid": 8121189,
-        "number": 9
-    },
-    {
-        "t": 1789087398,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 256,
-        "guanid": 8121090,
-        "number": 9
-    },
-    {
-        "t": 1789073805,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 330,
-        "guanid": 8120936,
-        "number": 9
-    },
-    {
-        "t": 1789073281,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 288,
-        "guanid": 8120933,
-        "number": 9
-    },
-    {
-        "t": 1789072531,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 268,
-        "guanid": 8120930,
-        "number": 9
-    },
-    {
-        "t": 1789071957,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 315,
-        "guanid": 8120929,
-        "number": 9
-    },
-    {
-        "t": 1789064773,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 293,
-        "guanid": 8120921,
-        "number": 9
-    },
-    {
-        "t": 1789063937,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 274,
-        "guanid": 8120920,
-        "number": 9
-    },
-    {
-        "t": 1789055983,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 309,
-        "guanid": 8120754,
-        "number": 9
-    },
-    {
-        "t": 1789055550,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 308,
-        "guanid": 8120731,
-        "number": 9
-    },
-    {
-        "t": 1789051105,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 276,
-        "guanid": 8120574,
-        "number": 9
-    },
-    {
-        "t": 1789050388,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 302,
-        "guanid": 8120544,
-        "number": 9
-    },
-    {
-        "t": 1789043784,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 292,
-        "guanid": 8119757,
-        "number": 9
-    },
-    {
-        "t": 1789041773,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 274,
-        "guanid": 8119519,
-        "number": 9
-    },
-    {
-        "t": 1789041232,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 272,
-        "guanid": 10297045,
-        "number": 6
-    },
-    {
-        "t": 1789003574,
-        "status": 1,
-        "oknum": 1,
-        "totaltime": 333,
-        "guanid": 8117501,
-        "number": 9
-    },
-    {
-        "t": 1788997892,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 308,
-        "guanid": 9108333,
-        "number": 10
-    },
-    {
-        "t": 1788996281,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 344,
-        "guanid": 9108318,
-        "number": 10
-    },
-    {
-        "t": 1788992804,
-        "status": 1,
-        "oknum": 1,
-        "totaltime": 324,
-        "guanid": 9108267,
-        "number": 10
-    },
-    {
-        "t": 1788991628,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 284,
-        "guanid": 9108262,
-        "number": 10
-    },
-    {
-        "t": 1788989160,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 310,
-        "guanid": 8117351,
-        "number": 9
-    },
-    {
-        "t": 1788987302,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 256,
-        "guanid": 8117348,
-        "number": 9
-    },
-    {
-        "t": 1788986638,
+        "t": 1784112528,
         "status": 2,
         "oknum": 10,
-        "totaltime": 203,
-        "guanid": 7013069,
-        "number": 8
-    },
-    {
-        "t": 1788980831,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 256,
-        "guanid": 10295149,
-        "number": 6
-    },
-    {
-        "t": 1788979421,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 240,
-        "guanid": 10295133,
-        "number": 6
-    },
-    {
-        "t": 1788912035,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 285,
-        "guanid": 8114063,
-        "number": 9
-    },
-    {
-        "t": 1788908298,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 331,
-        "guanid": 8114053,
-        "number": 9
-    },
-    {
-        "t": 1788902264,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 310,
-        "guanid": 8114024,
-        "number": 9
-    },
-    {
-        "t": 1788896564,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 321,
-        "guanid": 8113994,
-        "number": 9
-    },
-    {
-        "t": 1788875003,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 275,
-        "guanid": 8113472,
-        "number": 9
-    },
-    {
-        "t": 1788874655,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 272,
-        "guanid": 8113402,
-        "number": 9
-    },
-    {
-        "t": 1788874208,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 302,
-        "guanid": 8113333,
-        "number": 9
-    },
-    {
-        "t": 1788873797,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 338,
-        "guanid": 8113258,
-        "number": 9
-    },
-    {
-        "t": 1788872916,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 282,
-        "guanid": 8113104,
-        "number": 9
-    },
-    {
-        "t": 1788872411,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 278,
-        "guanid": 8113049,
-        "number": 9
-    },
-    {
-        "t": 1788871036,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 287,
-        "guanid": 7009698,
-        "number": 8
-    },
-    {
-        "t": 1788870474,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 264,
-        "guanid": 7009614,
-        "number": 8
-    },
-    {
-        "t": 1788869248,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 255,
-        "guanid": 10290138,
-        "number": 6
-    },
-    {
-        "t": 1788803620,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 268,
-        "guanid": 8110723,
-        "number": 9
-    },
-    {
-        "t": 1788803174,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 285,
-        "guanid": 8110720,
-        "number": 9
-    },
-    {
-        "t": 1788802704,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 295,
-        "guanid": 8110718,
-        "number": 9
-    },
-    {
-        "t": 1788802134,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 336,
-        "guanid": 8110717,
-        "number": 9
-    },
-    {
-        "t": 1788801510,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 278,
-        "guanid": 8110716,
-        "number": 9
-    },
-    {
-        "t": 1788800960,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 251,
-        "guanid": 8110714,
-        "number": 9
-    },
-    {
-        "t": 1788797831,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 278,
-        "guanid": 8110565,
-        "number": 9
-    },
-    {
-        "t": 1788792054,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 258,
-        "guanid": 8110551,
-        "number": 9
-    },
-    {
-        "t": 1788791626,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 186,
-        "guanid": 10287627,
-        "number": 6
-    },
-    {
-        "t": 1788784851,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 232,
-        "guanid": 10286567,
-        "number": 6
-    },
-    {
-        "t": 1788782815,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 197,
-        "guanid": 10286224,
-        "number": 6
-    },
-    {
-        "t": 1788745390,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 291,
-        "guanid": 8107372,
-        "number": 9
-    },
-    {
-        "t": 1788744894,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 247,
-        "guanid": 8107358,
-        "number": 9
-    },
-    {
-        "t": 1788744457,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 273,
-        "guanid": 8107347,
-        "number": 9
-    },
-    {
-        "t": 1788731835,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 260,
-        "guanid": 8107218,
-        "number": 9
-    },
-    {
-        "t": 1788731407,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 256,
-        "guanid": 8107215,
-        "number": 9
-    },
-    {
-        "t": 1788730966,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 217,
-        "guanid": 8107214,
-        "number": 9
-    },
-    {
-        "t": 1788730501,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 245,
-        "guanid": 8107213,
-        "number": 9
-    },
-    {
-        "t": 1788730118,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 257,
-        "guanid": 8107212,
-        "number": 9
-    },
-    {
-        "t": 1788729717,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 349,
-        "guanid": 8107210,
-        "number": 9
-    },
-    {
-        "t": 1788729185,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 295,
-        "guanid": 8107209,
-        "number": 9
-    },
-    {
-        "t": 1788728765,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 292,
-        "guanid": 8107208,
-        "number": 9
-    },
-    {
-        "t": 1788728332,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 254,
-        "guanid": 8107205,
-        "number": 9
-    },
-    {
-        "t": 1788727813,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 288,
-        "guanid": 8107203,
-        "number": 9
-    },
-    {
-        "t": 1788727293,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 300,
-        "guanid": 8107202,
-        "number": 9
-    },
-    {
-        "t": 1788724404,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 228,
-        "guanid": 8107196,
-        "number": 9
-    },
-    {
-        "t": 1788723875,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 210,
-        "guanid": 8107195,
-        "number": 9
-    },
-    {
-        "t": 1788703674,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 241,
-        "guanid": 8106930,
-        "number": 9
-    },
-    {
-        "t": 1788703236,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 289,
-        "guanid": 8106894,
-        "number": 9
-    },
-    {
-        "t": 1788702426,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 209,
-        "guanid": 8106825,
-        "number": 9
-    },
-    {
-        "t": 1788657758,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 212,
-        "guanid": 8102200,
-        "number": 9
-    },
-    {
-        "t": 1788657395,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 203,
-        "guanid": 8102177,
-        "number": 9
-    },
-    {
-        "t": 1788657133,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 208,
-        "guanid": 8102154,
-        "number": 9
-    },
-    {
-        "t": 1788656815,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 184,
-        "guanid": 8102126,
-        "number": 9
-    },
-    {
-        "t": 1788656525,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 213,
-        "guanid": 8102092,
-        "number": 9
-    },
-    {
-        "t": 1788651435,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 226,
-        "guanid": 8101818,
-        "number": 9
-    },
-    {
-        "t": 1788651049,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 189,
-        "guanid": 8101814,
-        "number": 9
-    },
-    {
-        "t": 1788650802,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 175,
-        "guanid": 7001061,
-        "number": 8
-    },
-    {
-        "t": 1788650584,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 160,
-        "guanid": 7001052,
-        "number": 8
-    },
-    {
-        "t": 1788650251,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 160,
-        "guanid": 7001042,
-        "number": 8
-    },
-    {
-        "t": 1788650021,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 169,
-        "guanid": 7001037,
-        "number": 8
-    },
-    {
-        "t": 1788649804,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 201,
-        "guanid": 7001031,
-        "number": 8
-    },
-    {
-        "t": 1788649519,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 144,
-        "guanid": 7001029,
-        "number": 8
-    },
-    {
-        "t": 1788649287,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 195,
-        "guanid": 7001023,
-        "number": 8
-    },
-    {
-        "t": 1788648984,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 180,
-        "guanid": 7001018,
-        "number": 8
-    },
-    {
-        "t": 1788648720,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 194,
-        "guanid": 7001013,
-        "number": 8
-    },
-    {
-        "t": 1788648365,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 164,
-        "guanid": 7001008,
-        "number": 8
-    },
-    {
-        "t": 1788647989,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 232,
-        "guanid": 7001004,
-        "number": 8
-    },
-    {
-        "t": 1788647596,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 198,
-        "guanid": 7000996,
-        "number": 8
-    },
-    {
-        "t": 1788647336,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 250,
-        "guanid": 7000992,
-        "number": 8
-    },
-    {
-        "t": 1788646909,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 233,
-        "guanid": 7000985,
-        "number": 8
-    },
-    {
-        "t": 1788646516,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 165,
-        "guanid": 7000984,
-        "number": 8
-    },
-    {
-        "t": 1788646239,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 147,
-        "guanid": 7000983,
-        "number": 8
-    },
-    {
-        "t": 1788613993,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 192,
-        "guanid": 7000187,
-        "number": 8
-    },
-    {
-        "t": 1788613731,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 118,
-        "guanid": 4320683,
-        "number": 7
-    },
-    {
-        "t": 1788613576,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 162,
-        "guanid": 4320670,
-        "number": 7
-    },
-    {
-        "t": 1788613321,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 148,
-        "guanid": 4320658,
-        "number": 7
-    },
-    {
-        "t": 1788613063,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 112,
-        "guanid": 4320635,
-        "number": 7
-    },
-    {
-        "t": 1788612853,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 163,
-        "guanid": 4320610,
-        "number": 7
-    },
-    {
-        "t": 1788612665,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 148,
-        "guanid": 4320597,
-        "number": 7
-    },
-    {
-        "t": 1788612434,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 148,
-        "guanid": 4320574,
-        "number": 7
-    },
-    {
-        "t": 1788612162,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 131,
-        "guanid": 4320557,
-        "number": 7
-    },
-    {
-        "t": 1788611998,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 139,
-        "guanid": 4320548,
-        "number": 7
-    },
-    {
-        "t": 1788611664,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 109,
-        "guanid": 4320540,
-        "number": 7
-    },
-    {
-        "t": 1788611469,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 134,
-        "guanid": 4320536,
-        "number": 7
-    },
-    {
-        "t": 1788611302,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 121,
-        "guanid": 4320534,
-        "number": 7
-    },
-    {
-        "t": 1788611128,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 123,
-        "guanid": 4320530,
-        "number": 7
-    },
-    {
-        "t": 1788610907,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 204,
-        "guanid": 4320514,
-        "number": 7
-    },
-    {
-        "t": 1788610624,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 128,
-        "guanid": 4320502,
-        "number": 7
-    },
-    {
-        "t": 1788610445,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 159,
-        "guanid": 4320490,
-        "number": 7
-    },
-    {
-        "t": 1788610197,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 184,
-        "guanid": 4320471,
-        "number": 7
-    },
-    {
-        "t": 1788609907,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 164,
-        "guanid": 4320452,
-        "number": 7
-    },
-    {
-        "t": 1788609634,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 149,
-        "guanid": 4320435,
-        "number": 7
-    },
-    {
-        "t": 1788609412,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 161,
-        "guanid": 4320419,
-        "number": 7
-    },
-    {
-        "t": 1788609140,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 134,
-        "guanid": 4320407,
-        "number": 7
-    },
-    {
-        "t": 1788608968,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 138,
-        "guanid": 4320398,
-        "number": 7
-    },
-    {
-        "t": 1788608750,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 167,
-        "guanid": 4320381,
-        "number": 7
-    },
-    {
-        "t": 1788608489,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 100,
-        "guanid": 4320368,
-        "number": 7
-    },
-    {
-        "t": 1788608340,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 125,
-        "guanid": 4320352,
-        "number": 7
-    },
-    {
-        "t": 1788578809,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 133,
-        "guanid": 4319273,
-        "number": 7
-    },
-    {
-        "t": 1788578627,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 132,
-        "guanid": 4319266,
-        "number": 7
-    },
-    {
-        "t": 1788578397,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 107,
-        "guanid": 4319252,
-        "number": 7
-    },
-    {
-        "t": 1788578225,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 122,
-        "guanid": 4319242,
-        "number": 7
-    },
-    {
-        "t": 1788578042,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 151,
-        "guanid": 4319236,
-        "number": 7
-    },
-    {
-        "t": 1788577803,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 122,
-        "guanid": 4319229,
-        "number": 7
-    },
-    {
-        "t": 1788577620,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 157,
-        "guanid": 4319224,
-        "number": 7
-    },
-    {
-        "t": 1788577407,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 158,
-        "guanid": 4319220,
-        "number": 7
-    },
-    {
-        "t": 1788577179,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 116,
-        "guanid": 4319208,
-        "number": 7
-    },
-    {
-        "t": 1788576952,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 128,
-        "guanid": 4319196,
-        "number": 7
-    },
-    {
-        "t": 1788576676,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 158,
-        "guanid": 4319183,
-        "number": 7
-    },
-    {
-        "t": 1788576458,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 94,
-        "guanid": 4319171,
-        "number": 7
-    },
-    {
-        "t": 1788576315,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 127,
-        "guanid": 4319164,
-        "number": 7
-    },
-    {
-        "t": 1788576165,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 144,
-        "guanid": 4319159,
-        "number": 7
-    },
-    {
-        "t": 1788575989,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 127,
-        "guanid": 4319150,
-        "number": 7
-    },
-    {
-        "t": 1788575752,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 171,
-        "guanid": 4319143,
-        "number": 7
-    },
-    {
-        "t": 1788575514,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 131,
-        "guanid": 4319133,
-        "number": 7
-    },
-    {
-        "t": 1788575285,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 198,
-        "guanid": 4319122,
-        "number": 7
-    },
-    {
-        "t": 1788575055,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 123,
-        "guanid": 4319117,
-        "number": 7
-    },
-    {
-        "t": 1788574889,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 152,
-        "guanid": 4319103,
-        "number": 7
-    },
-    {
-        "t": 1788574633,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 144,
-        "guanid": 4319090,
-        "number": 7
-    },
-    {
-        "t": 1788574401,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 165,
-        "guanid": 4319071,
-        "number": 7
-    },
-    {
-        "t": 1788574128,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 173,
-        "guanid": 4319062,
-        "number": 7
-    },
-    {
-        "t": 1788573905,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 165,
-        "guanid": 4319050,
-        "number": 7
-    },
-    {
-        "t": 1788573644,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 121,
-        "guanid": 4319041,
-        "number": 7
-    },
-    {
-        "t": 1788573399,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 147,
-        "guanid": 4319025,
-        "number": 7
-    },
-    {
-        "t": 1788573189,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 158,
-        "guanid": 4319009,
-        "number": 7
-    },
-    {
-        "t": 1788572981,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 156,
-        "guanid": 4319000,
-        "number": 7
-    },
-    {
-        "t": 1788572765,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 148,
-        "guanid": 4318989,
-        "number": 7
-    },
-    {
-        "t": 1788572485,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 194,
-        "guanid": 4318984,
-        "number": 7
-    },
-    {
-        "t": 1788554713,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 188,
-        "guanid": 4318639,
-        "number": 7
-    },
-    {
-        "t": 1788554484,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 149,
-        "guanid": 4318638,
-        "number": 7
-    },
-    {
-        "t": 1788554281,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 172,
-        "guanid": 4318637,
-        "number": 7
-    },
-    {
-        "t": 1788554020,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 185,
-        "guanid": 4318636,
-        "number": 7
-    },
-    {
-        "t": 1788553735,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 115,
-        "guanid": 4318635,
-        "number": 7
-    },
-    {
-        "t": 1788553121,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 142,
-        "guanid": 4318630,
-        "number": 7
-    },
-    {
-        "t": 1788551230,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 147,
-        "guanid": 4318629,
-        "number": 7
-    },
-    {
-        "t": 1788551034,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 164,
-        "guanid": 4318628,
-        "number": 7
-    },
-    {
-        "t": 1788550829,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 193,
-        "guanid": 4318627,
-        "number": 7
-    },
-    {
-        "t": 1788550601,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 98,
-        "guanid": 4318626,
-        "number": 7
-    },
-    {
-        "t": 1788550431,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 179,
-        "guanid": 4318625,
-        "number": 7
-    },
-    {
-        "t": 1788550210,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 169,
-        "guanid": 10270929,
-        "number": 6
-    },
-    {
-        "t": 1788550012,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 155,
-        "guanid": 10270928,
-        "number": 6
-    },
-    {
-        "t": 1788549810,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 171,
-        "guanid": 10270927,
-        "number": 6
-    },
-    {
-        "t": 1788549612,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 179,
-        "guanid": 10270926,
-        "number": 6
-    },
-    {
-        "t": 1788549303,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 164,
-        "guanid": 10270925,
-        "number": 6
-    },
-    {
-        "t": 1788549082,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 135,
-        "guanid": 10270923,
-        "number": 6
-    },
-    {
-        "t": 1788548849,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 164,
-        "guanid": 10270922,
-        "number": 6
-    },
-    {
-        "t": 1788548433,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 141,
-        "guanid": 10270920,
-        "number": 6
-    },
-    {
-        "t": 1788548175,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 117,
-        "guanid": 10270917,
-        "number": 6
-    },
-    {
-        "t": 1788547983,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 124,
-        "guanid": 10270915,
-        "number": 6
-    },
-    {
-        "t": 1788547775,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 124,
-        "guanid": 10270913,
-        "number": 6
-    },
-    {
-        "t": 1788544929,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 100,
-        "guanid": 10270899,
-        "number": 6
-    },
-    {
-        "t": 1788544759,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 124,
-        "guanid": 10270896,
-        "number": 6
-    },
-    {
-        "t": 1788544556,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 111,
-        "guanid": 10270892,
-        "number": 6
-    },
-    {
-        "t": 1788544308,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 121,
-        "guanid": 10270890,
-        "number": 6
-    },
-    {
-        "t": 1788544098,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 72,
-        "guanid": 6049631,
-        "number": 5
-    },
-    {
-        "t": 1788544004,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 60,
-        "guanid": 5509280,
-        "number": 4
-    },
-    {
-        "t": 1788543921,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 65,
-        "guanid": 5509278,
-        "number": 4
-    },
-    {
-        "t": 1788543765,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 31,
-        "guanid": 3973568,
-        "number": 3
-    },
-    {
-        "t": 1788543703,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 54,
-        "guanid": 3973567,
-        "number": 3
-    },
-    {
-        "t": 1788543597,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 62,
-        "guanid": 3973566,
-        "number": 3
-    },
-    {
-        "t": 1788542497,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 85,
-        "guanid": 3973563,
-        "number": 3
-    },
-    {
-        "t": 1788542318,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 48,
-        "guanid": 3973562,
-        "number": 3
-    },
-    {
-        "t": 1788542216,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 52,
-        "guanid": 3973561,
-        "number": 3
-    },
-    {
-        "t": 1788542129,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 48,
-        "guanid": 3973560,
-        "number": 3
-    },
-    {
-        "t": 1788541928,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 36,
-        "guanid": 2994648,
-        "number": 2
-    },
-    {
-        "t": 1788541866,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 47,
-        "guanid": 2994647,
-        "number": 2
-    },
-    {
-        "t": 1788541785,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 40,
-        "guanid": 4355315,
+        "totaltime": 30,
+        "guanid": 9468862,
         "number": 1
     },
     {
-        "t": 1788541702,
+        "t": 1784112878,
         "status": 2,
         "oknum": 10,
         "totaltime": 37,
-        "guanid": 4355314,
+        "guanid": 9689445,
         "number": 1
     },
     {
-        "t": 1788523656,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 251,
-        "guanid": 6995611,
-        "number": 8
-    },
-    {
-        "t": 1788519940,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 326,
-        "guanid": 9083501,
-        "number": 10
-    },
-    {
-        "t": 1788491044,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 274,
-        "guanid": 8093956,
-        "number": 9
-    },
-    {
-        "t": 1788490633,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 296,
-        "guanid": 8093941,
-        "number": 9
-    },
-    {
-        "t": 1788490226,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 275,
-        "guanid": 8093924,
-        "number": 9
-    },
-    {
-        "t": 1788489849,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 232,
-        "guanid": 8093909,
-        "number": 9
-    },
-    {
-        "t": 1788485854,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 198,
-        "guanid": 6994158,
-        "number": 8
-    },
-    {
-        "t": 1788485594,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 308,
-        "guanid": 6994152,
-        "number": 8
-    },
-    {
-        "t": 1788485188,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 221,
-        "guanid": 6994148,
-        "number": 8
-    },
-    {
-        "t": 1788472369,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 284,
-        "guanid": 6994060,
-        "number": 8
-    },
-    {
-        "t": 1788434369,
+        "t": 1784113161,
         "status": 2,
         "oknum": 10,
-        "totaltime": 218,
-        "guanid": 10265592,
-        "number": 6
+        "totaltime": 39,
+        "guanid": 9672622,
+        "number": 1
     },
     {
-        "t": 1788434097,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 260,
-        "guanid": 10265475,
-        "number": 6
-    },
-    {
-        "t": 1788433265,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 187,
-        "guanid": 10265437,
-        "number": 6
-    },
-    {
-        "t": 1788432987,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 211,
-        "guanid": 10265388,
-        "number": 6
-    },
-    {
-        "t": 1788318137,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 264,
-        "guanid": 8087644,
-        "number": 9
-    },
-    {
-        "t": 1788317598,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 343,
-        "guanid": 8087633,
-        "number": 9
-    },
-    {
-        "t": 1788282653,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 284,
-        "guanid": 6988804,
-        "number": 8
-    },
-    {
-        "t": 1788282290,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 294,
-        "guanid": 6988802,
-        "number": 8
-    },
-    {
-        "t": 1788201171,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 311,
-        "guanid": 8083856,
-        "number": 9
-    },
-    {
-        "t": 1788200556,
+        "t": 1784113438,
         "status": 2,
         "oknum": 10,
-        "totaltime": 293,
-        "guanid": 6986479,
-        "number": 8
-    },
-    {
-        "t": 1788175142,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 273,
-        "guanid": 6985337,
-        "number": 8
-    },
-    {
-        "t": 1788111540,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 284,
-        "guanid": 8079858,
-        "number": 9
-    },
-    {
-        "t": 1788110959,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 298,
-        "guanid": 6983203,
-        "number": 8
-    },
-    {
-        "t": 1788087978,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 256,
-        "guanid": 6982108,
-        "number": 8
-    },
-    {
-        "t": 1788004665,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 263,
-        "guanid": 10246947,
-        "number": 6
-    },
-    {
-        "t": 1787951384,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 249,
-        "guanid": 10243030,
-        "number": 6
-    },
-    {
-        "t": 1787949716,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 508,
-        "guanid": 10243024,
-        "number": 6
-    },
-    {
-        "t": 1787949100,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 265,
-        "guanid": 10243023,
-        "number": 6
-    },
-    {
-        "t": 1787689529,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 318,
-        "guanid": 6963575,
-        "number": 8
-    },
-    {
-        "t": 1787689063,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 247,
-        "guanid": 6963572,
-        "number": 8
-    },
-    {
-        "t": 1787688656,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 286,
-        "guanid": 6963564,
-        "number": 8
-    },
-    {
-        "t": 1787688282,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 299,
-        "guanid": 4299732,
-        "number": 7
-    },
-    {
-        "t": 1787687911,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 241,
-        "guanid": 10226813,
-        "number": 6
-    },
-    {
-        "t": 1787424376,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 205,
-        "guanid": 10208422,
-        "number": 6
-    },
-    {
-        "t": 1787424103,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 290,
-        "guanid": 10208399,
-        "number": 6
-    },
-    {
-        "t": 1786986388,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 224,
-        "guanid": 10174965,
-        "number": 6
-    },
-    {
-        "t": 1786969654,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 293,
-        "guanid": 6923642,
-        "number": 8
-    },
-    {
-        "t": 1786969241,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 297,
-        "guanid": 6923602,
-        "number": 8
-    },
-    {
-        "t": 1786968793,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 319,
-        "guanid": 6923577,
-        "number": 8
-    },
-    {
-        "t": 1786933664,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 267,
-        "guanid": 6920613,
-        "number": 8
-    },
-    {
-        "t": 1786887182,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 273,
-        "guanid": 6919183,
-        "number": 8
-    },
-    {
-        "t": 1786884322,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 320,
-        "guanid": 6918929,
-        "number": 8
-    },
-    {
-        "t": 1786883618,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 286,
-        "guanid": 6918893,
-        "number": 8
-    },
-    {
-        "t": 1786839905,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 284,
-        "guanid": 7998117,
-        "number": 9
-    },
-    {
-        "t": 1786839367,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 275,
-        "guanid": 6914942,
-        "number": 8
-    },
-    {
-        "t": 1786798816,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 292,
-        "guanid": 7996844,
-        "number": 9
-    },
-    {
-        "t": 1786798477,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 287,
-        "guanid": 6913757,
-        "number": 8
-    },
-    {
-        "t": 1786798095,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 300,
-        "guanid": 6913719,
-        "number": 8
-    },
-    {
-        "t": 1786797749,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 268,
-        "guanid": 6913690,
-        "number": 8
-    },
-    {
-        "t": 1786797373,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 376,
-        "guanid": 6913668,
-        "number": 8
-    },
-    {
-        "t": 1786796959,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 347,
-        "guanid": 6913629,
-        "number": 8
-    },
-    {
-        "t": 1786796213,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 342,
-        "guanid": 6913596,
-        "number": 8
-    },
-    {
-        "t": 1786708376,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 316,
-        "guanid": 6908076,
-        "number": 8
-    },
-    {
-        "t": 1786658034,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 293,
-        "guanid": 6904203,
-        "number": 8
-    },
-    {
-        "t": 1786657665,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 284,
-        "guanid": 6904201,
-        "number": 8
-    },
-    {
-        "t": 1786638994,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 351,
-        "guanid": 6904047,
-        "number": 8
-    },
-    {
-        "t": 1786638441,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 316,
-        "guanid": 6904041,
-        "number": 8
-    },
-    {
-        "t": 1786584056,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 307,
-        "guanid": 7977570,
-        "number": 9
-    },
-    {
-        "t": 1786583497,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 312,
-        "guanid": 6899497,
-        "number": 8
-    },
-    {
-        "t": 1786583082,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 226,
-        "guanid": 10141569,
-        "number": 6
-    },
-    {
-        "t": 1786541735,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 350,
-        "guanid": 8949018,
-        "number": 10
-    },
-    {
-        "t": 1786540855,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 335,
-        "guanid": 8948887,
-        "number": 10
-    },
-    {
-        "t": 1786540320,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 325,
-        "guanid": 8948718,
-        "number": 10
-    },
-    {
-        "t": 1786503600,
-        "status": 1,
-        "oknum": 3,
-        "totaltime": 292,
-        "guanid": 8943462,
-        "number": 10
-    },
-    {
-        "t": 1786503022,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 300,
-        "guanid": 10134521,
-        "number": 6
-    },
-    {
-        "t": 1786453736,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 266,
-        "guanid": 10131702,
-        "number": 6
-    },
-    {
-        "t": 1786366284,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 291,
-        "guanid": 6888443,
-        "number": 8
-    },
-    {
-        "t": 1786365872,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 329,
-        "guanid": 10124452,
-        "number": 6
-    },
-    {
-        "t": 1786351488,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 275,
-        "guanid": 10122740,
-        "number": 6
-    },
-    {
-        "t": 1785803942,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 257,
-        "guanid": 10078001,
-        "number": 6
-    },
-    {
-        "t": 1785683553,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 337,
-        "guanid": 7914468,
-        "number": 9
-    },
-    {
-        "t": 1785598591,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 293,
-        "guanid": 7908487,
-        "number": 9
-    },
-    {
-        "t": 1785590133,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 341,
-        "guanid": 7907650,
-        "number": 9
-    },
-    {
-        "t": 1785589546,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 253,
-        "guanid": 7907605,
-        "number": 9
-    },
-    {
-        "t": 1785589204,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 308,
-        "guanid": 7907529,
-        "number": 9
-    },
-    {
-        "t": 1785588709,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 264,
-        "guanid": 7907472,
-        "number": 9
-    },
-    {
-        "t": 1785588119,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 374,
-        "guanid": 7907352,
-        "number": 9
-    },
-    {
-        "t": 1785587442,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 372,
-        "guanid": 7907243,
-        "number": 9
-    },
-    {
-        "t": 1785586793,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 287,
-        "guanid": 7907199,
-        "number": 9
-    },
-    {
-        "t": 1785586005,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 375,
-        "guanid": 7907110,
-        "number": 9
-    },
-    {
-        "t": 1785546263,
-        "status": 1,
-        "oknum": 3,
-        "totaltime": 234,
-        "guanid": 7902908,
-        "number": 9
-    },
-    {
-        "t": 1785545792,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 341,
-        "guanid": 7902887,
-        "number": 9
-    },
-    {
-        "t": 1785545333,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 274,
-        "guanid": 7902863,
-        "number": 9
-    },
-    {
-        "t": 1785544938,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 256,
-        "guanid": 7902836,
-        "number": 9
-    },
-    {
-        "t": 1785544541,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 299,
-        "guanid": 7902822,
-        "number": 9
-    },
-    {
-        "t": 1785544080,
-        "status": 1,
-        "oknum": 3,
-        "totaltime": 268,
-        "guanid": 7902804,
-        "number": 9
-    },
-    {
-        "t": 1785543534,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 251,
-        "guanid": 7902776,
-        "number": 9
-    },
-    {
-        "t": 1785543128,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 260,
-        "guanid": 7902764,
-        "number": 9
-    },
-    {
-        "t": 1785542711,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 339,
-        "guanid": 7902735,
-        "number": 9
-    },
-    {
-        "t": 1785541869,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 312,
-        "guanid": 7902708,
-        "number": 9
-    },
-    {
-        "t": 1785541108,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 253,
-        "guanid": 7902702,
-        "number": 9
-    },
-    {
-        "t": 1785540489,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 289,
-        "guanid": 7902696,
-        "number": 9
-    },
-    {
-        "t": 1785539882,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 327,
-        "guanid": 7902691,
-        "number": 9
-    },
-    {
-        "t": 1785539358,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 293,
-        "guanid": 7902689,
-        "number": 9
-    },
-    {
-        "t": 1785538930,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 263,
-        "guanid": 7902687,
-        "number": 9
-    },
-    {
-        "t": 1785538518,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 241,
-        "guanid": 7902683,
-        "number": 9
-    },
-    {
-        "t": 1785538134,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 316,
-        "guanid": 7902674,
-        "number": 9
-    },
-    {
-        "t": 1785537606,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 287,
-        "guanid": 7902658,
-        "number": 9
-    },
-    {
-        "t": 1785534249,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 269,
-        "guanid": 7902636,
-        "number": 9
-    },
-    {
-        "t": 1785533519,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 274,
-        "guanid": 7902631,
-        "number": 9
-    },
-    {
-        "t": 1785532926,
-        "status": 1,
-        "oknum": 3,
-        "totaltime": 240,
-        "guanid": 7902627,
-        "number": 9
-    },
-    {
-        "t": 1785532395,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 263,
-        "guanid": 6841929,
-        "number": 8
-    },
-    {
-        "t": 1785532081,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 273,
-        "guanid": 6841927,
-        "number": 8
-    },
-    {
-        "t": 1785527685,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 241,
-        "guanid": 10057593,
-        "number": 6
-    },
-    {
-        "t": 1785366826,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 334,
-        "guanid": 10044154,
-        "number": 6
-    },
-    {
-        "t": 1785281810,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 275,
-        "guanid": 10037498,
-        "number": 6
-    },
-    {
-        "t": 1785211100,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 289,
-        "guanid": 10032320,
-        "number": 6
-    },
-    {
-        "t": 1785100275,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 286,
-        "guanid": 6819045,
-        "number": 8
-    },
-    {
-        "t": 1785006654,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 330,
-        "guanid": 6814806,
-        "number": 8
-    },
-    {
-        "t": 1785005987,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 326,
-        "guanid": 6814805,
-        "number": 8
-    },
-    {
-        "t": 1785005536,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 294,
-        "guanid": 6814804,
-        "number": 8
-    },
-    {
-        "t": 1784946303,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 261,
-        "guanid": 6810836,
-        "number": 8
-    },
-    {
-        "t": 1784945941,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 275,
-        "guanid": 6810791,
-        "number": 8
-    },
-    {
-        "t": 1784945543,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 307,
-        "guanid": 6810739,
-        "number": 8
-    },
-    {
-        "t": 1784862173,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 306,
-        "guanid": 6806285,
-        "number": 8
-    },
-    {
-        "t": 1784861836,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 304,
-        "guanid": 6806226,
-        "number": 8
-    },
-    {
-        "t": 1784683482,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 263,
-        "guanid": 6796339,
-        "number": 8
-    },
-    {
-        "t": 1784683171,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 291,
-        "guanid": 6796310,
-        "number": 8
-    },
-    {
-        "t": 1784682770,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 274,
-        "guanid": 6796280,
-        "number": 8
-    },
-    {
-        "t": 1784682311,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 345,
-        "guanid": 6796225,
-        "number": 8
-    },
-    {
-        "t": 1784502580,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 301,
-        "guanid": 6787183,
-        "number": 8
-    },
-    {
-        "t": 1784502157,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 305,
-        "guanid": 6787179,
-        "number": 8
-    },
-    {
-        "t": 1784420059,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 336,
-        "guanid": 6783359,
-        "number": 8
-    },
-    {
-        "t": 1784255286,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 321,
-        "guanid": 6774911,
-        "number": 8
-    },
-    {
-        "t": 1783882392,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 320,
-        "guanid": 6757467,
-        "number": 8
-    },
-    {
-        "t": 1783873116,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 307,
-        "guanid": 6757389,
-        "number": 8
-    },
-    {
-        "t": 1783864879,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 239,
-        "guanid": 6757094,
-        "number": 8
-    },
-    {
-        "t": 1783864565,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 313,
-        "guanid": 6757040,
-        "number": 8
-    },
-    {
-        "t": 1783864116,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 314,
-        "guanid": 6757009,
-        "number": 8
-    },
-    {
-        "t": 1783863677,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 286,
-        "guanid": 6756993,
-        "number": 8
-    },
-    {
-        "t": 1783818273,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 293,
-        "guanid": 6753757,
-        "number": 8
-    },
-    {
-        "t": 1783817922,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 280,
-        "guanid": 6753743,
-        "number": 8
-    },
-    {
-        "t": 1783817582,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 316,
-        "guanid": 6753722,
-        "number": 8
-    },
-    {
-        "t": 1783803240,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 260,
-        "guanid": 6753609,
-        "number": 8
-    },
-    {
-        "t": 1783802838,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 283,
-        "guanid": 6753608,
-        "number": 8
-    },
-    {
-        "t": 1783802488,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 240,
-        "guanid": 6753607,
-        "number": 8
-    },
-    {
-        "t": 1783802058,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 290,
-        "guanid": 6753605,
-        "number": 8
-    },
-    {
-        "t": 1783801414,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 302,
-        "guanid": 6753604,
-        "number": 8
-    },
-    {
-        "t": 1783800959,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 323,
-        "guanid": 6753602,
-        "number": 8
-    },
-    {
-        "t": 1783790670,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 341,
-        "guanid": 6753536,
-        "number": 8
-    },
-    {
-        "t": 1783790237,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 291,
-        "guanid": 6753535,
-        "number": 8
-    },
-    {
-        "t": 1783773966,
-        "status": 2,
-        "oknum": 9,
-        "totaltime": 318,
-        "guanid": 6752872,
-        "number": 8
-    },
-    {
-        "t": 1783773583,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 330,
-        "guanid": 6752807,
-        "number": 8
-    },
-    {
-        "t": 1783773192,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 262,
-        "guanid": 6752766,
-        "number": 8
-    },
-    {
-        "t": 1783772381,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 280,
-        "guanid": 6752716,
-        "number": 8
-    },
-    {
-        "t": 1783772065,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 280,
-        "guanid": 6752690,
-        "number": 8
-    },
-    {
-        "t": 1783736994,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 286,
-        "guanid": 6750153,
-        "number": 8
-    },
-    {
-        "t": 1783736661,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 261,
-        "guanid": 6750134,
-        "number": 8
-    },
-    {
-        "t": 1783727914,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 235,
-        "guanid": 6749671,
-        "number": 8
-    },
-    {
-        "t": 1783727536,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 274,
-        "guanid": 6749660,
-        "number": 8
-    },
-    {
-        "t": 1783727136,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 349,
-        "guanid": 6749653,
-        "number": 8
-    },
-    {
-        "t": 1783726576,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 349,
-        "guanid": 7775999,
-        "number": 9
-    },
-    {
-        "t": 1783726054,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 296,
-        "guanid": 7775996,
-        "number": 9
-    },
-    {
-        "t": 1783725614,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 333,
-        "guanid": 7775968,
-        "number": 9
-    },
-    {
-        "t": 1783720197,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 331,
-        "guanid": 7775960,
-        "number": 9
-    },
-    {
-        "t": 1783685919,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 346,
-        "guanid": 7774598,
-        "number": 9
-    },
-    {
-        "t": 1783619289,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 395,
-        "guanid": 7771255,
-        "number": 9
-    },
-    {
-        "t": 1783618568,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 362,
-        "guanid": 7771251,
-        "number": 9
-    },
-    {
-        "t": 1783617630,
-        "status": 1,
-        "oknum": 3,
-        "totaltime": 334,
-        "guanid": 7771248,
-        "number": 9
-    },
-    {
-        "t": 1783617074,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 336,
-        "guanid": 7771242,
-        "number": 9
-    },
-    {
-        "t": 1783616536,
-        "status": 1,
-        "oknum": 4,
-        "totaltime": 375,
-        "guanid": 7771156,
-        "number": 9
-    },
-    {
-        "t": 1783564937,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 353,
-        "guanid": 7766859,
-        "number": 9
-    },
-    {
-        "t": 1783548094,
-        "status": 1,
-        "oknum": 2,
-        "totaltime": 396,
-        "guanid": 7766221,
-        "number": 9
-    },
-    {
-        "t": 1783545125,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 346,
-        "guanid": 7766219,
-        "number": 9
-    },
-    {
-        "t": 1783534870,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 354,
-        "guanid": 7766172,
-        "number": 9
-    },
-    {
-        "t": 1783531097,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 346,
-        "guanid": 7766166,
-        "number": 9
-    },
-    {
-        "t": 1783511596,
-        "status": 1,
-        "oknum": 7,
-        "totaltime": 374,
-        "guanid": 7765089,
-        "number": 9
-    },
-    {
-        "t": 1783472455,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 343,
-        "guanid": 7761958,
-        "number": 9
-    },
-    {
-        "t": 1783471807,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 385,
-        "guanid": 7761919,
-        "number": 9
-    },
-    {
-        "t": 1783471190,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 276,
-        "guanid": 6737475,
-        "number": 8
-    },
-    {
-        "t": 1783470756,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 365,
-        "guanid": 6737461,
-        "number": 8
-    },
-    {
-        "t": 1783470283,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 328,
-        "guanid": 6737449,
-        "number": 8
-    },
-    {
-        "t": 1783469746,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 311,
-        "guanid": 6737398,
-        "number": 8
-    },
-    {
-        "t": 1783467246,
-        "status": 1,
-        "oknum": 5,
-        "totaltime": 237,
-        "guanid": 6737377,
-        "number": 8
-    },
-    {
-        "t": 1783463199,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 273,
-        "guanid": 6737341,
-        "number": 8
-    },
-    {
-        "t": 1783462771,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 275,
-        "guanid": 4162737,
-        "number": 7
-    },
-    {
-        "t": 1783462325,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 255,
-        "guanid": 9903236,
-        "number": 6
-    },
-    {
-        "t": 1783461970,
-        "status": 1,
-        "oknum": 6,
-        "totaltime": 292,
-        "guanid": 9903229,
-        "number": 6
-    },
-    {
-        "t": 1783461395,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 173,
-        "guanid": 5865250,
-        "number": 5
-    },
-    {
-        "t": 1783461202,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 131,
-        "guanid": 5344877,
-        "number": 4
-    },
-    {
-        "t": 1783461001,
-        "status": 2,
-        "oknum": 10,
-        "totaltime": 148,
-        "guanid": 3831405,
-        "number": 3
-    },
-    {
-        "t": 1783460831,
-        "status": 2,
-        "oknum": 8,
-        "totaltime": 125,
-        "guanid": 2899268,
+        "totaltime": 30,
+        "guanid": 7907735,
         "number": 2
     },
     {
-        "t": 1783460550,
+        "t": 1784125589,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 44,
+        "guanid": 8405329,
+        "number": 2
+    },
+    {
+        "t": 1784125999,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 130,
+        "guanid": 9333720,
+        "number": 2
+    },
+    {
+        "t": 1784126310,
         "status": 2,
         "oknum": 10,
-        "totaltime": 44,
-        "guanid": 4229988,
-        "number": 1
+        "totaltime": 30,
+        "guanid": 7193073,
+        "number": 3
+    },
+    {
+        "t": 1784126751,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 57,
+        "guanid": 7461810,
+        "number": 3
+    },
+    {
+        "t": 1784126974,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 58,
+        "guanid": 7397538,
+        "number": 3
+    },
+    {
+        "t": 1784193211,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 52,
+        "guanid": 7527214,
+        "number": 3
+    },
+    {
+        "t": 1784193607,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 49,
+        "guanid": 9432796,
+        "number": 3
+    },
+    {
+        "t": 1784193914,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 55,
+        "guanid": 9096981,
+        "number": 3
+    },
+    {
+        "t": 1784204941,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 80,
+        "guanid": 8191553,
+        "number": 3
+    },
+    {
+        "t": 1784205241,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 156,
+        "guanid": 9622852,
+        "number": 3
+    },
+    {
+        "t": 1784205521,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 64,
+        "guanid": 8361175,
+        "number": 4
+    },
+    {
+        "t": 1784301168,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 67,
+        "guanid": 8945897,
+        "number": 4
+    },
+    {
+        "t": 1784301598,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 123,
+        "guanid": 8036484,
+        "number": 4
+    },
+    {
+        "t": 1784302057,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 74,
+        "guanid": 9028317,
+        "number": 5
+    },
+    {
+        "t": 1784302262,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 182,
+        "guanid": 9178369,
+        "number": 5
+    },
+    {
+        "t": 1784302740,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 95,
+        "guanid": 9706591,
+        "number": 6
+    },
+    {
+        "t": 1784367449,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 119,
+        "guanid": 8647320,
+        "number": 6
+    },
+    {
+        "t": 1784367869,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 116,
+        "guanid": 8589009,
+        "number": 6
+    },
+    {
+        "t": 1784368260,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 118,
+        "guanid": 8438351,
+        "number": 6
+    },
+    {
+        "t": 1784477935,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 132,
+        "guanid": 9648782,
+        "number": 6
+    },
+    {
+        "t": 1784478237,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 122,
+        "guanid": 9604361,
+        "number": 6
+    },
+    {
+        "t": 1784478512,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 117,
+        "guanid": 8867105,
+        "number": 6
+    },
+    {
+        "t": 1784490053,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 131,
+        "guanid": 8706270,
+        "number": 6
+    },
+    {
+        "t": 1784490509,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 133,
+        "guanid": 8067737,
+        "number": 6
+    },
+    {
+        "t": 1784490715,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 156,
+        "guanid": 9084392,
+        "number": 6
+    },
+    {
+        "t": 1784655457,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 167,
+        "guanid": 8682182,
+        "number": 6
+    },
+    {
+        "t": 1784655720,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 157,
+        "guanid": 9638012,
+        "number": 6
+    },
+    {
+        "t": 1784656048,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 169,
+        "guanid": 9027655,
+        "number": 6
+    },
+    {
+        "t": 1784656389,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 172,
+        "guanid": 8075109,
+        "number": 6
+    },
+    {
+        "t": 1784754630,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 178,
+        "guanid": 8800264,
+        "number": 6
+    },
+    {
+        "t": 1784754871,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 174,
+        "guanid": 8930587,
+        "number": 6
+    },
+    {
+        "t": 1784755213,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 168,
+        "guanid": 8248815,
+        "number": 6
+    },
+    {
+        "t": 1784771619,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 183,
+        "guanid": 7106753,
+        "number": 6
+    },
+    {
+        "t": 1784772075,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 179,
+        "guanid": 9329935,
+        "number": 6
+    },
+    {
+        "t": 1784772527,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 176,
+        "guanid": 7315177,
+        "number": 6
+    },
+    {
+        "t": 1784772835,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 178,
+        "guanid": 9090896,
+        "number": 6
+    },
+    {
+        "t": 1784836045,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 183,
+        "guanid": 9191370,
+        "number": 6
+    },
+    {
+        "t": 1784836516,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 191,
+        "guanid": 8356229,
+        "number": 6
+    },
+    {
+        "t": 1784836708,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 204,
+        "guanid": 7229791,
+        "number": 6
+    },
+    {
+        "t": 1784837054,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 202,
+        "guanid": 8032599,
+        "number": 6
+    },
+    {
+        "t": 1784837407,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 198,
+        "guanid": 7324375,
+        "number": 6
+    },
+    {
+        "t": 1784902284,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 202,
+        "guanid": 7252563,
+        "number": 6
+    },
+    {
+        "t": 1784902482,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 202,
+        "guanid": 8103385,
+        "number": 6
+    },
+    {
+        "t": 1784902695,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 224,
+        "guanid": 9569429,
+        "number": 6
+    },
+    {
+        "t": 1784914779,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 228,
+        "guanid": 8981921,
+        "number": 6
+    },
+    {
+        "t": 1784915054,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 219,
+        "guanid": 7933048,
+        "number": 6
+    },
+    {
+        "t": 1784915248,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 219,
+        "guanid": 8124824,
+        "number": 6
+    },
+    {
+        "t": 1785012387,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 226,
+        "guanid": 7345229,
+        "number": 6
+    },
+    {
+        "t": 1785012749,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 242,
+        "guanid": 7570549,
+        "number": 6
+    },
+    {
+        "t": 1785012934,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 248,
+        "guanid": 9316432,
+        "number": 6
+    },
+    {
+        "t": 1785013149,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 251,
+        "guanid": 7733009,
+        "number": 6
+    },
+    {
+        "t": 1785013440,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 241,
+        "guanid": 7974141,
+        "number": 6
+    },
+    {
+        "t": 1785034690,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 258,
+        "guanid": 7395331,
+        "number": 6
+    },
+    {
+        "t": 1785035064,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 252,
+        "guanid": 7172726,
+        "number": 6
+    },
+    {
+        "t": 1785035300,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 248,
+        "guanid": 9729258,
+        "number": 6
+    },
+    {
+        "t": 1785035760,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 249,
+        "guanid": 9790440,
+        "number": 6
+    },
+    {
+        "t": 1785036215,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 257,
+        "guanid": 9497161,
+        "number": 6
+    },
+    {
+        "t": 1785076265,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 263,
+        "guanid": 9314147,
+        "number": 6
+    },
+    {
+        "t": 1785076603,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 254,
+        "guanid": 7774146,
+        "number": 6
+    },
+    {
+        "t": 1785076833,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 253,
+        "guanid": 9233144,
+        "number": 6
+    },
+    {
+        "t": 1785077162,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 275,
+        "guanid": 7537454,
+        "number": 6
+    },
+    {
+        "t": 1785091539,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 266,
+        "guanid": 9400847,
+        "number": 6
+    },
+    {
+        "t": 1785091892,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 272,
+        "guanid": 8163054,
+        "number": 6
+    },
+    {
+        "t": 1785092300,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 273,
+        "guanid": 7971108,
+        "number": 6
+    },
+    {
+        "t": 1785092523,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 281,
+        "guanid": 9602027,
+        "number": 6
+    },
+    {
+        "t": 1785092810,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 291,
+        "guanid": 8216634,
+        "number": 6
+    },
+    {
+        "t": 1785258365,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 287,
+        "guanid": 8324785,
+        "number": 6
+    },
+    {
+        "t": 1785258591,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 302,
+        "guanid": 8174664,
+        "number": 6
+    },
+    {
+        "t": 1785258936,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 299,
+        "guanid": 7773810,
+        "number": 6
+    },
+    {
+        "t": 1785259188,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 335,
+        "guanid": 9872262,
+        "number": 6
+    },
+    {
+        "t": 1785259638,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 338,
+        "guanid": 7937034,
+        "number": 6
+    },
+    {
+        "t": 1785346431,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 508,
+        "guanid": 7129296,
+        "number": 6
+    },
+    {
+        "t": 1785346709,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 88,
+        "guanid": 8934879,
+        "number": 7
+    },
+    {
+        "t": 1785346909,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 93,
+        "guanid": 8567372,
+        "number": 7
+    },
+    {
+        "t": 1785347094,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 109,
+        "guanid": 7232174,
+        "number": 7
+    },
+    {
+        "t": 1785347486,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 113,
+        "guanid": 8739155,
+        "number": 7
+    },
+    {
+        "t": 1785422429,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 118,
+        "guanid": 7540042,
+        "number": 7
+    },
+    {
+        "t": 1785422905,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 116,
+        "guanid": 7731962,
+        "number": 7
+    },
+    {
+        "t": 1785423137,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 122,
+        "guanid": 8114273,
+        "number": 7
+    },
+    {
+        "t": 1785423597,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 119,
+        "guanid": 8362180,
+        "number": 7
+    },
+    {
+        "t": 1785444637,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 125,
+        "guanid": 9308881,
+        "number": 7
+    },
+    {
+        "t": 1785444916,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 130,
+        "guanid": 7622623,
+        "number": 7
+    },
+    {
+        "t": 1785445133,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 125,
+        "guanid": 7683475,
+        "number": 7
+    },
+    {
+        "t": 1785445595,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 124,
+        "guanid": 8416976,
+        "number": 7
+    },
+    {
+        "t": 1785681611,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 124,
+        "guanid": 9037747,
+        "number": 7
+    },
+    {
+        "t": 1785681792,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 118,
+        "guanid": 9670303,
+        "number": 7
+    },
+    {
+        "t": 1785681979,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 114,
+        "guanid": 7213224,
+        "number": 7
+    },
+    {
+        "t": 1785682240,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 123,
+        "guanid": 8055172,
+        "number": 7
+    },
+    {
+        "t": 1785701128,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 122,
+        "guanid": 8771125,
+        "number": 7
+    },
+    {
+        "t": 1785701396,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 135,
+        "guanid": 7889724,
+        "number": 7
+    },
+    {
+        "t": 1785701605,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 135,
+        "guanid": 9549841,
+        "number": 7
+    },
+    {
+        "t": 1785701896,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 135,
+        "guanid": 8132240,
+        "number": 7
+    },
+    {
+        "t": 1785768286,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 131,
+        "guanid": 7471001,
+        "number": 7
+    },
+    {
+        "t": 1785768695,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 124,
+        "guanid": 8561763,
+        "number": 7
+    },
+    {
+        "t": 1785769061,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 126,
+        "guanid": 8252022,
+        "number": 7
+    },
+    {
+        "t": 1785769385,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 138,
+        "guanid": 9737923,
+        "number": 7
+    },
+    {
+        "t": 1785783798,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 143,
+        "guanid": 9812998,
+        "number": 7
+    },
+    {
+        "t": 1785784246,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 144,
+        "guanid": 8821829,
+        "number": 7
+    },
+    {
+        "t": 1785784697,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 135,
+        "guanid": 8814740,
+        "number": 7
+    },
+    {
+        "t": 1785785052,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 143,
+        "guanid": 9391905,
+        "number": 7
+    },
+    {
+        "t": 1785952143,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 138,
+        "guanid": 8604768,
+        "number": 7
+    },
+    {
+        "t": 1785952546,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 150,
+        "guanid": 9742155,
+        "number": 7
+    },
+    {
+        "t": 1785953018,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 154,
+        "guanid": 9716054,
+        "number": 7
+    },
+    {
+        "t": 1785967519,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 145,
+        "guanid": 9631319,
+        "number": 7
+    },
+    {
+        "t": 1785967933,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 157,
+        "guanid": 9344547,
+        "number": 7
+    },
+    {
+        "t": 1785968339,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 145,
+        "guanid": 7635011,
+        "number": 7
+    },
+    {
+        "t": 1786052858,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 151,
+        "guanid": 7329939,
+        "number": 7
+    },
+    {
+        "t": 1786053292,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 151,
+        "guanid": 9016333,
+        "number": 7
+    },
+    {
+        "t": 1786053748,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 152,
+        "guanid": 9897278,
+        "number": 7
+    },
+    {
+        "t": 1786053977,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 152,
+        "guanid": 8703993,
+        "number": 7
+    },
+    {
+        "t": 1786054304,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 148,
+        "guanid": 9871416,
+        "number": 7
+    },
+    {
+        "t": 1786138719,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 141,
+        "guanid": 9083445,
+        "number": 7
+    },
+    {
+        "t": 1786139005,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 148,
+        "guanid": 8147512,
+        "number": 7
+    },
+    {
+        "t": 1786139329,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 165,
+        "guanid": 8304330,
+        "number": 7
+    },
+    {
+        "t": 1786139582,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 165,
+        "guanid": 8476582,
+        "number": 7
+    },
+    {
+        "t": 1786139946,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 152,
+        "guanid": 9825105,
+        "number": 7
+    },
+    {
+        "t": 1786154172,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 148,
+        "guanid": 8353320,
+        "number": 7
+    },
+    {
+        "t": 1786154644,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 165,
+        "guanid": 8509503,
+        "number": 7
+    },
+    {
+        "t": 1786154979,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 154,
+        "guanid": 9428516,
+        "number": 7
+    },
+    {
+        "t": 1786155406,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 157,
+        "guanid": 8193088,
+        "number": 7
+    },
+    {
+        "t": 1786155620,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 168,
+        "guanid": 7607848,
+        "number": 7
+    },
+    {
+        "t": 1786155962,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 167,
+        "guanid": 8157254,
+        "number": 7
+    },
+    {
+        "t": 1786468996,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 157,
+        "guanid": 8851394,
+        "number": 7
+    },
+    {
+        "t": 1786469291,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 156,
+        "guanid": 7391371,
+        "number": 7
+    },
+    {
+        "t": 1786469694,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 172,
+        "guanid": 8547066,
+        "number": 7
+    },
+    {
+        "t": 1786469995,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 163,
+        "guanid": 8077115,
+        "number": 7
+    },
+    {
+        "t": 1786470303,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 168,
+        "guanid": 9259168,
+        "number": 7
+    },
+    {
+        "t": 1786482720,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 174,
+        "guanid": 7935165,
+        "number": 7
+    },
+    {
+        "t": 1786483127,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 163,
+        "guanid": 7735935,
+        "number": 7
+    },
+    {
+        "t": 1786483599,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 176,
+        "guanid": 8892222,
+        "number": 7
+    },
+    {
+        "t": 1786483956,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 183,
+        "guanid": 9676976,
+        "number": 7
+    },
+    {
+        "t": 1786484422,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 191,
+        "guanid": 8418893,
+        "number": 7
+    },
+    {
+        "t": 1786526626,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 193,
+        "guanid": 8108955,
+        "number": 7
+    },
+    {
+        "t": 1786526873,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 193,
+        "guanid": 7633627,
+        "number": 7
+    },
+    {
+        "t": 1786527140,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 192,
+        "guanid": 8789477,
+        "number": 7
+    },
+    {
+        "t": 1786527412,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 199,
+        "guanid": 8267162,
+        "number": 7
+    },
+    {
+        "t": 1786527691,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 204,
+        "guanid": 8048170,
+        "number": 7
+    },
+    {
+        "t": 1786540397,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 196,
+        "guanid": 9009787,
+        "number": 7
+    },
+    {
+        "t": 1786540805,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 273,
+        "guanid": 8082704,
+        "number": 7
+    },
+    {
+        "t": 1786540986,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 291,
+        "guanid": 7132581,
+        "number": 7
+    },
+    {
+        "t": 1786541201,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 150,
+        "guanid": 8573215,
+        "number": 8
+    },
+    {
+        "t": 1786541409,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 153,
+        "guanid": 7394650,
+        "number": 8
+    },
+    {
+        "t": 1786632207,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 168,
+        "guanid": 9820571,
+        "number": 8
+    },
+    {
+        "t": 1786632499,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 165,
+        "guanid": 7936729,
+        "number": 8
+    },
+    {
+        "t": 1786632804,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 155,
+        "guanid": 7271897,
+        "number": 8
+    },
+    {
+        "t": 1786633211,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 167,
+        "guanid": 9823349,
+        "number": 8
+    },
+    {
+        "t": 1786633499,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 171,
+        "guanid": 9241876,
+        "number": 8
+    },
+    {
+        "t": 1786647346,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 165,
+        "guanid": 8595807,
+        "number": 8
+    },
+    {
+        "t": 1786647789,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 182,
+        "guanid": 7691203,
+        "number": 8
+    },
+    {
+        "t": 1786648186,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 200,
+        "guanid": 9444408,
+        "number": 8
+    },
+    {
+        "t": 1786648497,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 196,
+        "guanid": 7846926,
+        "number": 8
+    },
+    {
+        "t": 1786648971,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 191,
+        "guanid": 7126769,
+        "number": 8
+    },
+    {
+        "t": 1786649369,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 194,
+        "guanid": 9381545,
+        "number": 8
+    },
+    {
+        "t": 1786822569,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 192,
+        "guanid": 8749891,
+        "number": 8
+    },
+    {
+        "t": 1786822978,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 197,
+        "guanid": 9670786,
+        "number": 8
+    },
+    {
+        "t": 1786823453,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 202,
+        "guanid": 8162554,
+        "number": 8
+    },
+    {
+        "t": 1786840268,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 225,
+        "guanid": 7470792,
+        "number": 8
+    },
+    {
+        "t": 1786840603,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 238,
+        "guanid": 7391399,
+        "number": 8
+    },
+    {
+        "t": 1786840868,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 225,
+        "guanid": 8641627,
+        "number": 8
+    },
+    {
+        "t": 1786841138,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 242,
+        "guanid": 8210166,
+        "number": 8
+    },
+    {
+        "t": 1786898566,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 228,
+        "guanid": 9246173,
+        "number": 8
+    },
+    {
+        "t": 1786898797,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 241,
+        "guanid": 8326750,
+        "number": 8
+    },
+    {
+        "t": 1786899091,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 239,
+        "guanid": 8232815,
+        "number": 8
+    },
+    {
+        "t": 1786899409,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 244,
+        "guanid": 7671012,
+        "number": 8
+    },
+    {
+        "t": 1786910730,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 240,
+        "guanid": 7381853,
+        "number": 8
+    },
+    {
+        "t": 1786911133,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 248,
+        "guanid": 8513015,
+        "number": 8
+    },
+    {
+        "t": 1786911604,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 250,
+        "guanid": 9514427,
+        "number": 8
+    },
+    {
+        "t": 1786912007,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 260,
+        "guanid": 8018376,
+        "number": 8
+    },
+    {
+        "t": 1787168530,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 263,
+        "guanid": 7168249,
+        "number": 8
+    },
+    {
+        "t": 1787168961,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 265,
+        "guanid": 8680464,
+        "number": 8
+    },
+    {
+        "t": 1787169383,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 252,
+        "guanid": 7396757,
+        "number": 8
+    },
+    {
+        "t": 1787169778,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 259,
+        "guanid": 8192124,
+        "number": 8
+    },
+    {
+        "t": 1787183268,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 272,
+        "guanid": 8309925,
+        "number": 8
+    },
+    {
+        "t": 1787183554,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 266,
+        "guanid": 8743254,
+        "number": 8
+    },
+    {
+        "t": 1787183773,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 275,
+        "guanid": 8714266,
+        "number": 8
+    },
+    {
+        "t": 1787184038,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 261,
+        "guanid": 7937280,
+        "number": 8
+    },
+    {
+        "t": 1787184284,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 273,
+        "guanid": 7892194,
+        "number": 8
+    },
+    {
+        "t": 1787238589,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 280,
+        "guanid": 9423519,
+        "number": 8
+    },
+    {
+        "t": 1787238837,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 263,
+        "guanid": 8880300,
+        "number": 8
+    },
+    {
+        "t": 1787239107,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 268,
+        "guanid": 9642535,
+        "number": 8
+    },
+    {
+        "t": 1787239400,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 265,
+        "guanid": 9319866,
+        "number": 8
+    },
+    {
+        "t": 1787254686,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 279,
+        "guanid": 9413557,
+        "number": 8
+    },
+    {
+        "t": 1787254958,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 276,
+        "guanid": 8064101,
+        "number": 8
+    },
+    {
+        "t": 1787255387,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 277,
+        "guanid": 8679257,
+        "number": 8
+    },
+    {
+        "t": 1787255797,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 279,
+        "guanid": 9535885,
+        "number": 8
+    },
+    {
+        "t": 1787256199,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 272,
+        "guanid": 9760749,
+        "number": 8
+    },
+    {
+        "t": 1787425834,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 270,
+        "guanid": 7441116,
+        "number": 8
+    },
+    {
+        "t": 1787426022,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 270,
+        "guanid": 9598804,
+        "number": 8
+    },
+    {
+        "t": 1787426429,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 275,
+        "guanid": 9819929,
+        "number": 8
+    },
+    {
+        "t": 1787441375,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 287,
+        "guanid": 7869743,
+        "number": 8
+    },
+    {
+        "t": 1787441636,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 279,
+        "guanid": 8760285,
+        "number": 8
+    },
+    {
+        "t": 1787441977,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 281,
+        "guanid": 8248248,
+        "number": 8
+    },
+    {
+        "t": 1787442250,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 283,
+        "guanid": 8037017,
+        "number": 8
+    },
+    {
+        "t": 1787521649,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 282,
+        "guanid": 7209939,
+        "number": 8
+    },
+    {
+        "t": 1787521977,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 283,
+        "guanid": 8897965,
+        "number": 8
+    },
+    {
+        "t": 1787522384,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 284,
+        "guanid": 9764378,
+        "number": 8
+    },
+    {
+        "t": 1787522573,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 289,
+        "guanid": 9776345,
+        "number": 8
+    },
+    {
+        "t": 1787542491,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 286,
+        "guanid": 8957699,
+        "number": 8
+    },
+    {
+        "t": 1787542872,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 286,
+        "guanid": 9011246,
+        "number": 8
+    },
+    {
+        "t": 1787543291,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 300,
+        "guanid": 9660162,
+        "number": 8
+    },
+    {
+        "t": 1787543610,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 290,
+        "guanid": 9160834,
+        "number": 8
+    },
+    {
+        "t": 1787543891,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 285,
+        "guanid": 7456179,
+        "number": 8
+    },
+    {
+        "t": 1787588055,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 294,
+        "guanid": 9352878,
+        "number": 8
+    },
+    {
+        "t": 1787588353,
+        "status": 2,
+        "oknum": 10,
+        "totaltime": 289,
+        "guanid": 7914906,
+        "number": 8
+    },
+    {
+        "t": 1787588701,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 287,
+        "guanid": 8201904,
+        "number": 8
+    },
+    {
+        "t": 1787608621,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 297,
+        "guanid": 7743176,
+        "number": 8
+    },
+    {
+        "t": 1787608904,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 296,
+        "guanid": 8552455,
+        "number": 8
+    },
+    {
+        "t": 1787609129,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 294,
+        "guanid": 7166410,
+        "number": 8
+    },
+    {
+        "t": 1787671642,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 293,
+        "guanid": 8362501,
+        "number": 8
+    },
+    {
+        "t": 1787671922,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 293,
+        "guanid": 9289034,
+        "number": 8
+    },
+    {
+        "t": 1787672322,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 298,
+        "guanid": 8201072,
+        "number": 8
+    },
+    {
+        "t": 1787672610,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 302,
+        "guanid": 7222695,
+        "number": 8
+    },
+    {
+        "t": 1787672995,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 305,
+        "guanid": 8508896,
+        "number": 8
+    },
+    {
+        "t": 1787688104,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 292,
+        "guanid": 9260749,
+        "number": 8
+    },
+    {
+        "t": 1787688342,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 294,
+        "guanid": 9593967,
+        "number": 8
+    },
+    {
+        "t": 1787688640,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 315,
+        "guanid": 8422576,
+        "number": 8
+    },
+    {
+        "t": 1787688933,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 314,
+        "guanid": 8518721,
+        "number": 8
+    },
+    {
+        "t": 1787689189,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 306,
+        "guanid": 8571739,
+        "number": 8
+    },
+    {
+        "t": 1787773804,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 300,
+        "guanid": 8215665,
+        "number": 8
+    },
+    {
+        "t": 1787774046,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 298,
+        "guanid": 7414351,
+        "number": 8
+    },
+    {
+        "t": 1787774500,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 310,
+        "guanid": 7241641,
+        "number": 8
+    },
+    {
+        "t": 1787789408,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 309,
+        "guanid": 9811019,
+        "number": 8
+    },
+    {
+        "t": 1787789734,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 315,
+        "guanid": 8681766,
+        "number": 8
+    },
+    {
+        "t": 1787790186,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 312,
+        "guanid": 7665919,
+        "number": 8
+    },
+    {
+        "t": 1787790505,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 320,
+        "guanid": 7967829,
+        "number": 8
+    },
+    {
+        "t": 1787851049,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 314,
+        "guanid": 7683604,
+        "number": 8
+    },
+    {
+        "t": 1787851411,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 307,
+        "guanid": 9576108,
+        "number": 8
+    },
+    {
+        "t": 1787851635,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 317,
+        "guanid": 8521623,
+        "number": 8
+    },
+    {
+        "t": 1787851940,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 319,
+        "guanid": 7837297,
+        "number": 8
+    },
+    {
+        "t": 1787852346,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 320,
+        "guanid": 9579252,
+        "number": 8
+    },
+    {
+        "t": 1787934212,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 313,
+        "guanid": 8059743,
+        "number": 8
+    },
+    {
+        "t": 1787934443,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 323,
+        "guanid": 9562694,
+        "number": 8
+    },
+    {
+        "t": 1787934896,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 324,
+        "guanid": 7652916,
+        "number": 8
+    },
+    {
+        "t": 1787935166,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 315,
+        "guanid": 9165882,
+        "number": 8
+    },
+    {
+        "t": 1787946153,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 336,
+        "guanid": 7532242,
+        "number": 8
+    },
+    {
+        "t": 1787946340,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 336,
+        "guanid": 8983038,
+        "number": 8
+    },
+    {
+        "t": 1787946658,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 320,
+        "guanid": 9795331,
+        "number": 8
+    },
+    {
+        "t": 1787946992,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 332,
+        "guanid": 9224341,
+        "number": 8
+    },
+    {
+        "t": 1788016718,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 345,
+        "guanid": 9340931,
+        "number": 8
+    },
+    {
+        "t": 1788016901,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 338,
+        "guanid": 8865016,
+        "number": 8
+    },
+    {
+        "t": 1788017185,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 337,
+        "guanid": 8130074,
+        "number": 8
+    },
+    {
+        "t": 1788017365,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 346,
+        "guanid": 7120255,
+        "number": 8
+    },
+    {
+        "t": 1788017795,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 348,
+        "guanid": 9362264,
+        "number": 8
+    },
+    {
+        "t": 1788018250,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 356,
+        "guanid": 9861640,
+        "number": 8
+    },
+    {
+        "t": 1788033417,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 361,
+        "guanid": 9664497,
+        "number": 8
+    },
+    {
+        "t": 1788033632,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 359,
+        "guanid": 9649735,
+        "number": 8
+    },
+    {
+        "t": 1788034050,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 382,
+        "guanid": 7116990,
+        "number": 8
+    },
+    {
+        "t": 1788034418,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 186,
+        "guanid": 8342742,
+        "number": 9
+    },
+    {
+        "t": 1788034634,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 187,
+        "guanid": 9184298,
+        "number": 9
+    },
+    {
+        "t": 1788034999,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 185,
+        "guanid": 7932785,
+        "number": 9
+    },
+    {
+        "t": 1788086239,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 211,
+        "guanid": 8415066,
+        "number": 9
+    },
+    {
+        "t": 1788086514,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 208,
+        "guanid": 9342557,
+        "number": 9
+    },
+    {
+        "t": 1788086856,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 203,
+        "guanid": 7469598,
+        "number": 9
+    },
+    {
+        "t": 1788087207,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 210,
+        "guanid": 9705782,
+        "number": 9
+    },
+    {
+        "t": 1788087443,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 221,
+        "guanid": 9731757,
+        "number": 9
+    },
+    {
+        "t": 1788087729,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 214,
+        "guanid": 8282911,
+        "number": 9
+    },
+    {
+        "t": 1788103528,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 214,
+        "guanid": 9177478,
+        "number": 9
+    },
+    {
+        "t": 1788103788,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 228,
+        "guanid": 8300858,
+        "number": 9
+    },
+    {
+        "t": 1788104041,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 222,
+        "guanid": 8426654,
+        "number": 9
+    },
+    {
+        "t": 1788104376,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 222,
+        "guanid": 7863015,
+        "number": 9
+    },
+    {
+        "t": 1788104653,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 233,
+        "guanid": 7149167,
+        "number": 9
+    },
+    {
+        "t": 1788105109,
+        "status": 1,
+        "oknum": 3,
+        "totaltime": 233,
+        "guanid": 7537331,
+        "number": 9
+    },
+    {
+        "t": 1788105370,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 239,
+        "guanid": 7216959,
+        "number": 9
+    },
+    {
+        "t": 1788190543,
+        "status": 1,
+        "oknum": 3,
+        "totaltime": 247,
+        "guanid": 9557656,
+        "number": 9
+    },
+    {
+        "t": 1788190796,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 245,
+        "guanid": 8576719,
+        "number": 9
+    },
+    {
+        "t": 1788191085,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 245,
+        "guanid": 8205505,
+        "number": 9
+    },
+    {
+        "t": 1788191479,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 239,
+        "guanid": 9239030,
+        "number": 9
+    },
+    {
+        "t": 1788191828,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 256,
+        "guanid": 7588727,
+        "number": 9
+    },
+    {
+        "t": 1788207780,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 242,
+        "guanid": 7332555,
+        "number": 9
+    },
+    {
+        "t": 1788208055,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 250,
+        "guanid": 7413886,
+        "number": 9
+    },
+    {
+        "t": 1788208254,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 249,
+        "guanid": 8166656,
+        "number": 9
+    },
+    {
+        "t": 1788208667,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 260,
+        "guanid": 8382480,
+        "number": 9
+    },
+    {
+        "t": 1788209032,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 257,
+        "guanid": 8270613,
+        "number": 9
+    },
+    {
+        "t": 1788284903,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 260,
+        "guanid": 8149461,
+        "number": 9
+    },
+    {
+        "t": 1788285377,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 261,
+        "guanid": 7865100,
+        "number": 9
+    },
+    {
+        "t": 1788285570,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 255,
+        "guanid": 9654046,
+        "number": 9
+    },
+    {
+        "t": 1788285866,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 246,
+        "guanid": 8035120,
+        "number": 9
+    },
+    {
+        "t": 1788286107,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 249,
+        "guanid": 9530011,
+        "number": 9
+    },
+    {
+        "t": 1788286296,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 265,
+        "guanid": 9652100,
+        "number": 9
+    },
+    {
+        "t": 1788303476,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 251,
+        "guanid": 8839700,
+        "number": 9
+    },
+    {
+        "t": 1788303883,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 264,
+        "guanid": 9640164,
+        "number": 9
+    },
+    {
+        "t": 1788304298,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 258,
+        "guanid": 9270895,
+        "number": 9
+    },
+    {
+        "t": 1788304680,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 254,
+        "guanid": 9304304,
+        "number": 9
+    },
+    {
+        "t": 1788304922,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 260,
+        "guanid": 9731852,
+        "number": 9
+    },
+    {
+        "t": 1788305103,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 260,
+        "guanid": 8931697,
+        "number": 9
+    },
+    {
+        "t": 1788305382,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 259,
+        "guanid": 8158267,
+        "number": 9
+    },
+    {
+        "t": 1788345045,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 271,
+        "guanid": 9599612,
+        "number": 9
+    },
+    {
+        "t": 1788345287,
+        "status": 1,
+        "oknum": 3,
+        "totaltime": 260,
+        "guanid": 9689643,
+        "number": 9
+    },
+    {
+        "t": 1788345706,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 277,
+        "guanid": 9684682,
+        "number": 9
+    },
+    {
+        "t": 1788346026,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 274,
+        "guanid": 9329206,
+        "number": 9
+    },
+    {
+        "t": 1788346439,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 278,
+        "guanid": 7564259,
+        "number": 9
+    },
+    {
+        "t": 1788427164,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 266,
+        "guanid": 8467477,
+        "number": 9
+    },
+    {
+        "t": 1788427411,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 278,
+        "guanid": 9117222,
+        "number": 9
+    },
+    {
+        "t": 1788427825,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 281,
+        "guanid": 7762734,
+        "number": 9
+    },
+    {
+        "t": 1788428130,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 269,
+        "guanid": 7726543,
+        "number": 9
+    },
+    {
+        "t": 1788446839,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 270,
+        "guanid": 8758960,
+        "number": 9
+    },
+    {
+        "t": 1788447246,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 275,
+        "guanid": 9482180,
+        "number": 9
+    },
+    {
+        "t": 1788447435,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 272,
+        "guanid": 7693571,
+        "number": 9
+    },
+    {
+        "t": 1788447829,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 265,
+        "guanid": 9320720,
+        "number": 9
+    },
+    {
+        "t": 1788448267,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 283,
+        "guanid": 7904627,
+        "number": 9
+    },
+    {
+        "t": 1788551057,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 273,
+        "guanid": 7751485,
+        "number": 9
+    },
+    {
+        "t": 1788551239,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 284,
+        "guanid": 8133871,
+        "number": 9
+    },
+    {
+        "t": 1788551713,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 277,
+        "guanid": 9105694,
+        "number": 9
+    },
+    {
+        "t": 1788552184,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 283,
+        "guanid": 9622765,
+        "number": 9
+    },
+    {
+        "t": 1788552599,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 277,
+        "guanid": 8656893,
+        "number": 9
+    },
+    {
+        "t": 1788569126,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 292,
+        "guanid": 9030153,
+        "number": 9
+    },
+    {
+        "t": 1788569480,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 293,
+        "guanid": 8142166,
+        "number": 9
+    },
+    {
+        "t": 1788569670,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 285,
+        "guanid": 8834985,
+        "number": 9
+    },
+    {
+        "t": 1788570105,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 292,
+        "guanid": 8986599,
+        "number": 9
+    },
+    {
+        "t": 1788570314,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 284,
+        "guanid": 9331130,
+        "number": 9
+    },
+    {
+        "t": 1788570590,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 291,
+        "guanid": 8612702,
+        "number": 9
+    },
+    {
+        "t": 1788625228,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 281,
+        "guanid": 7311908,
+        "number": 9
+    },
+    {
+        "t": 1788625546,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 294,
+        "guanid": 8956716,
+        "number": 9
+    },
+    {
+        "t": 1788625921,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 299,
+        "guanid": 8947538,
+        "number": 9
+    },
+    {
+        "t": 1788626162,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 292,
+        "guanid": 8526468,
+        "number": 9
+    },
+    {
+        "t": 1788645542,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 285,
+        "guanid": 8550407,
+        "number": 9
+    },
+    {
+        "t": 1788645925,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 283,
+        "guanid": 8603230,
+        "number": 9
+    },
+    {
+        "t": 1788646217,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 290,
+        "guanid": 8750688,
+        "number": 9
+    },
+    {
+        "t": 1788646586,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 298,
+        "guanid": 9301667,
+        "number": 9
+    },
+    {
+        "t": 1788646978,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 292,
+        "guanid": 9637666,
+        "number": 9
+    },
+    {
+        "t": 1788685594,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 285,
+        "guanid": 7127714,
+        "number": 9
+    },
+    {
+        "t": 1788685776,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 293,
+        "guanid": 8793214,
+        "number": 9
+    },
+    {
+        "t": 1788686011,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 302,
+        "guanid": 7525118,
+        "number": 9
+    },
+    {
+        "t": 1788686192,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 288,
+        "guanid": 8504393,
+        "number": 9
+    },
+    {
+        "t": 1788686465,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 292,
+        "guanid": 8355273,
+        "number": 9
+    },
+    {
+        "t": 1788707490,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 301,
+        "guanid": 9173781,
+        "number": 9
+    },
+    {
+        "t": 1788707692,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 297,
+        "guanid": 8810356,
+        "number": 9
+    },
+    {
+        "t": 1788708025,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 306,
+        "guanid": 8480684,
+        "number": 9
+    },
+    {
+        "t": 1788708337,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 309,
+        "guanid": 8948724,
+        "number": 9
+    },
+    {
+        "t": 1788708699,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 303,
+        "guanid": 7556687,
+        "number": 9
+    },
+    {
+        "t": 1788817240,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 299,
+        "guanid": 8037057,
+        "number": 9
+    },
+    {
+        "t": 1788817692,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 305,
+        "guanid": 8084026,
+        "number": 9
+    },
+    {
+        "t": 1788818098,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 317,
+        "guanid": 7721412,
+        "number": 9
+    },
+    {
+        "t": 1788818317,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 301,
+        "guanid": 8954095,
+        "number": 9
+    },
+    {
+        "t": 1788818582,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 313,
+        "guanid": 7508944,
+        "number": 9
+    },
+    {
+        "t": 1788835688,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 303,
+        "guanid": 8430185,
+        "number": 9
+    },
+    {
+        "t": 1788836098,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 305,
+        "guanid": 7210592,
+        "number": 9
+    },
+    {
+        "t": 1788836418,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 321,
+        "guanid": 7790164,
+        "number": 9
+    },
+    {
+        "t": 1788836739,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 304,
+        "guanid": 9405787,
+        "number": 9
+    },
+    {
+        "t": 1788837188,
+        "status": 2,
+        "oknum": 8,
+        "totaltime": 309,
+        "guanid": 8748496,
+        "number": 9
+    },
+    {
+        "t": 1788837655,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 320,
+        "guanid": 7879754,
+        "number": 9
+    },
+    {
+        "t": 1788888573,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 313,
+        "guanid": 9323856,
+        "number": 9
+    },
+    {
+        "t": 1788888793,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 332,
+        "guanid": 7114834,
+        "number": 9
+    },
+    {
+        "t": 1788889171,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 326,
+        "guanid": 9081031,
+        "number": 9
+    },
+    {
+        "t": 1788902564,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 337,
+        "guanid": 8138837,
+        "number": 9
+    },
+    {
+        "t": 1788902840,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 328,
+        "guanid": 9546174,
+        "number": 9
+    },
+    {
+        "t": 1788903214,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 336,
+        "guanid": 9121241,
+        "number": 9
+    },
+    {
+        "t": 1788988784,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 323,
+        "guanid": 8020492,
+        "number": 9
+    },
+    {
+        "t": 1788989073,
+        "status": 1,
+        "oknum": 1,
+        "totaltime": 333,
+        "guanid": 8560806,
+        "number": 9
+    },
+    {
+        "t": 1788989463,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 342,
+        "guanid": 8113059,
+        "number": 9
+    },
+    {
+        "t": 1789002372,
+        "status": 1,
+        "oknum": 3,
+        "totaltime": 336,
+        "guanid": 8061660,
+        "number": 9
+    },
+    {
+        "t": 1789002730,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 340,
+        "guanid": 8016654,
+        "number": 9
+    },
+    {
+        "t": 1789003106,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 342,
+        "guanid": 7228750,
+        "number": 9
+    },
+    {
+        "t": 1789003328,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 330,
+        "guanid": 8817863,
+        "number": 9
+    },
+    {
+        "t": 1789035556,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 340,
+        "guanid": 7538037,
+        "number": 9
+    },
+    {
+        "t": 1789036015,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 332,
+        "guanid": 8632696,
+        "number": 9
+    },
+    {
+        "t": 1789036266,
+        "status": 2,
+        "oknum": 9,
+        "totaltime": 350,
+        "guanid": 9622434,
+        "number": 9
+    },
+    {
+        "t": 1789036732,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 350,
+        "guanid": 9823846,
+        "number": 9
+    },
+    {
+        "t": 1789037143,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 353,
+        "guanid": 8604432,
+        "number": 9
+    },
+    {
+        "t": 1789037559,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 352,
+        "guanid": 8937887,
+        "number": 9
+    },
+    {
+        "t": 1789051232,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 350,
+        "guanid": 7854037,
+        "number": 9
+    },
+    {
+        "t": 1789051560,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 347,
+        "guanid": 9353472,
+        "number": 9
+    },
+    {
+        "t": 1789051756,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 353,
+        "guanid": 9642967,
+        "number": 9
+    },
+    {
+        "t": 1789052016,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 342,
+        "guanid": 8096346,
+        "number": 9
+    },
+    {
+        "t": 1789052421,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 351,
+        "guanid": 9122243,
+        "number": 9
+    },
+    {
+        "t": 1789052792,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 352,
+        "guanid": 9001820,
+        "number": 9
+    },
+    {
+        "t": 1789146483,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 363,
+        "guanid": 8325707,
+        "number": 9
+    },
+    {
+        "t": 1789146791,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 363,
+        "guanid": 8477542,
+        "number": 9
+    },
+    {
+        "t": 1789147141,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 375,
+        "guanid": 7258487,
+        "number": 9
+    },
+    {
+        "t": 1789147592,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 373,
+        "guanid": 9285740,
+        "number": 9
+    },
+    {
+        "t": 1789147840,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 383,
+        "guanid": 8193906,
+        "number": 9
+    },
+    {
+        "t": 1789161930,
+        "status": 1,
+        "oknum": 7,
+        "totaltime": 365,
+        "guanid": 9843016,
+        "number": 9
+    },
+    {
+        "t": 1789162148,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 378,
+        "guanid": 9552838,
+        "number": 9
+    },
+    {
+        "t": 1789162362,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 375,
+        "guanid": 9119248,
+        "number": 9
+    },
+    {
+        "t": 1789162680,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 401,
+        "guanid": 9240986,
+        "number": 9
+    },
+    {
+        "t": 1789162997,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 399,
+        "guanid": 8075293,
+        "number": 9
+    },
+    {
+        "t": 1789163234,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 231,
+        "guanid": 8599832,
+        "number": 10
+    },
+    {
+        "t": 1789240294,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 284,
+        "guanid": 7969257,
+        "number": 10
+    },
+    {
+        "t": 1789240579,
+        "status": 1,
+        "oknum": 3,
+        "totaltime": 287,
+        "guanid": 7111061,
+        "number": 10
+    },
+    {
+        "t": 1789240780,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 303,
+        "guanid": 8892333,
+        "number": 10
+    },
+    {
+        "t": 1789241172,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 309,
+        "guanid": 8558874,
+        "number": 10
+    },
+    {
+        "t": 1789241357,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 304,
+        "guanid": 8333064,
+        "number": 10
+    },
+    {
+        "t": 1789241799,
+        "status": 1,
+        "oknum": 6,
+        "totaltime": 331,
+        "guanid": 8355371,
+        "number": 10
+    },
+    {
+        "t": 1789255401,
+        "status": 1,
+        "oknum": 1,
+        "totaltime": 322,
+        "guanid": 9021152,
+        "number": 10
+    },
+    {
+        "t": 1789255793,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 330,
+        "guanid": 7600491,
+        "number": 10
+    },
+    {
+        "t": 1789255993,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 334,
+        "guanid": 9359420,
+        "number": 10
+    },
+    {
+        "t": 1789256284,
+        "status": 1,
+        "oknum": 4,
+        "totaltime": 331,
+        "guanid": 7767992,
+        "number": 10
+    },
+    {
+        "t": 1789256480,
+        "status": 1,
+        "oknum": 3,
+        "totaltime": 343,
+        "guanid": 7404074,
+        "number": 10
+    },
+    {
+        "t": 1789256799,
+        "status": 1,
+        "oknum": 5,
+        "totaltime": 354,
+        "guanid": 7285197,
+        "number": 10
+    },
+    {
+        "t": 1789257074,
+        "status": 1,
+        "oknum": 2,
+        "totaltime": 360,
+        "guanid": 7230746,
+        "number": 10
     }
 ]
