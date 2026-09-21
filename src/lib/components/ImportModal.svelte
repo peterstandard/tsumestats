@@ -8,7 +8,8 @@
     Copy,
     Check,
     AlertCircle,
-    CheckCircle2
+    CheckCircle2,
+    ShieldCheck
   } from 'lucide-svelte';
 
   interface Props {
@@ -137,6 +138,17 @@
 
       <!-- Modal Body -->
       <div class="p-5 overflow-y-auto flex-1 space-y-4">
+        <!-- Privacy & Client-Side Notice -->
+        <div class="bg-[#eaf6dc]/80 border border-[#88C13F]/60 rounded-xl p-3 flex items-start gap-2.5 text-xs text-[#3D2A1F] shadow-2xs">
+          <ShieldCheck class="w-4 h-4 text-[#55821c] shrink-0 mt-0.5" />
+          <div class="leading-relaxed">
+            <span class="font-bold text-[#55821c]">100% Client-Side & Private:</span>
+            <span class="text-[#5e4537]">
+              Your test data is parsed and stored exclusively inside your browser (<code class="bg-[#FAF0DA] px-1 py-0.5 rounded text-[#8B5E3C]">localStorage</code>). Nothing is ever sent to a server, tracked, or stored anywhere on the internet.
+            </span>
+          </div>
+        </div>
+
         {#if activeTab === 'import'}
           <!-- File Drop Zone -->
           <div
