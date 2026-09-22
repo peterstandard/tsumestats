@@ -2,16 +2,20 @@ import type {
   ProcessedRecord,
   SpeedRecordMilestone,
   RankSpeedMilestoneGroup,
-  SpeedMilestoneSummary
+  SpeedMilestoneSummary,
+  SpeedAccuracyPolicy
 } from '$lib/types';
 import { rankNumberToLabel } from './rank';
 
 /**
  * Computes speed record milestones (personal bests) per difficulty level over time.
- * Tracks when a new fastest test speed was achieved for each rank, how many tests
- * it took to beat the prior record, and calendar time elapsed.
+ * Supports accuracy policy filtering so lower-accuracy runs never overwrite higher-accuracy records.
+ * Defaults to 'best_or_100': only 100% accuracy runs refresh records (or best accuracy if 100% not yet achieved).
  */
-export function computeSpeedMilestones(records: ProcessedRecord[]): SpeedMilestoneSummary {
+export function computeSpeedMilestones(
+  records: ProcessedRecord[],
+  policy: SpeedAccuracyPolicy = 'best_or_100'
+): SpeedMilestoneSummary {
   if (!records || records.length === 0) {
     return {
       byRank: new Map(),
@@ -51,7 +55,13 @@ export function computeSpeedMilestones(records: ProcessedRecord[]): SpeedMilesto
     const rankRecords = rankBuckets.get(rankNum)!;
     const rankLabel = rankRecords[0]?.rankLabel || rankNumberToLabel(rankNum);
 
+    // Determine target accuracy for 'best_or_100' policy
+    const passedAtRank = rankRecords.filter((r) => r.passed);
+    const maxPassingOknum = passedAtRank.length > 0 ? Math.max(...passedAtRank.map((r) => r.oknum)) : 10;
+    const targetOknum = maxPassingOknum >= 10 ? 10 : maxPassingOknum;
+
     let currentFastestTime = Infinity;
+    let currentBestOknum = 0;
     let lastPBRecord: ProcessedRecord | null = null;
     let testsSinceLastPB = 0;
     const rankPBs: SpeedRecordMilestone[] = [];
@@ -61,7 +71,26 @@ export function computeSpeedMilestones(records: ProcessedRecord[]): SpeedMilesto
 
       // Only passed tests can establish speed records
       if (r.passed) {
-        if (r.totaltime < currentFastestTime) {
+        let qualifies = false;
+
+        if (policy === 'best_or_100') {
+          // Only 100% accuracy runs qualify (or the highest passing accuracy for ranks that haven't hit 100% yet)
+          if (r.oknum >= targetOknum && r.totaltime < currentFastestTime) {
+            qualifies = true;
+          }
+        } else if (policy === 'non_decreasing') {
+          // Accuracy can never decrease from the current record's accuracy
+          if (r.oknum >= currentBestOknum && r.totaltime < currentFastestTime) {
+            qualifies = true;
+          }
+        } else {
+          // 'all_passing': Any passed run faster than prior record
+          if (r.totaltime < currentFastestTime) {
+            qualifies = true;
+          }
+        }
+
+        if (qualifies) {
           const isInitial = currentFastestTime === Infinity;
           const prevTime = isInitial ? null : currentFastestTime;
           const prevSpeed = isInitial ? null : Number((currentFastestTime / 10).toFixed(1));
@@ -100,6 +129,7 @@ export function computeSpeedMilestones(records: ProcessedRecord[]): SpeedMilesto
           pbGuanidMap.set(r.guanid, milestone);
 
           currentFastestTime = r.totaltime;
+          currentBestOknum = Math.max(currentBestOknum, r.oknum);
           lastPBRecord = r;
           testsSinceLastPB = 0;
         }

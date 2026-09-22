@@ -3,7 +3,7 @@
   import { recordsStore } from '$lib/stores/records.svelte';
   import { computeSpeedMilestones } from '$lib/utils/speedMilestones';
   import { rankNumberToLabel } from '$lib/utils/rank';
-  import type { SpeedRecordMilestone, RankSpeedMilestoneGroup } from '$lib/types';
+  import type { SpeedRecordMilestone, RankSpeedMilestoneGroup, SpeedAccuracyPolicy } from '$lib/types';
   import type { EChartsOption } from 'echarts';
   import {
     Zap,
@@ -14,6 +14,7 @@
     Layers,
     Calendar,
     Hash,
+    Target,
     ChevronDown,
     ChevronUp,
     ExternalLink
@@ -25,11 +26,14 @@
   // Secondary bar metric: 'tests' (attempts to beat) | 'days' (calendar time to beat)
   let barMetric = $state<'tests' | 'days'>('tests');
 
+  // Accuracy policy: 'best_or_100' (default) | 'non_decreasing' | 'all_passing'
+  let accuracyPolicy = $state<SpeedAccuracyPolicy>('best_or_100');
+
   // Table collapse toggle
   let showHistoryLog = $state(false);
 
-  // Compute speed milestones from all records
-  const speedStats = $derived(computeSpeedMilestones(recordsStore.allRecords));
+  // Compute speed milestones from all records with accuracy policy
+  const speedStats = $derived(computeSpeedMilestones(recordsStore.allRecords, accuracyPolicy));
   const ranksWithPBs = $derived(speedStats.ranksWithPBs);
   const byRank = $derived(speedStats.byRank);
   const allPBs = $derived(speedStats.allMilestonesChronological);
@@ -450,8 +454,37 @@
       </p>
     </div>
 
-    <!-- Rank Filter Tabs & Secondary Metric Selector -->
+    <!-- Toolbar: Accuracy Policy & Secondary Metric Selector -->
     <div class="flex flex-wrap items-center gap-2 self-start lg:self-auto">
+      <!-- Accuracy Policy Toggle -->
+      <div class="flex items-center gap-1 bg-[#FDF5E6] border border-[#D6BA96] p-1 rounded-xl text-xs shadow-2xs">
+        <span class="text-[10px] font-bold text-[#5e4537] px-1 flex items-center gap-1">
+          <Target class="w-3 h-3 text-[#88C13F]" />
+          Accuracy:
+        </span>
+        <button
+          onclick={() => (accuracyPolicy = 'best_or_100')}
+          class="px-2 py-0.5 rounded-lg text-xs font-medium cursor-pointer transition-colors {accuracyPolicy === 'best_or_100' ? 'bg-[#88C13F] text-white font-bold shadow-xs' : 'text-[#5e4537] hover:text-[#3D2A1F]'}"
+          title="Only 100% accuracy runs refresh records (or best accuracy achieved if 100% not yet reached). Lower accuracy runs cannot replace a higher accuracy record."
+        >
+          100% / Best Acc
+        </button>
+        <button
+          onclick={() => (accuracyPolicy = 'non_decreasing')}
+          class="px-2 py-0.5 rounded-lg text-xs font-medium cursor-pointer transition-colors {accuracyPolicy === 'non_decreasing' ? 'bg-[#88C13F] text-white font-bold shadow-xs' : 'text-[#5e4537] hover:text-[#3D2A1F]'}"
+          title="Accuracy can never decrease from current record (e.g. 80% cannot replace 90%)"
+        >
+          Non-Decreasing
+        </button>
+        <button
+          onclick={() => (accuracyPolicy = 'all_passing')}
+          class="px-2 py-0.5 rounded-lg text-xs font-medium cursor-pointer transition-colors {accuracyPolicy === 'all_passing' ? 'bg-[#88C13F] text-white font-bold shadow-xs' : 'text-[#5e4537] hover:text-[#3D2A1F]'}"
+          title="Any passed test qualifies regardless of accuracy score"
+        >
+          All Passes
+        </button>
+      </div>
+
       {#if selectedRank !== 'all'}
         <!-- Metric Toggle: Tests to Beat vs Days to Beat -->
         <div class="flex items-center gap-1 bg-[#FDF5E6] border border-[#D6BA96] p-1 rounded-xl text-xs shadow-2xs">

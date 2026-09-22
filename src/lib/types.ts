@@ -143,6 +143,8 @@ export interface MilestoneSummaryStats {
   lowestRankPassed: DifficultyMilestone | null;
 }
 
+export type SpeedAccuracyPolicy = 'best_or_100' | 'non_decreasing' | 'all_passing';
+
 export interface SpeedRecordMilestone {
   id: string;                        // guanid as string
   guanid: number;
