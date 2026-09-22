@@ -5,12 +5,14 @@
   import KpiCards from '$lib/components/KpiCards.svelte';
   import FilterBar from '$lib/components/FilterBar.svelte';
   import TimelineChart from '$lib/components/charts/TimelineChart.svelte';
+  import MilestoneChart from '$lib/components/charts/MilestoneChart.svelte';
   import DifficultyChart from '$lib/components/charts/DifficultyChart.svelte';
   import SpeedAccuracyChart from '$lib/components/charts/SpeedAccuracyChart.svelte';
   import TemporalChart from '$lib/components/charts/TemporalChart.svelte';
   import HistoryTable from '$lib/components/HistoryTable.svelte';
   import ImportModal from '$lib/components/ImportModal.svelte';
   import { Sparkles, Upload, Bookmark, ShieldCheck, Heart } from 'lucide-svelte';
+  import { APP_VERSION } from '$lib/version';
 
   let isImportOpen = $state(false);
   let importInitialTab = $state<'import' | 'bookmarklet'>('import');
@@ -87,6 +89,9 @@
       <!-- Chart Grid: Timeline -->
       <TimelineChart />
 
+      <!-- Milestone Progression: First Pass at Each Difficulty -->
+      <MilestoneChart />
+
       <!-- Chart Grid: Difficulty & Speed/Accuracy Regression -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <DifficultyChart />
@@ -106,6 +111,7 @@
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
       <div class="flex items-center gap-2">
         <span class="font-bold text-[#3D2A1F]">tsumestats</span>
+        <span class="text-[10px] font-mono text-[#8B5E3C] bg-[#FAF0DA] px-1.5 py-0.5 rounded border border-[#D6BA96]/60">v{APP_VERSION}</span>
         <span class="text-[#D6BA96]">•</span>
         <span>A specialized tool for <a href="https://www.101weiqi.com" target="_blank" rel="noopener noreferrer" class="text-[#8B5E3C] hover:underline">101weiqi</a> Go solvers</span>
       </div>

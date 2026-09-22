@@ -104,3 +104,42 @@ export interface AggregatedBucket {
   avgSecondsPerProblem: number | null;
   records: ProcessedRecord[];
 }
+
+export interface DifficultyMilestone {
+  rankNumber: number;
+  rankLabel: string;
+  firstPassTimestamp: number;        // Epoch ms for ECharts
+  firstPassDate: Date;
+  dateStr: string;                   // YYYY-MM-DD
+  formattedDate: string;             // e.g. "Jul 15, 2026, 10:48"
+  attemptsToPass: number;            // Attempts before and including first pass
+  failedAttemptsBeforePass: number;  // attemptsToPass - 1
+  firstPassRecord: ProcessedRecord;
+  totalAttemptsAtRank: number;       // All attempts lifetime at this rank
+  totalPassesAtRank: number;         // All passes lifetime at this rank
+  lifetimePassRatePct: number;       // totalPassesAtRank / totalAttemptsAtRank * 100
+  timeToFirstPassSeconds: number;    // Cumulative duration of attempts leading to first pass
+}
+
+export interface UnpassedDifficulty {
+  rankNumber: number;
+  rankLabel: string;
+  attempts: number;
+  bestOkNum: number;
+  totalTimeSeconds: number;
+  lastAttemptDate: string;
+}
+
+export interface MilestoneSummaryStats {
+  milestones: DifficultyMilestone[];
+  unpassed: UnpassedDifficulty[];
+  totalPassedCount: number;
+  firstTryPassesCount: number;
+  firstTryRatePct: number;
+  avgAttemptsToPass: number;
+  hardestMilestone: DifficultyMilestone | null;
+  fastestMilestone: DifficultyMilestone | null;
+  highestRankPassed: DifficultyMilestone | null;
+  lowestRankPassed: DifficultyMilestone | null;
+}
+

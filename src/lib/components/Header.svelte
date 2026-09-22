@@ -10,6 +10,7 @@
     FileJson,
     Trash2
   } from 'lucide-svelte';
+  import { APP_VERSION } from '$lib/version';
 
   interface Props {
     onOpenImport: () => void;
@@ -38,7 +39,10 @@
       <div>
         <div class="flex items-center gap-2">
           <h1 class="text-2xl font-black tracking-tight text-[#3D2A1F]">tsumestats</h1>
-          <span class="text-xs px-2 py-0.5 rounded-full font-medium border border-[#D6BA96] bg-[#FDF5E6] text-[#8B5E3C]">
+          <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-md border border-[#D6BA96] bg-[#FDF5E6] text-[#8B5E3C] shadow-2xs">
+            v{APP_VERSION}
+          </span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium border border-[#D6BA96] bg-[#FDF5E6] text-[#8B5E3C] hidden sm:inline-block">
             101weiqi analytics
           </span>
         </div>

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Auto-bump patch version on commit unless SKIP_BUMP=1 is provided
+if [ "$SKIP_BUMP" = "1" ]; then
+  exit 0
+fi
+
+# Skip during git rebase or merge resolution
+if [ -d ".git/rebase-merge" ] || [ -d ".git/rebase-apply" ] || [ -f ".git/MERGE_HEAD" ]; then
+  exit 0
+fi
+
+# Only bump if there are actual changes staged
+if git diff --cached --quiet; then
+  exit 0
+fi
+
+# Bump patch version and generate src/lib/version.ts
+node scripts/bump-version.js patch
+
+# Stage the updated version files into this commit
+git add package.json package-lock.json src/lib/version.ts
