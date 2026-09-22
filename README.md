@@ -1,5 +1,10 @@
 # 詰 tsumestats
 
+[![Live Dashboard](https://img.shields.io/badge/Live%20Dashboard-peterstandard.github.io%2Ftsumestats-88C13F?style=for-the-badge&logo=github)](https://peterstandard.github.io/tsumestats/)
+[![Deploy to GitHub Pages](https://github.com/peterstandard/tsumestats/actions/workflows/deploy.yml/badge.svg)](https://github.com/peterstandard/tsumestats/actions/workflows/deploy.yml)
+
+> 🚀 **Live Site:** **[https://peterstandard.github.io/tsumestats/](https://peterstandard.github.io/tsumestats/)**
+
 A client-side analytics and visualization dashboard for **101weiqi** (101围棋网) checkpoint challenge (`guan`) test records.
 
 Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" design system), and **Apache ECharts**.
@@ -13,6 +18,8 @@ Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" des
 - **KPI Overview Cards**: Total tests, total problems solved, overall accuracy %, pass rate %, average seconds per problem/test, active practice days, and difficulty progression.
 - **Interactive Dual-Axis Timeline**: 7-test rolling accuracy line + individual test scores alongside solving speed (seconds per problem), with an interactive timeline brush slider.
 - **Performance by Rank (Kyu / Dan)**: Compare accuracy %, pass rate %, and time taken across Kyu/Dan ranks to spot plateaus.
+- **Difficulty Progression Milestones**: Tracks the exact date you first cleared each rank difficulty (15k → 7k) and how many attempts it took to break through, with Calendar Timeline and Sequential Rank step views.
+- **Speed Milestones & Personal Bests by Rank**: Tracks personal best speed records per difficulty, the seconds shaved off, and how many tests and calendar days were spent breaking each record, plus golden diamond PB badges on the timeline chart.
 - **Speed vs. Accuracy Correlation & Regression**: Scatter plot of duration vs accuracy with Ordinary Least Squares (OLS) linear regression ($y = mx + b$) and $R^2$ goodness-of-fit.
 - **Temporal Habit Analysis**:
   - **Time of Day**: 24-hour distribution of test count, accuracy %, and speed (morning vs afternoon vs late night).
