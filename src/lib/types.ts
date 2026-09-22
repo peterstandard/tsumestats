@@ -143,3 +143,54 @@ export interface MilestoneSummaryStats {
   lowestRankPassed: DifficultyMilestone | null;
 }
 
+export interface SpeedRecordMilestone {
+  id: string;                        // guanid as string
+  guanid: number;
+  rankNumber: number;
+  rankLabel: string;
+  timestamp: number;                 // epoch ms
+  dateStr: string;                   // YYYY-MM-DD
+  formattedDate: string;             // e.g. "Aug 13, 2026, 01:04"
+  totaltime: number;                 // total time in seconds
+  secondsPerProblem: number;         // seconds per problem (totaltime / 10)
+  previousRecordTotalTime: number | null;
+  previousRecordSpeed: number | null;
+  improvementSeconds: number;        // totaltime reduction
+  improvementSpeed: number;          // secondsPerProblem reduction
+  improvementPct: number;            // percentage faster than previous record
+  testsToBeat: number;               // tests attempted at this rank since previous PB
+  timeToBeatSeconds: number;         // seconds elapsed between PBs
+  daysToBeat: number;                // days elapsed between PBs
+  isInitialRecord: boolean;          // true if first pass at this rank
+  recordIndex: number;               // 1-based (PB #1, PB #2, etc.)
+  record: ProcessedRecord;
+}
+
+export interface RankSpeedMilestoneGroup {
+  rankNumber: number;
+  rankLabel: string;
+  records: SpeedRecordMilestone[];
+  currentBestSpeed: number;
+  currentBestTotalTime: number;
+  initialSpeed: number;
+  initialTotalTime: number;
+  totalImprovementSec: number;
+  totalImprovementPct: number;
+  totalPBs: number;
+  avgTestsToBeat: number;
+  maxTestsToBeat: number;
+  longestGrindMilestone: SpeedRecordMilestone | null;
+}
+
+export interface SpeedMilestoneSummary {
+  byRank: Map<number, RankSpeedMilestoneGroup>;
+  ranksWithPBs: RankSpeedMilestoneGroup[];
+  allMilestonesChronological: SpeedRecordMilestone[];
+  totalPBsCount: number;
+  biggestImprovement: SpeedRecordMilestone | null;
+  hardestToBeat: SpeedRecordMilestone | null;
+  fastestOverallSpeed: SpeedRecordMilestone | null;
+  pbGuanidMap: Map<number, SpeedRecordMilestone>;
+}
+
+

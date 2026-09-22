@@ -8,6 +8,7 @@
     computeAggregatedSpeedTrend,
     formatDuration
   } from '$lib/utils/timeAggregation';
+  import { computeSpeedMilestones } from '$lib/utils/speedMilestones';
   import type { TimeGranularity, DrillStep, AggregatedBucket } from '$lib/types';
   import {
     Zap,
@@ -39,6 +40,8 @@
   const currentDrill = $derived(drillHistory.length > 0 ? drillHistory[drillHistory.length - 1] : null);
 
   const rawRecords = $derived(recordsStore.filteredRecords);
+  const speedMilestones = $derived(computeSpeedMilestones(recordsStore.allRecords));
+  const pbGuanidMap = $derived(speedMilestones.pbGuanidMap);
 
   // Aggregated buckets based on filtered records, granularity, rest-days setting, and active drill step
   const aggregatedBuckets = $derived.by<AggregatedBucket[]>(() => {
@@ -424,6 +427,13 @@
     const startSpeed = individualSpeedTrend.startSpeed;
     const speedTrendline = speeds.map((_, x) => Number((startSpeed + slope * x).toFixed(1)));
 
+    const pbPoints = rawRecords
+      .map((r, idx) => {
+        const pb = pbGuanidMap.get(r.guanid);
+        return pb ? [idx, r.secondsPerProblem, pb] : null;
+      })
+      .filter((p): p is [number, number, any] => p !== null);
+
     return {
       backgroundColor: 'transparent',
       tooltip: {
@@ -445,6 +455,20 @@
             ? `<span style="color: #88C13F; font-weight: bold;">PASS</span>`
             : `<span style="color: #c84b31; font-weight: bold;">FAIL</span>`;
 
+          const pb = pbGuanidMap.get(rec.guanid);
+          const pbHtml = pb
+            ? `
+              <div style="margin-top: 4px; padding-top: 4px; border-top: 1px dashed rgba(255, 184, 0, 0.5); color: #FFB800; font-size: 11px;">
+                <strong>⚡ NEW SPEED RECORD (PB #${pb.recordIndex})!</strong>
+                <div style="font-size: 10px; color: #FAF0DA;">
+                  ${pb.isInitialRecord
+                    ? `Initial baseline pass at ${pb.rankLabel}`
+                    : `Beat previous by -${pb.improvementSeconds}s (-${pb.improvementPct}%) after ${pb.testsToBeat} tests (${pb.daysToBeat}d)`}
+                </div>
+              </div>
+            `
+            : '';
+
           return `
             <div style="font-size: 11px; line-height: 1.5;">
               <div style="font-weight: bold; border-bottom: 1px solid #5e4537; padding-bottom: 4px; margin-bottom: 4px;">
@@ -453,6 +477,7 @@
               <div>Accuracy: <strong style="color: #88C13F;">${rec.oknum}/10 (${rec.accuracyPct}%)</strong> <span style="color: #ebdcc9;">(7-test avg: ${rollingAcc}%)</span></div>
               <div>Speed: <strong style="color: #8B5E3C;">${rec.secondsPerProblem}s / prob</strong> <span style="color: #ebdcc9;">(7-test avg: ${rollingSpd}s)</span></div>
               <div>Test Total: <strong>${rec.totaltime}s</strong> (Guan ID: <code>${rec.guanid}</code>)</div>
+              ${pbHtml}
             </div>
           `;
         }
@@ -467,7 +492,8 @@
           'Raw Accuracy',
           'Rolling Speed (7-Test)',
           'Speed Trendline',
-          'Raw Speed'
+          'Raw Speed',
+          'Speed Record (PB)'
         ],
         textStyle: { color: '#3D2A1F', fontSize: 11 }
       },
@@ -590,6 +616,22 @@
           lineStyle: { color: '#c49a7a', width: 1, type: 'dotted' },
           itemStyle: { color: '#c49a7a' },
           z: 1
+        },
+        {
+          name: 'Speed Record (PB)',
+          type: 'scatter',
+          yAxisIndex: 1,
+          data: pbPoints,
+          symbol: 'diamond',
+          symbolSize: 11,
+          itemStyle: {
+            color: '#FFB800',
+            borderColor: '#FAF0DA',
+            borderWidth: 2,
+            shadowColor: 'rgba(255, 184, 0, 0.6)',
+            shadowBlur: 6
+          },
+          z: 6
         }
       ]
     };

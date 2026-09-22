@@ -6,6 +6,7 @@
   import FilterBar from '$lib/components/FilterBar.svelte';
   import TimelineChart from '$lib/components/charts/TimelineChart.svelte';
   import MilestoneChart from '$lib/components/charts/MilestoneChart.svelte';
+  import SpeedMilestoneChart from '$lib/components/charts/SpeedMilestoneChart.svelte';
   import DifficultyChart from '$lib/components/charts/DifficultyChart.svelte';
   import SpeedAccuracyChart from '$lib/components/charts/SpeedAccuracyChart.svelte';
   import TemporalChart from '$lib/components/charts/TemporalChart.svelte';
@@ -91,6 +92,9 @@
 
       <!-- Milestone Progression: First Pass at Each Difficulty -->
       <MilestoneChart />
+
+      <!-- Speed Milestones & Personal Bests by Rank -->
+      <SpeedMilestoneChart />
 
       <!-- Chart Grid: Difficulty & Speed/Accuracy Regression -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
