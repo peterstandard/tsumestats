@@ -24,6 +24,7 @@
   import HeroSessionPacingChart from '$lib/components/hero/HeroSessionPacingChart.svelte';
   import HeroTemporalChart from '$lib/components/hero/HeroTemporalChart.svelte';
   import HeroCollectionSummaryTable from '$lib/components/hero/HeroCollectionSummaryTable.svelte';
+  import HeroProblemMasteryTable from '$lib/components/hero/HeroProblemMasteryTable.svelte';
   import HeroHistoryTable from '$lib/components/hero/HeroHistoryTable.svelte';
 
   import { Sparkles, Upload, Bookmark, ShieldCheck, Zap } from 'lucide-svelte';
@@ -186,10 +187,13 @@
         <!-- Practice Consistency & Routine (Day of Week Habits & Hourly) -->
         <HeroTemporalChart />
 
-        <!-- Collection Mastery & Summary (Clickable filter for problem history) -->
+        <!-- Collection Mastery & Summary Table -->
         <HeroCollectionSummaryTable />
 
-        <!-- History Table -->
+        <!-- Problem Mastery & Repeat Solves Table -->
+        <HeroProblemMasteryTable />
+
+        <!-- Pure Solve History Log Table (Chronological) -->
         <HeroHistoryTable />
       {/if}
     {/if}

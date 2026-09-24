@@ -99,11 +99,11 @@
     <div>
       <h3 class="text-sm font-bold text-[#3D2A1F] flex items-center gap-1.5">
         <ListFilter class="w-4 h-4 text-[#8052cf]" />
-        <span>Solve History Log</span>
-        <span class="text-xs font-normal text-[#5e4537]">({sortedRecords.length} records)</span>
+        <span>Solve History Log (Chronological)</span>
+        <span class="text-xs font-normal text-[#5e4537]">({sortedRecords.length} solves)</span>
       </h3>
       <p class="text-[11px] text-[#5e4537]">
-        Every recorded solve with misplays, solve times, and direct problem links. Click column headers to sort by duration or difficulty.
+        Pure chronological event log of every recorded solve attempt with misplays, solve times, and direct problem links.
       </p>
     </div>
 
@@ -125,54 +125,25 @@
 
   <!-- Collection Filter Banner (shown when filtered to a collection) -->
   {#if isCollectionActive}
-    <div class="px-4 py-2.5 bg-[#8052cf]/10 border-b border-[#8052cf]/20 flex flex-wrap items-center justify-between gap-3">
-      <div class="flex flex-wrap items-center gap-2">
-        <span class="text-xs font-bold text-[#8052cf]">Collection:</span>
-        <span class="text-xs font-black text-[#3D2A1F] bg-[#FAF0DA] px-2.5 py-0.5 rounded-md border border-[#D6BA96]">
+    <div class="px-4 py-2 bg-[#8052cf]/10 border-b border-[#8052cf]/20 flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-[#8052cf]">Showing solves for:</span>
+        <span class="font-black text-[#3D2A1F] bg-[#FAF0DA] px-2.5 py-0.5 rounded-md border border-[#D6BA96]">
           {heroStore.filter.setFilter}
         </span>
-        {#if collectionStats?.stat}
-          <span class="text-[11px] text-[#5e4537]">
-            • <strong class="text-[#3D2A1F]">{collectionStats.stat.cleanPct}%</strong> flawless ({collectionStats.stat.cleanCount}/{collectionStats.stat.totalCount})
-            {#if collectionStats.avgSec}
-              • avg pace <strong class="text-[#8052cf]">{collectionStats.avgSec}s</strong> / prob
-            {/if}
-          </span>
-        {/if}
+        <span class="text-[11px] text-[#5e4537]">
+          ({sortedRecords.length} recorded solve{sortedRecords.length === 1 ? '' : 's'})
+        </span>
       </div>
 
-      <div class="flex flex-wrap items-center gap-1.5 text-xs">
-        <span class="text-[11px] text-[#5e4537] mr-1">Filter:</span>
-        <button
-          onclick={() => (heroStore.filter.misplayFilter = 'all')}
-          class="text-[11px] px-2 py-0.5 rounded font-medium cursor-pointer transition-colors {heroStore.filter.misplayFilter === 'all' ? 'bg-[#8052cf] text-white font-bold' : 'bg-[#FAF0DA] text-[#5e4537] hover:text-[#3D2A1F] border border-[#D6BA96]'}"
-        >
-          All
-        </button>
-        <button
-          onclick={() => (heroStore.filter.misplayFilter = 'misplay')}
-          class="text-[11px] px-2 py-0.5 rounded font-medium cursor-pointer transition-colors flex items-center gap-1 {heroStore.filter.misplayFilter === 'misplay' ? 'bg-[#c84b31] text-white font-bold' : 'bg-[#FAF0DA] text-[#c84b31] hover:bg-[#fbeee9] border border-[#c84b31]/30'}"
-          title="Only show problems with misplays"
-        >
-          <AlertCircle class="w-3 h-3" />
-          Challenging (Misplays)
-        </button>
-        <button
-          onclick={() => (heroStore.filter.misplayFilter = 'clean')}
-          class="text-[11px] px-2 py-0.5 rounded font-medium cursor-pointer transition-colors {heroStore.filter.misplayFilter === 'clean' ? 'bg-[#88C13F] text-white font-bold' : 'bg-[#FAF0DA] text-[#55821c] hover:bg-[#eaf6dc] border border-[#88C13F]/30'}"
-          title="Only show flawless solves"
-        >
-          Flawless Only
-        </button>
-        <button
-          onclick={() => { heroStore.filter.setFilter = 'all'; heroStore.filter.misplayFilter = 'all'; }}
-          class="text-[11px] text-[#5e4537] hover:text-[#c84b31] px-2 py-0.5 rounded bg-[#FAF0DA] border border-[#D6BA96] hover:bg-[#fbeee9] cursor-pointer ml-1 inline-flex items-center gap-1"
-          title="Clear collection filter"
-        >
-          <X class="w-3 h-3" />
-          Clear filter
-        </button>
-      </div>
+      <button
+        onclick={() => (heroStore.filter.setFilter = 'all')}
+        class="text-[11px] text-[#5e4537] hover:text-[#c84b31] px-2 py-0.5 rounded bg-[#FAF0DA] border border-[#D6BA96] hover:bg-[#fbeee9] cursor-pointer inline-flex items-center gap-1 transition-colors"
+        title="Show all collections"
+      >
+        <X class="w-3 h-3" />
+        <span>Show all collections</span>
+      </button>
     </div>
   {/if}
 

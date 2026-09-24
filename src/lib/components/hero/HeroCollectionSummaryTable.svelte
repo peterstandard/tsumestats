@@ -77,8 +77,8 @@
       heroStore.filter.setFilter = 'all';
     } else {
       heroStore.filter.setFilter = setName;
-      // Smoothly scroll down to problem table
-      const el = document.getElementById('hero-history-table');
+      // Smoothly scroll down to problem mastery table
+      const el = document.getElementById('hero-problem-mastery-table');
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
@@ -115,7 +115,7 @@
             <span class="text-[11px] font-normal text-[#5e4537]">({heroStore.setStats.length} collections)</span>
           </h3>
           <p class="text-[11px] text-[#5e4537]">
-            Full overview of your practice across Go books. Click any collection row to filter the problem log below.
+            Full overview of your practice across Go books. Click any collection row to inspect its problem mastery below.
           </p>
         </div>
       </div>

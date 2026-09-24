@@ -5498,5 +5498,38 @@
     "rating": 1787,
     "xp": 11,
     "date": "2026-07-01 10:00:00"
+  },
+  {
+    "set": "Korean Problem Academy 2",
+    "setUrl": "/sets/view/69",
+    "tsumego": "8",
+    "probUrl": "/3773",
+    "solved": true,
+    "misplays": 2,
+    "rating": 1890,
+    "xp": 5,
+    "date": "2026-07-02 14:10:22"
+  },
+  {
+    "set": "Korean Problem Academy 2",
+    "setUrl": "/sets/view/69",
+    "tsumego": "13",
+    "probUrl": "/3778",
+    "solved": true,
+    "misplays": 3,
+    "rating": 1895,
+    "xp": 4,
+    "date": "2026-07-03 16:22:05"
+  },
+  {
+    "set": "Korean Problem Academy 2",
+    "setUrl": "/sets/view/69",
+    "tsumego": "13",
+    "probUrl": "/3778",
+    "solved": true,
+    "misplays": 1,
+    "rating": 1902,
+    "xp": 8,
+    "date": "2026-07-07 18:40:11"
   }
 ]

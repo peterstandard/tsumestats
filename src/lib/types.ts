@@ -288,4 +288,40 @@ export interface HeroFilterState {
   searchQuery: string;
 }
 
+export type HeroProblemMasteryStatus = 'flawless' | 'overcome' | 'struggling';
+
+export interface HeroProblemAttempt {
+  attemptIndex: number;
+  date: string;
+  timestamp: number;
+  solved: boolean;
+  misplays: number;
+  rating: number;
+  xp: number;
+  solveTimeSeconds: number | null;
+}
+
+export interface HeroProblemStat {
+  key: string;              // `${setName}::${problemNumber}`
+  setName: string;
+  setUrl?: string | null;
+  problemNumber: string;
+  problemNumberInt: number;
+  probUrl?: string | null;
+  attemptsCount: number;
+  attempts: HeroProblemAttempt[]; // sorted chronologically (oldest to newest)
+  masteryStatus: HeroProblemMasteryStatus;
+  firstAttemptDate: string;
+  latestAttemptDate: string;
+  totalMisplays: number;
+  bestMisplays: number;
+  latestMisplays: number;
+  firstMisplays: number;
+  bestSolveTimeSec: number | null;
+  latestSolveTimeSec: number | null;
+  firstSolveTimeSec: number | null;
+  avgSolveTimeSec: number | null;
+}
+
+
 

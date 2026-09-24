@@ -5,7 +5,8 @@ import type {
   HeroFilterState,
   HeroTrainingSession,
   HeroKpiStats,
-  HeroSetStat
+  HeroSetStat,
+  HeroProblemStat
 } from '$lib/types';
 import {
   parseHeroInput,
@@ -14,7 +15,8 @@ import {
   computeHeroKpis,
   computeHeroSetStats,
   computeHeroHourlyHabits,
-  computeHeroDayOfWeekHabits
+  computeHeroDayOfWeekHabits,
+  computeHeroProblemStats
 } from '$lib/utils/heroRecords';
 import { SAMPLE_HERO_RECORDS } from '$lib/data/sampleHero';
 
@@ -89,6 +91,9 @@ function createHeroStore() {
 
   // Derived day of week habits
   let dayOfWeekHabits = $derived(computeHeroDayOfWeekHabits(filteredRecords));
+
+  // Derived problem stats across all records (preserving complete solve journeys)
+  let allProblemStats = $derived<HeroProblemStat[]>(computeHeroProblemStats(allRecords));
 
   function init() {
     if (!browser || isInitialized) return;
@@ -195,6 +200,7 @@ function createHeroStore() {
     get filter() { return filter; },
     get kpis() { return kpis; },
     get setStats() { return setStats; },
+    get allProblemStats() { return allProblemStats; },
     get hourlyHabits() { return hourlyHabits; },
     get dayOfWeekHabits() { return dayOfWeekHabits; },
     init,

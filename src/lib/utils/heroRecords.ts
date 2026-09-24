@@ -3,7 +3,10 @@ import type {
   ProcessedHeroRecord,
   HeroTrainingSession,
   HeroSetStat,
-  HeroKpiStats
+  HeroKpiStats,
+  HeroProblemStat,
+  HeroProblemAttempt,
+  HeroProblemMasteryStatus
 } from '$lib/types';
 
 const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -531,4 +534,112 @@ export function computeHeroDayOfWeekHabits(records: ProcessedHeroRecord[]) {
 
   return days;
 }
+
+export function computeHeroProblemStats(records: ProcessedHeroRecord[]): HeroProblemStat[] {
+  const groups = new Map<string, ProcessedHeroRecord[]>();
+
+  for (const r of records) {
+    const key = `${r.set}::${r.tsumego}`;
+    let list = groups.get(key);
+    if (!list) {
+      list = [];
+      groups.set(key, list);
+    }
+    list.push(r);
+  }
+
+  const results: HeroProblemStat[] = [];
+
+  for (const [key, list] of groups.entries()) {
+    // Sort attempts chronologically (oldest to newest)
+    list.sort((a, b) => a.timestamp - b.timestamp);
+
+    const first = list[0];
+    const latest = list[list.length - 1];
+    const setName = first.set;
+    const problemNumber = first.tsumego;
+    const problemNumberInt = parseInt(problemNumber, 10) || 0;
+
+    const attempts: HeroProblemAttempt[] = list.map((r, idx) => ({
+      attemptIndex: idx + 1,
+      date: r.date,
+      timestamp: r.timestamp,
+      solved: r.solved,
+      misplays: r.misplays,
+      rating: r.rating,
+      xp: r.xp,
+      solveTimeSeconds:
+        r.timeSincePrevSeconds !== null && r.timeSincePrevSeconds <= 900
+          ? r.timeSincePrevSeconds
+          : null
+    }));
+
+    const totalMisplays = list.reduce((sum, r) => sum + r.misplays, 0);
+    const bestMisplays = Math.min(...list.map((r) => r.misplays));
+    const latestMisplays = latest.misplays;
+    const firstMisplays = first.misplays;
+
+    const validTimes = attempts
+      .map((a) => a.solveTimeSeconds)
+      .filter((t): t is number => t !== null);
+
+    const bestSolveTimeSec = validTimes.length > 0 ? Math.min(...validTimes) : null;
+    const latestSolveTimeSec =
+      latest.timeSincePrevSeconds !== null && latest.timeSincePrevSeconds <= 900
+        ? latest.timeSincePrevSeconds
+        : null;
+    const firstSolveTimeSec =
+      first.timeSincePrevSeconds !== null && first.timeSincePrevSeconds <= 900
+        ? first.timeSincePrevSeconds
+        : null;
+    const avgSolveTimeSec =
+      validTimes.length > 0
+        ? Math.round(validTimes.reduce((a, b) => a + b, 0) / validTimes.length)
+        : null;
+
+    let masteryStatus: HeroProblemMasteryStatus;
+    if (latestMisplays === 0 && latest.solved) {
+      if (totalMisplays === 0) {
+        masteryStatus = 'flawless';
+      } else {
+        masteryStatus = 'overcome';
+      }
+    } else {
+      masteryStatus = 'struggling';
+    }
+
+    results.push({
+      key,
+      setName,
+      setUrl: first.setUrl ?? null,
+      problemNumber,
+      problemNumberInt,
+      probUrl: first.probUrl ?? null,
+      attemptsCount: list.length,
+      attempts,
+      masteryStatus,
+      firstAttemptDate: first.date,
+      latestAttemptDate: latest.date,
+      totalMisplays,
+      bestMisplays,
+      latestMisplays,
+      firstMisplays,
+      bestSolveTimeSec,
+      latestSolveTimeSec,
+      firstSolveTimeSec,
+      avgSolveTimeSec
+    });
+  }
+
+  // Default sort by problemNumberInt ascending
+  results.sort((a, b) => {
+    if (a.setName !== b.setName) {
+      return a.setName.localeCompare(b.setName);
+    }
+    return a.problemNumberInt - b.problemNumberInt;
+  });
+
+  return results;
+}
+
 
