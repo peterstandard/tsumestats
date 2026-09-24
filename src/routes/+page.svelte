@@ -26,11 +26,11 @@
   import HeroCollectionSummaryTable from '$lib/components/hero/HeroCollectionSummaryTable.svelte';
   import HeroHistoryTable from '$lib/components/hero/HeroHistoryTable.svelte';
 
-  import { Sparkles, Upload, Bookmark, ShieldCheck } from 'lucide-svelte';
+  import { Sparkles, Upload, Bookmark, ShieldCheck, Zap } from 'lucide-svelte';
   import { APP_VERSION } from '$lib/version';
 
   let isImportOpen = $state(false);
-  let importInitialTab = $state<'import' | 'bookmarklet'>('import');
+  let importInitialTab = $state<'import' | 'bookmarklet' | 'direct'>('import');
 
   let isWeiqi = $derived(platformStore.activePlatform === '101weiqi');
 
@@ -40,8 +40,12 @@
     heroStore.init();
   });
 
-  function openImport(tab?: 'import' | 'bookmarklet') {
-    importInitialTab = tab === 'bookmarklet' ? 'bookmarklet' : 'import';
+  function openImport(tab?: 'import' | 'bookmarklet' | 'direct') {
+    if (tab) {
+      importInitialTab = tab;
+    } else {
+      importInitialTab = isWeiqi ? 'import' : 'direct';
+    }
     isImportOpen = true;
   }
 
@@ -150,11 +154,11 @@
               Load Sample Dataset
             </button>
             <button
-              onclick={() => openImport('import')}
-              class="w-full sm:w-auto px-5 py-2.5 bg-[#8B5E3C] hover:bg-[#6e472a] text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
+              onclick={() => openImport('direct')}
+              class="w-full sm:w-auto px-5 py-2.5 bg-[#8052cf] hover:bg-[#6f42b8] text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
             >
-              <Upload class="w-4 h-4" />
-              Import My Solves
+              <Zap class="w-4 h-4" />
+              Fetch Solves (1-Click)
             </button>
           </div>
 

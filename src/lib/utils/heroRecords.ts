@@ -74,7 +74,7 @@ export function parseHeroHtml(html: string): HeroRawRecord[] {
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
     const tables = doc.querySelectorAll('table');
-    const table = tables.length > 1 ? tables[1] : tables[0];
+    const table = doc.querySelector('table.data-table') || (tables.length > 1 ? tables[1] : tables[0]);
     if (table) {
       const rows = table.querySelectorAll('tr');
       for (let i = 1; i < rows.length; i++) {
@@ -83,8 +83,8 @@ export function parseHeroHtml(html: string): HeroRawRecord[] {
           const aSet = tds[0].querySelector('a');
           const aProb = tds[1].querySelector('a');
           const setName = tds[0].textContent?.trim() || '';
-          const probRaw = tds[1].textContent?.trim() || '';
-          const probNum = probRaw.split('-')[0].trim();
+          const probNumEl = tds[1].querySelector('.problem-nav__number');
+          const probNum = probNumEl?.textContent?.trim() || tds[1].textContent?.trim().split('-')[0].trim() || '';
           const solved = tds[2].textContent?.trim() === '✓';
           const misplays = parseInt(tds[3].textContent?.trim() || '0', 10) || 0;
           const rating = parseInt(tds[4].textContent?.trim() || '0', 10) || 0;
@@ -110,6 +110,67 @@ export function parseHeroHtml(html: string): HeroRawRecord[] {
   }
 
   return records;
+}
+
+export function extractHeroUserId(input: string): string | null {
+  const trimmed = input.trim();
+  if (!trimmed) return null;
+  // If it is pure digits, e.g. "32551"
+  if (/^\d+$/.test(trimmed)) {
+    return trimmed;
+  }
+  // If it is a full URL, e.g. "https://tsumego.com/users/view/32551" or "solveHistory/32551"
+  const urlMatch = trimmed.match(/\/users\/(?:solveHistory|view)?\/?(\d+)/i);
+  if (urlMatch) {
+    return urlMatch[1];
+  }
+  // Fallback: match any numeric sequence in the string
+  const generalMatch = trimmed.match(/(?:^|[^0-9])(\d{1,8})(?:[^0-9]|$)/);
+  if (generalMatch) {
+    return generalMatch[1];
+  }
+  return null;
+}
+
+export interface HeroScrapedPage {
+  records: HeroRawRecord[];
+  currentPage: number;
+  totalPages: number;
+}
+
+export function parseHeroHtmlWithPagination(html: string): HeroScrapedPage {
+  const records = parseHeroHtml(html);
+  let currentPage = 1;
+  let totalPages = 1;
+
+  if (typeof DOMParser !== 'undefined') {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+
+    const infoEl = doc.querySelector('.pagination__info');
+    if (infoEl && infoEl.textContent) {
+      const cm = infoEl.textContent.match(/Page\s+(\d+)\s+of\s+(\d+)/i);
+      if (cm) {
+        currentPage = parseInt(cm[1], 10) || 1;
+        totalPages = parseInt(cm[2], 10) || 1;
+      } else {
+        const om = infoEl.textContent.match(/of\s+(\d+)/i);
+        if (om) totalPages = parseInt(om[1], 10) || 1;
+      }
+    } else {
+      const pLinks = Array.from(doc.querySelectorAll('a[href*="page="]'));
+      for (const link of pLinks) {
+        const href = link.getAttribute('href') || '';
+        const pm = href.match(/page=(\d+)/);
+        if (pm) {
+          const pN = parseInt(pm[1], 10);
+          if (pN > totalPages) totalPages = pN;
+        }
+      }
+    }
+  }
+
+  return { records, currentPage, totalPages };
 }
 
 export function parseDateString(dateStr: string): Date {

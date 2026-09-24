@@ -16,7 +16,7 @@
   import { APP_VERSION } from '$lib/version';
 
   interface Props {
-    onOpenImport: (initialTab?: 'import' | 'bookmarklet') => void;
+    onOpenImport: (initialTab?: 'import' | 'bookmarklet' | 'direct') => void;
   }
 
   let { onOpenImport }: Props = $props();
@@ -117,9 +117,9 @@
         </span>
       {/if}
 
-      <!-- Import Data (opens to bookmarklet tab if on demo data, or direct import if real data) -->
+      <!-- Import Data (opens to direct scraper for Tsumego Hero, or bookmarklet/import for 101weiqi) -->
       <button
-        onclick={() => onOpenImport(isDemoActive ? 'bookmarklet' : 'import')}
+        onclick={() => onOpenImport(isWeiqi ? (isDemoActive ? 'bookmarklet' : 'import') : 'direct')}
         class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8052cf] hover:bg-[#6f42b8]'} text-white transition-colors cursor-pointer shadow-sm"
       >
         <Upload class="w-3.5 h-3.5" />
