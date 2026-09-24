@@ -354,6 +354,8 @@ export function computeHeroSetStats(records: ProcessedHeroRecord[]): HeroSetStat
     misplayCount: number;
     ratings: number[];
     lastDate: string;
+    solveTimes: number[];
+    results: boolean[];
   }>();
 
   for (const r of records) {
@@ -365,7 +367,9 @@ export function computeHeroSetStats(records: ProcessedHeroRecord[]): HeroSetStat
         cleanCount: 0,
         misplayCount: 0,
         ratings: [],
-        lastDate: r.dateStr
+        lastDate: r.dateStr,
+        solveTimes: [],
+        results: []
       });
     }
     const entry = map.get(r.set)!;
@@ -374,6 +378,10 @@ export function computeHeroSetStats(records: ProcessedHeroRecord[]): HeroSetStat
     entry.misplayCount += r.misplays;
     if (r.rating > 0) entry.ratings.push(r.rating);
     if (r.dateStr > entry.lastDate) entry.lastDate = r.dateStr;
+    if (r.timeSincePrevSeconds !== null && r.timeSincePrevSeconds <= 900) {
+      entry.solveTimes.push(r.timeSincePrevSeconds);
+    }
+    entry.results.push(r.isClean);
   }
 
   const results: HeroSetStat[] = [];
@@ -382,6 +390,10 @@ export function computeHeroSetStats(records: ProcessedHeroRecord[]): HeroSetStat
     const avgMisplays = Math.round((e.misplayCount / e.totalCount) * 100) / 100;
     const minRating = e.ratings.length > 0 ? Math.min(...e.ratings) : 0;
     const maxRating = e.ratings.length > 0 ? Math.max(...e.ratings) : 0;
+    const avgSolveTimeSec = e.solveTimes.length > 0
+      ? Math.round((e.solveTimes.reduce((a, b) => a + b, 0) / e.solveTimes.length) * 10) / 10
+      : null;
+    const recentResults = e.results.slice(-10);
 
     results.push({
       setName: e.setName,
@@ -393,7 +405,9 @@ export function computeHeroSetStats(records: ProcessedHeroRecord[]): HeroSetStat
       avgMisplays,
       minRating,
       maxRating,
-      lastPracticedDate: e.lastDate
+      lastPracticedDate: e.lastDate,
+      avgSolveTimeSec,
+      recentResults
     });
   }
 

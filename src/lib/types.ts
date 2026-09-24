@@ -261,6 +261,8 @@ export interface HeroSetStat {
   minRating: number;
   maxRating: number;
   lastPracticedDate: string;
+  avgSolveTimeSec: number | null;
+  recentResults: boolean[];
 }
 
 export interface HeroKpiStats {
