@@ -35,3 +35,6 @@ original_*.json
 *backup*.json
 my_records*.json
 personal_*.json
+tsumego.com/
+*.html.bak
+
