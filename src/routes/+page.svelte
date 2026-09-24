@@ -133,7 +133,7 @@
       {#if heroStore.allRecords.length === 0}
         <!-- Tsumego Hero Empty State -->
         <div class="bg-[#FAF0DA] border-2 border-dashed border-[#D6BA96] rounded-2xl p-8 sm:p-12 text-center max-w-xl mx-auto my-12 shadow-xs">
-          <div class="w-16 h-16 rounded-full bg-[#8C52FF]/20 text-[#8C52FF] flex items-center justify-center mx-auto mb-4 border-2 border-[#8C52FF]">
+          <div class="w-16 h-16 rounded-full bg-[#8052cf]/20 text-[#8052cf] flex items-center justify-center mx-auto mb-4 border-2 border-[#8052cf]">
             <span class="text-2xl font-black">英</span>
           </div>
           <h2 class="text-xl font-black text-[#3D2A1F]">Tsumego Hero Analytics</h2>
@@ -144,7 +144,7 @@
           <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
             <button
               onclick={() => heroStore.loadDemo()}
-              class="w-full sm:w-auto px-5 py-2.5 bg-[#8C52FF] hover:bg-[#7c3aed] text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
+              class="w-full sm:w-auto px-5 py-2.5 bg-[#8052cf] hover:bg-[#6f42b8] text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
             >
               <Sparkles class="w-4 h-4" />
               Load Sample Dataset
@@ -160,7 +160,7 @@
 
           <button
             onclick={openBookmarklet}
-            class="mt-4 text-xs font-medium text-[#8C52FF] hover:text-[#5b21b6] hover:underline flex items-center justify-center gap-1 mx-auto cursor-pointer"
+            class="mt-4 text-xs font-medium text-[#8052cf] hover:text-[#5c34a4] hover:underline flex items-center justify-center gap-1 mx-auto cursor-pointer"
           >
             <Bookmark class="w-3.5 h-3.5" />
             How do I get my Tsumego Hero history?
@@ -201,12 +201,12 @@
         {#if isWeiqi}
           <span>A specialized tool for <a href="https://www.101weiqi.com" target="_blank" rel="noopener noreferrer" class="text-[#8B5E3C] hover:underline">101weiqi</a> Go solvers</span>
         {:else}
-          <span>A specialized tool for <a href="https://tsumego-hero.com" target="_blank" rel="noopener noreferrer" class="text-[#8C52FF] hover:underline">Tsumego Hero</a> Go solvers</span>
+          <span>A specialized tool for <a href="https://tsumego.com" target="_blank" rel="noopener noreferrer" class="text-[#8052cf] hover:underline">Tsumego Hero</a> Go solvers</span>
         {/if}
       </div>
 
       <div class="flex items-center gap-1 text-[11px]">
-        <ShieldCheck class="w-3.5 h-3.5 {isWeiqi ? 'text-[#88C13F]' : 'text-[#8C52FF]'}" />
+        <ShieldCheck class="w-3.5 h-3.5 {isWeiqi ? 'text-[#88C13F]' : 'text-[#8052cf]'}" />
         <span>100% Client-Side. Your records remain private in your browser.</span>
       </div>
     </div>

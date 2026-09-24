@@ -57,7 +57,7 @@
 
           return `
             <div class="font-bold border-b border-[#D6BA96] pb-1 mb-1">${formattedDate}</div>
-            <div class="text-xs font-semibold text-[#8C52FF] mb-1">${set}</div>
+            <div class="text-xs font-semibold text-[#8052cf] mb-1">${set}</div>
             <div class="grid grid-cols-2 gap-x-3 gap-y-1 text-xs">
               <div>Problems: <strong class="text-[#3D2A1F]">${count}</strong></div>
               <div>Duration: <strong class="text-[#3D2A1F]">${durationMin} min</strong></div>
@@ -139,8 +139,8 @@
           data: deepData,
           symbolSize: (data: any) => Math.min(36, Math.max(10, Math.sqrt(data[2]) * 3.5)),
           itemStyle: {
-            color: '#8C52FF',
-            borderColor: '#5b21b6',
+            color: '#8052cf',
+            borderColor: '#5c34a4',
             borderWidth: 1.5,
             opacity: 0.85
           },
@@ -149,7 +149,7 @@
             lineStyle: { type: 'dashed', color: '#D97706', width: 1 },
             data: [
               { yAxis: 20, label: { formatter: '20s Blitz', position: 'end', fontSize: 10, color: '#88C13F' } },
-              { yAxis: 60, label: { formatter: '60s Deep Reading', position: 'end', fontSize: 10, color: '#8C52FF' } }
+              { yAxis: 60, label: { formatter: '60s Deep Reading', position: 'end', fontSize: 10, color: '#8052cf' } }
             ]
           }
         }

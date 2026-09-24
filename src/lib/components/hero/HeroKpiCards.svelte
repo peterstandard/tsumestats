@@ -18,7 +18,7 @@
   <div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-3.5 shadow-2xs flex flex-col justify-between">
     <div class="flex items-center justify-between text-[#5e4537]">
       <span class="text-[11px] font-medium uppercase tracking-wider">Total Solves</span>
-      <CheckCircle2 class="w-4 h-4 text-[#8C52FF]" />
+      <CheckCircle2 class="w-4 h-4 text-[#8052cf]" />
     </div>
     <div class="mt-2">
       <div class="text-xl sm:text-2xl font-black text-[#3D2A1F]">
@@ -82,14 +82,14 @@
   <div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-3.5 shadow-2xs flex flex-col justify-between">
     <div class="flex items-center justify-between text-[#5e4537]">
       <span class="text-[11px] font-medium uppercase tracking-wider">Elo Rating</span>
-      <TrendingUp class="w-4 h-4 text-[#8C52FF]" />
+      <TrendingUp class="w-4 h-4 text-[#8052cf]" />
     </div>
     <div class="mt-2">
       <div class="text-xl sm:text-2xl font-black text-[#3D2A1F]">
         {kpis.currentRating || '—'}
       </div>
       <div class="text-[11px] text-[#5e4537] mt-0.5">
-        Peak: <span class="font-bold text-[#8C52FF]">{kpis.peakRating}</span>
+        Peak: <span class="font-bold text-[#8052cf]">{kpis.peakRating}</span>
       </div>
     </div>
   </div>

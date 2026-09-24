@@ -54,7 +54,7 @@
   <div class="p-4 border-b border-[#D6BA96] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 bg-[#FAF0DA]">
     <div>
       <h3 class="text-sm font-bold text-[#3D2A1F] flex items-center gap-1.5">
-        <ListFilter class="w-4 h-4 text-[#8C52FF]" />
+        <ListFilter class="w-4 h-4 text-[#8052cf]" />
         <span>Solve History Log</span>
         <span class="text-xs font-normal text-[#5e4537]">({sortedRecords.length} records)</span>
       </h3>
@@ -69,7 +69,7 @@
       <select
         bind:value={pageSize}
         onchange={() => (currentPage = 1)}
-        class="bg-[#FDF5E6] border border-[#D6BA96] text-[#3D2A1F] rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-[#8C52FF]"
+        class="bg-[#FDF5E6] border border-[#D6BA96] text-[#3D2A1F] rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-[#8052cf]"
       >
         <option value={15}>15</option>
         <option value={25}>25</option>
@@ -87,7 +87,7 @@
           <th class="py-2.5 px-3">
             <button
               onclick={() => toggleSort('date')}
-              class="flex items-center gap-1 hover:text-[#8C52FF] transition-colors cursor-pointer"
+              class="flex items-center gap-1 hover:text-[#8052cf] transition-colors cursor-pointer"
             >
               <span>Date & Time</span>
               <ArrowUpDown class="w-3 h-3 text-[#5e4537]" />
@@ -98,7 +98,7 @@
           <th class="py-2.5 px-3 text-center">
             <button
               onclick={() => toggleSort('misplays')}
-              class="inline-flex items-center gap-1 hover:text-[#8C52FF] transition-colors cursor-pointer mx-auto"
+              class="inline-flex items-center gap-1 hover:text-[#8052cf] transition-colors cursor-pointer mx-auto"
             >
               <span>Misplays</span>
               <ArrowUpDown class="w-3 h-3 text-[#5e4537]" />
@@ -107,7 +107,7 @@
           <th class="py-2.5 px-3 text-right">
             <button
               onclick={() => toggleSort('rating')}
-              class="inline-flex items-center gap-1 hover:text-[#8C52FF] transition-colors cursor-pointer ml-auto"
+              class="inline-flex items-center gap-1 hover:text-[#8052cf] transition-colors cursor-pointer ml-auto"
             >
               <span>Elo Rating</span>
               <ArrowUpDown class="w-3 h-3 text-[#5e4537]" />
@@ -116,7 +116,7 @@
           <th class="py-2.5 px-3 text-right">
             <button
               onclick={() => toggleSort('xp')}
-              class="inline-flex items-center gap-1 hover:text-[#8C52FF] transition-colors cursor-pointer ml-auto"
+              class="inline-flex items-center gap-1 hover:text-[#8052cf] transition-colors cursor-pointer ml-auto"
             >
               <span>XP</span>
               <ArrowUpDown class="w-3 h-3 text-[#5e4537]" />
@@ -144,10 +144,10 @@
               <td class="py-2.5 px-3 font-medium text-[#3D2A1F]">
                 {#if record.setUrl}
                   <a
-                    href="https://tsumego-hero.com{record.setUrl}"
+                    href="https://tsumego.com{record.setUrl}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hover:text-[#8C52FF] hover:underline"
+                    class="hover:text-[#8052cf] hover:underline"
                   >
                     {record.set}
                   </a>
@@ -177,7 +177,7 @@
               </td>
 
               <!-- Rating -->
-              <td class="py-2.5 px-3 text-right font-mono font-bold text-[#8C52FF]">
+              <td class="py-2.5 px-3 text-right font-mono font-bold text-[#8052cf]">
                 {record.rating || '—'}
               </td>
 
@@ -190,10 +190,10 @@
               <td class="py-2.5 px-3 text-center">
                 {#if record.probUrl}
                   <a
-                    href="https://tsumego-hero.com{record.probUrl}"
+                    href="https://tsumego.com{record.probUrl}"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1 text-[11px] text-[#8C52FF] hover:text-[#5b21b6] font-medium hover:underline"
+                    class="inline-flex items-center gap-1 text-[11px] text-[#8052cf] hover:text-[#5c34a4] font-medium hover:underline"
                     title="View problem on Tsumego Hero"
                   >
                     <span>View</span>

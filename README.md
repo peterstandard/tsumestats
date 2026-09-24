@@ -5,7 +5,7 @@
 
 > 🚀 **Live Site:** **[https://peterstandard.github.io/tsumestats/](https://peterstandard.github.io/tsumestats/)**
 
-A client-side analytics and visualization dashboard for **101weiqi** (101围棋网) and **Tsumego Hero** (tsumego-hero.com) problem solvers.
+A client-side analytics and visualization dashboard for **101weiqi** (101围棋网) and **Tsumego Hero** (tsumego.com) problem solvers.
 
 Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" design system), and **Apache ECharts**.
 
@@ -36,7 +36,7 @@ Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" des
 
 ### 1-Click Scrapers & Importers
 - **101weiqi**: One-click bookmarklet to copy test records directly from `https://www.101weiqi.com/guan/my/`.
-- **Tsumego Hero**: Multi-page auto-fetching bookmarklet for `https://tsumego-hero.com/users/solveHistory/` that automatically crawls all paginated records in the background and copies the full JSON in ~1 second.
+- **Tsumego Hero**: Multi-page auto-fetching bookmarklet for `https://tsumego.com/users/solveHistory/` that automatically crawls all paginated records in the background and copies the full JSON in ~1 second.
 - **Drag-and-Drop Ingestion**: Supports `.json` files and saved `.html` pages. Automatically detects the data format and switches to the corresponding platform.
 
 ---

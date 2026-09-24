@@ -51,8 +51,8 @@
         {
           type: 'value',
           name: 'Solves',
-          axisLine: { lineStyle: { color: '#8C52FF' } },
-          axisLabel: { color: '#8C52FF', fontSize: 10 },
+          axisLine: { lineStyle: { color: '#8052cf' } },
+          axisLabel: { color: '#8052cf', fontSize: 10 },
           splitLine: { lineStyle: { color: '#F4E7CE' } }
         },
         {
@@ -72,7 +72,7 @@
           yAxisIndex: 0,
           data: counts,
           itemStyle: {
-            color: 'rgba(140, 82, 255, 0.7)',
+            color: 'rgba(128, 82, 207, 0.7)',
             borderRadius: [3, 3, 0, 0]
           },
           barMaxWidth: 16
@@ -96,7 +96,7 @@
 <div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 sm:p-5 shadow-2xs space-y-3">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-2">
-      <div class="w-7 h-7 rounded-lg bg-[#8C52FF]/15 text-[#8C52FF] flex items-center justify-center font-bold">
+      <div class="w-7 h-7 rounded-lg bg-[#8052cf]/15 text-[#8052cf] flex items-center justify-center font-bold">
         <Clock class="w-4 h-4" />
       </div>
       <div>

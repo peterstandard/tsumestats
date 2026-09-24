@@ -49,7 +49,7 @@
           for (const p of params) {
             if (p.seriesName === 'Elo Rating' && p.data) {
               const [ts, rating, set, prob, misplays] = p.data;
-              res += `<div class="text-[#8C52FF] font-black">Elo: ${rating}</div>`;
+              res += `<div class="text-[#8052cf] font-black">Elo: ${rating}</div>`;
               res += `<div class="text-xs text-[#5e4537] mt-0.5">${set} #${prob}</div>`;
               res += `<div class="text-xs text-[#5e4537]">${misplays === 0 ? '<span class="text-[#88C13F] font-bold">✓ Flawless (0 misplays)</span>' : `<span class="text-[#D97706]">${misplays} misplay${misplays>1?'s':''}</span>`}</div>`;
             } else if (p.seriesName === 'Daily Volume' && p.data) {
@@ -84,8 +84,8 @@
           name: 'Elo Rating',
           scale: true,
           position: 'left',
-          axisLine: { lineStyle: { color: '#8C52FF' } },
-          axisLabel: { color: '#8C52FF', fontSize: 10 },
+          axisLine: { lineStyle: { color: '#8052cf' } },
+          axisLabel: { color: '#8052cf', fontSize: 10 },
           splitLine: { lineStyle: { color: '#F4E7CE' } }
         },
         {
@@ -106,8 +106,8 @@
           bottom: 0,
           height: 20,
           borderColor: '#D6BA96',
-          fillerColor: 'rgba(140, 82, 255, 0.15)',
-          handleStyle: { color: '#8C52FF' }
+          fillerColor: 'rgba(128, 82, 207, 0.15)',
+          handleStyle: { color: '#8052cf' }
         }
       ],
       series: [
@@ -131,11 +131,11 @@
           symbolSize: 4,
           smooth: true,
           lineStyle: {
-            color: '#8C52FF',
+            color: '#8052cf',
             width: 2.5
           },
           itemStyle: {
-            color: '#8C52FF'
+            color: '#8052cf'
           },
           areaStyle: {
             color: {
@@ -145,8 +145,8 @@
               x2: 0,
               y2: 1,
               colorStops: [
-                { offset: 0, color: 'rgba(140, 82, 255, 0.25)' },
-                { offset: 1, color: 'rgba(140, 82, 255, 0.0)' }
+                { offset: 0, color: 'rgba(128, 82, 207, 0.25)' },
+                { offset: 1, color: 'rgba(128, 82, 207, 0.0)' }
               ]
             }
           }
@@ -159,7 +159,7 @@
 <div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 sm:p-5 shadow-2xs space-y-3">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-2">
-      <div class="w-7 h-7 rounded-lg bg-[#8C52FF]/15 text-[#8C52FF] flex items-center justify-center font-bold">
+      <div class="w-7 h-7 rounded-lg bg-[#8052cf]/15 text-[#8052cf] flex items-center justify-center font-bold">
         <TrendingUp class="w-4 h-4" />
       </div>
       <div>

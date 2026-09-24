@@ -42,7 +42,7 @@
 
   const WEIQI_BOOKMARKLET = `javascript:(function(){try{if(typeof records!=='undefined'&&Array.isArray(records)){var s=JSON.stringify(records);var done=function(){alert('Copied '+records.length+' 101weiqi test records to clipboard! Paste into tsumestats.')};var fb=function(){var t=document.createElement('textarea');t.value=s;t.style.position='fixed';t.style.left='-9999px';document.body.appendChild(t);t.focus();t.select();var ok=document.execCommand('copy');document.body.removeChild(t);return ok;};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(done).catch(function(){if(fb()){done()}else{prompt('Press Ctrl+C to copy records:',s)}});}else if(fb()){done()}else{prompt('Press Ctrl+C to copy records:',s);}}else{alert('101weiqi records variable not found. Please navigate to https://www.101weiqi.com/guan/my/ first.');}}catch(e){alert('Copy failed: '+e.message);}})();`;
 
-  const HERO_BOOKMARKLET = `javascript:(async function(){try{var t=document.querySelectorAll('table')[1];if(!t){alert('Please navigate to your Tsumego Hero Solve History page (/users/solveHistory/...) first.');return;}function p(d){var rows=d.querySelectorAll('table')[1]?.querySelectorAll('tr')||[];var it=[];for(var i=1;i<rows.length;i++){var c=rows[i].querySelectorAll('td');if(c.length>=7){var aS=c[0].querySelector('a');var aP=c[1].querySelector('a');it.push({set:c[0].textContent.trim(),setUrl:aS?aS.getAttribute('href'):null,tsumego:c[1].textContent.trim().split('-')[0].trim(),probUrl:aP?aP.getAttribute('href'):null,solved:c[2].textContent.trim()==='✓',misplays:parseInt(c[3].textContent.trim(),10)||0,rating:parseInt(c[4].textContent.trim(),10)||0,xp:parseInt(c[5].textContent.trim(),10)||0,date:c[6].textContent.trim()});}}return it;}var all=p(document);var m=document.body.innerText.match(/Page\\s+(\\d+)\\s+of\\s+(\\d+)/i);var totalPages=m?parseInt(m[2],10):1;if(totalPages>1){var chip=document.createElement('div');chip.style.cssText='position:fixed;top:20px;right:20px;background:#3D2A1F;color:#FDF5E6;padding:12px 18px;border-radius:10px;font-family:sans-serif;font-size:13px;z-index:999999;box-shadow:0 4px 12px rgba(0,0,0,0.3);border:2px solid #8C52FF;';chip.textContent='Scraping page 1 of '+totalPages+'...';document.body.appendChild(chip);for(var pg=2;pg<=totalPages;pg++){chip.textContent='Scraping page '+pg+' of '+totalPages+'... ('+all.length+' items)';var r=await fetch('?page='+pg);var h=await r.text();var pr=new DOMParser();var doc=pr.parseFromString(h,'text/html');all=all.concat(p(doc));}document.body.removeChild(chip);}var s=JSON.stringify(all);var done=function(){alert('Copied '+all.length+' Tsumego Hero solves ('+totalPages+' pages) to clipboard! Paste into tsumestats.')};if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(s);done();}else{var ta=document.createElement('textarea');ta.value=s;ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.focus();ta.select();document.execCommand('copy');document.body.removeChild(ta);done();}}catch(e){alert('Scrape failed: '+e.message);}})();`;
+  const HERO_BOOKMARKLET = `javascript:(async function(){try{var t=document.querySelectorAll('table')[1];if(!t){alert('Please navigate to your Tsumego Hero Solve History page (/users/solveHistory/...) first.');return;}function p(d){var rows=d.querySelectorAll('table')[1]?.querySelectorAll('tr')||[];var it=[];for(var i=1;i<rows.length;i++){var c=rows[i].querySelectorAll('td');if(c.length>=7){var aS=c[0].querySelector('a');var aP=c[1].querySelector('a');it.push({set:c[0].textContent.trim(),setUrl:aS?aS.getAttribute('href'):null,tsumego:c[1].textContent.trim().split('-')[0].trim(),probUrl:aP?aP.getAttribute('href'):null,solved:c[2].textContent.trim()==='✓',misplays:parseInt(c[3].textContent.trim(),10)||0,rating:parseInt(c[4].textContent.trim(),10)||0,xp:parseInt(c[5].textContent.trim(),10)||0,date:c[6].textContent.trim()});}}return it;}var all=p(document);var m=document.body.innerText.match(/Page\\s+(\\d+)\\s+of\\s+(\\d+)/i);var totalPages=m?parseInt(m[2],10):1;if(totalPages>1){var chip=document.createElement('div');chip.style.cssText='position:fixed;top:20px;right:20px;background:#3D2A1F;color:#FDF5E6;padding:12px 18px;border-radius:10px;font-family:sans-serif;font-size:13px;z-index:999999;box-shadow:0 4px 12px rgba(0,0,0,0.3);border:2px solid #8052cf;';chip.textContent='Scraping page 1 of '+totalPages+'...';document.body.appendChild(chip);for(var pg=2;pg<=totalPages;pg++){chip.textContent='Scraping page '+pg+' of '+totalPages+'... ('+all.length+' items)';var r=await fetch('?page='+pg);var h=await r.text();var pr=new DOMParser();var doc=pr.parseFromString(h,'text/html');all=all.concat(p(doc));}document.body.removeChild(chip);}var s=JSON.stringify(all);var done=function(){alert('Copied '+all.length+' Tsumego Hero solves ('+totalPages+' pages) to clipboard! Paste into tsumestats.')};if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(s);done();}else{var ta=document.createElement('textarea');ta.value=s;ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.focus();ta.select();document.execCommand('copy');document.body.removeChild(ta);done();}}catch(e){alert('Scrape failed: '+e.message);}})();`;
 
   let currentBookmarklet = $derived(isWeiqi ? WEIQI_BOOKMARKLET : HERO_BOOKMARKLET);
 
@@ -117,7 +117,7 @@
       <!-- Header -->
       <div class="p-4 bg-[#FAF0DA] border-b border-[#D6BA96] flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <div class="w-7 h-7 rounded-lg {isWeiqi ? 'bg-[#88C13F]' : 'bg-[#8C52FF]'} text-white flex items-center justify-center font-bold text-sm shadow-xs transition-colors">
+          <div class="w-7 h-7 rounded-lg {isWeiqi ? 'bg-[#88C13F]' : 'bg-[#8052cf]'} text-white flex items-center justify-center font-bold text-sm shadow-xs transition-colors">
             詰
           </div>
           <div>
@@ -138,7 +138,7 @@
       <div class="flex border-b border-[#D6BA96] bg-[#FAF0DA]/50 px-4 pt-2">
         <button
           onclick={() => (activeTab = 'import')}
-          class="px-4 py-2 text-xs font-bold border-b-2 transition-colors cursor-pointer {activeTab === 'import' ? (isWeiqi ? 'border-[#88C13F] text-[#3D2A1F]' : 'border-[#8C52FF] text-[#3D2A1F]') : 'border-transparent text-[#5e4537] hover:text-[#3D2A1F]'}"
+          class="px-4 py-2 text-xs font-bold border-b-2 transition-colors cursor-pointer {activeTab === 'import' ? (isWeiqi ? 'border-[#88C13F] text-[#3D2A1F]' : 'border-[#8052cf] text-[#3D2A1F]') : 'border-transparent text-[#5e4537] hover:text-[#3D2A1F]'}"
         >
           <span class="flex items-center gap-1.5">
             <Upload class="w-3.5 h-3.5" />
@@ -147,7 +147,7 @@
         </button>
         <button
           onclick={() => (activeTab = 'bookmarklet')}
-          class="px-4 py-2 text-xs font-bold border-b-2 transition-colors cursor-pointer {activeTab === 'bookmarklet' ? (isWeiqi ? 'border-[#88C13F] text-[#3D2A1F]' : 'border-[#8C52FF] text-[#3D2A1F]') : 'border-transparent text-[#5e4537] hover:text-[#3D2A1F]'}"
+          class="px-4 py-2 text-xs font-bold border-b-2 transition-colors cursor-pointer {activeTab === 'bookmarklet' ? (isWeiqi ? 'border-[#88C13F] text-[#3D2A1F]' : 'border-[#8052cf] text-[#3D2A1F]') : 'border-transparent text-[#5e4537] hover:text-[#3D2A1F]'}"
         >
           <span class="flex items-center gap-1.5">
             <Bookmark class="w-3.5 h-3.5" />
@@ -177,7 +177,7 @@
             ondragover={(e) => { e.preventDefault(); isDragging = true; }}
             ondragleave={() => (isDragging = false)}
             ondrop={handleFileDrop}
-            class="border-2 border-dashed rounded-xl p-5 text-center transition-colors {isDragging ? (isWeiqi ? 'border-[#88C13F] bg-[#eaf6dc]' : 'border-[#8C52FF] bg-[#f3e8ff]') : 'border-[#D6BA96] bg-[#FAF0DA]/40 hover:bg-[#FAF0DA]'}"
+            class="border-2 border-dashed rounded-xl p-5 text-center transition-colors {isDragging ? (isWeiqi ? 'border-[#88C13F] bg-[#eaf6dc]' : 'border-[#8052cf] bg-[#f3e8ff]') : 'border-[#D6BA96] bg-[#FAF0DA]/40 hover:bg-[#FAF0DA]'}"
           >
             <FileJson class="w-8 h-8 text-[#8B5E3C] mx-auto mb-2" />
             <p class="text-xs font-bold text-[#3D2A1F]">
@@ -218,7 +218,7 @@
               bind:value={jsonText}
               rows="6"
               placeholder={isWeiqi ? `[\n  {\n    "t": 1783461970,\n    "status": 1,\n    "oknum": 6,\n    "totaltime": 292,\n    "guanid": 9903229,\n    "number": 6\n  }\n]` : `[\n  {\n    "set": "Korean Problem Academy 1",\n    "tsumego": "42",\n    "misplays": 0,\n    "rating": 1865,\n    "xp": 11,\n    "date": "2026-09-18 12:44:11"\n  }\n]`}
-              class="w-full text-xs font-mono p-3 bg-[#FAF0DA] border border-[#D6BA96] rounded-xl text-[#3D2A1F] placeholder-[#5e4537]/50 focus:outline-none focus:ring-2 {isWeiqi ? 'focus:ring-[#88C13F]' : 'focus:ring-[#8C52FF]'}"
+              class="w-full text-xs font-mono p-3 bg-[#FAF0DA] border border-[#D6BA96] rounded-xl text-[#3D2A1F] placeholder-[#5e4537]/50 focus:outline-none focus:ring-2 {isWeiqi ? 'focus:ring-[#88C13F]' : 'focus:ring-[#8052cf]'}"
             ></textarea>
           </div>
 
@@ -247,7 +247,7 @@
             </button>
             <button
               onclick={handlePasteImport}
-              class="px-5 py-2 text-xs font-bold {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8C52FF] hover:bg-[#7c3aed]'} text-white rounded-lg shadow-sm transition-colors cursor-pointer flex items-center gap-1.5"
+              class="px-5 py-2 text-xs font-bold {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8052cf] hover:bg-[#6f42b8]'} text-white rounded-lg shadow-sm transition-colors cursor-pointer flex items-center gap-1.5"
             >
               <Upload class="w-3.5 h-3.5" />
               Import Records
@@ -284,7 +284,7 @@
                 />
                 <button
                   onclick={copyBookmarklet}
-                  class="px-3 py-2 {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8C52FF] hover:bg-[#7c3aed]'} text-white rounded-lg font-bold text-xs flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer shadow-xs"
+                  class="px-3 py-2 {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8052cf] hover:bg-[#6f42b8]'} text-white rounded-lg font-bold text-xs flex items-center gap-1.5 shrink-0 transition-colors cursor-pointer shadow-xs"
                 >
                   {#if copiedBookmarklet}
                     <Check class="w-3.5 h-3.5" />
@@ -318,7 +318,7 @@
                 {#if isWeiqi}
                   Go to your <a href="https://www.101weiqi.com/guan/my/" target="_blank" rel="noopener noreferrer" class="text-[#8B5E3C] underline font-semibold">101weiqi test history (https://www.101weiqi.com/guan/my/)</a>. Click your bookmark! All records are copied to your clipboard.
                 {:else}
-                  Go to your <a href="https://tsumego-hero.com" target="_blank" rel="noopener noreferrer" class="text-[#8C52FF] underline font-semibold">Tsumego Hero profile</a> and open <strong>Solve History</strong> (<code class="bg-[#FAF0DA] px-1 py-0.5 rounded">/users/solveHistory/...</code>). Click your bookmark! It will scrape all pages in ~1 second and copy the full JSON to your clipboard.
+                  Go to your <a href="https://tsumego.com" target="_blank" rel="noopener noreferrer" class="text-[#8052cf] underline font-semibold">Tsumego Hero profile</a> and open <strong>Solve History</strong> (<code class="bg-[#FAF0DA] px-1 py-0.5 rounded">/users/solveHistory/...</code>). Click your bookmark! It will scrape all pages in ~1 second and copy the full JSON to your clipboard.
                 {/if}
               </p>
             </div>

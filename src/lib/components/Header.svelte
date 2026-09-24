@@ -61,8 +61,8 @@
     <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
       <div class="flex items-center gap-3">
         <!-- Go stone / Kiwi Icon -->
-        <div class="relative w-10 h-10 rounded-full bg-[#3D2A1F] border-2 {isWeiqi ? 'border-[#88C13F]' : 'border-[#8C52FF]'} flex items-center justify-center shadow-md shadow-[#8B5E3C]/20 transition-colors">
-          <span class="w-4 h-4 rounded-full {isWeiqi ? 'bg-[#88C13F]' : 'bg-[#8C52FF]'} block transition-colors"></span>
+        <div class="relative w-10 h-10 rounded-full bg-[#3D2A1F] border-2 {isWeiqi ? 'border-[#88C13F]' : 'border-[#8052cf]'} flex items-center justify-center shadow-md shadow-[#8B5E3C]/20 transition-colors">
+          <span class="w-4 h-4 rounded-full {isWeiqi ? 'bg-[#88C13F]' : 'bg-[#8052cf]'} block transition-colors"></span>
           <span class="absolute text-[10px] font-bold text-[#FDF5E6]">詰</span>
         </div>
         <div>
@@ -94,10 +94,10 @@
         </button>
         <button
           onclick={() => platformStore.setPlatform('tsumegohero')}
-          class="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer {!isWeiqi ? 'bg-[#8C52FF] text-white shadow-xs' : 'text-[#5e4537] hover:text-[#3D2A1F]'}"
+          class="flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer {!isWeiqi ? 'bg-[#8052cf] text-white shadow-xs' : 'text-[#5e4537] hover:text-[#3D2A1F]'}"
           title="Switch to Tsumego Hero analytics"
         >
-          <span class="w-2 h-2 rounded-full {!isWeiqi ? 'bg-white' : 'bg-[#8C52FF]'}"></span>
+          <span class="w-2 h-2 rounded-full {!isWeiqi ? 'bg-white' : 'bg-[#8052cf]'}"></span>
           <span>Tsumego Hero</span>
         </button>
       </div>
@@ -107,13 +107,13 @@
     <div class="flex flex-wrap items-center gap-2 sm:gap-3">
       <!-- Demo / Active indicator -->
       {#if isDemoActive}
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold {isWeiqi ? 'bg-[#eaf6dc] text-[#55821c] border border-[#88C13F]/50' : 'bg-[#f3e8ff] text-[#6b21a8] border border-[#8C52FF]/50'}">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold {isWeiqi ? 'bg-[#eaf6dc] text-[#55821c] border border-[#88C13F]/50' : 'bg-[#f3e8ff] text-[#6b21a8] border border-[#8052cf]/50'}">
           <Sparkles class="w-3.5 h-3.5" />
           Demo Dataset
         </span>
       {:else if totalRecords > 0}
         <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-[#FAF0DA] text-[#3D2A1F] border border-[#D6BA96]">
-          <CheckCircle class="w-3.5 h-3.5 {isWeiqi ? 'text-[#88C13F]' : 'text-[#8C52FF]'}" />
+          <CheckCircle class="w-3.5 h-3.5 {isWeiqi ? 'text-[#88C13F]' : 'text-[#8052cf]'}" />
           {totalRecords} {isWeiqi ? 'tests' : 'solves'} loaded
         </span>
       {/if}
@@ -131,7 +131,7 @@
       <!-- Import JSON -->
       <button
         onclick={onOpenImport}
-        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8C52FF] hover:bg-[#7c3aed]'} text-white transition-colors cursor-pointer shadow-sm"
+        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8052cf] hover:bg-[#6f42b8]'} text-white transition-colors cursor-pointer shadow-sm"
       >
         <Upload class="w-3.5 h-3.5" />
         Import Data

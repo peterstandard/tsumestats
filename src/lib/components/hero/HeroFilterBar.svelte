@@ -39,7 +39,7 @@
       {#each datePresets as preset}
         <button
           onclick={() => (heroStore.filter.datePreset = preset.id)}
-          class="px-2.5 py-1 rounded-lg text-xs font-medium transition-colors cursor-pointer {heroStore.filter.datePreset === preset.id ? 'bg-[#8C52FF] text-white font-bold shadow-2xs' : 'bg-[#FDF5E6] hover:bg-[#F4E7CE] text-[#3D2A1F] border border-[#D6BA96]'}"
+          class="px-2.5 py-1 rounded-lg text-xs font-medium transition-colors cursor-pointer {heroStore.filter.datePreset === preset.id ? 'bg-[#8052cf] text-white font-bold shadow-2xs' : 'bg-[#FDF5E6] hover:bg-[#F4E7CE] text-[#3D2A1F] border border-[#D6BA96]'}"
         >
           {preset.label}
         </button>
@@ -49,7 +49,7 @@
     <!-- Active filter feedback / Reset -->
     <div class="flex items-center gap-2">
       {#if isFiltered}
-        <span class="text-xs text-[#8C52FF] font-medium">
+        <span class="text-xs text-[#8052cf] font-medium">
           Showing {heroStore.filteredRecords.length} of {heroStore.allRecords.length} solves
         </span>
         <button
@@ -74,7 +74,7 @@
       <select
         id="set-select"
         bind:value={heroStore.filter.setFilter}
-        class="w-full text-xs bg-[#FDF5E6] border border-[#D6BA96] rounded-lg px-2.5 py-1.5 text-[#3D2A1F] focus:outline-none focus:ring-1 focus:ring-[#8C52FF] truncate"
+        class="w-full text-xs bg-[#FDF5E6] border border-[#D6BA96] rounded-lg px-2.5 py-1.5 text-[#3D2A1F] focus:outline-none focus:ring-1 focus:ring-[#8052cf] truncate"
       >
         <option value="all">All Collections ({availableSets.length})</option>
         {#each availableSets as setName}
@@ -89,7 +89,7 @@
       <select
         id="misplay-select"
         bind:value={heroStore.filter.misplayFilter}
-        class="w-full text-xs bg-[#FDF5E6] border border-[#D6BA96] rounded-lg px-2.5 py-1.5 text-[#3D2A1F] focus:outline-none focus:ring-1 focus:ring-[#8C52FF]"
+        class="w-full text-xs bg-[#FDF5E6] border border-[#D6BA96] rounded-lg px-2.5 py-1.5 text-[#3D2A1F] focus:outline-none focus:ring-1 focus:ring-[#8052cf]"
       >
         <option value="all">All Solves</option>
         <option value="clean">Flawless Only (0 Misplays)</option>
@@ -104,7 +104,7 @@
         type="text"
         bind:value={heroStore.filter.searchQuery}
         placeholder="Search book, problem #..."
-        class="w-full text-xs bg-[#FDF5E6] border border-[#D6BA96] rounded-lg pl-8 pr-7 py-1.5 text-[#3D2A1F] placeholder-[#5e4537]/60 focus:outline-none focus:ring-1 focus:ring-[#8C52FF]"
+        class="w-full text-xs bg-[#FDF5E6] border border-[#D6BA96] rounded-lg pl-8 pr-7 py-1.5 text-[#3D2A1F] placeholder-[#5e4537]/60 focus:outline-none focus:ring-1 focus:ring-[#8052cf]"
       />
       {#if heroStore.filter.searchQuery}
         <button
