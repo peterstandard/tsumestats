@@ -5,7 +5,7 @@
 
 > 🚀 **Live Site:** **[https://peterstandard.github.io/tsumestats/](https://peterstandard.github.io/tsumestats/)**
 
-A client-side analytics and visualization dashboard for **101weiqi** (101围棋网) checkpoint challenge (`guan`) test records.
+A client-side analytics and visualization dashboard for **101weiqi** (101围棋网) and **Tsumego Hero** (tsumego-hero.com) problem solvers.
 
 Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" design system), and **Apache ECharts**.
 
@@ -13,22 +13,31 @@ Built with **SvelteKit** (Svelte 5 runes), **Tailwind CSS v4** ("Fresh Kiwi" des
 
 ## Features
 
-- **100% Client-Side & Private**: All parsing, metrics, regression, and storage run locally in your browser (`localStorage`). No database, server, or cloud account required.
-- **Pre-Loaded 2-Month Dataset**: Ships with 394 real checkpoint challenge tests (3,940 problems) from 15k to 6k over July–September 2026 for instant analysis.
-- **KPI Overview Cards**: Total tests, total problems solved, overall accuracy %, pass rate %, average seconds per problem/test, active practice days, and difficulty progression.
-- **Interactive Dual-Axis Timeline**: 7-test rolling accuracy line + individual test scores alongside solving speed (seconds per problem), with an interactive timeline brush slider.
-- **Performance by Rank (Kyu / Dan)**: Compare accuracy %, pass rate %, and time taken across Kyu/Dan ranks to spot plateaus.
-- **Difficulty Progression Milestones**: Tracks the exact date you first cleared each rank difficulty (15k → 7k) and how many attempts it took to break through, with Calendar Timeline and Sequential Rank step views.
-- **Speed Milestones & Personal Bests by Rank**: Tracks personal best speed records per difficulty, the seconds shaved off, and how many tests and calendar days were spent breaking each record, plus golden diamond PB badges on the timeline chart.
-- **Speed vs. Accuracy Correlation & Regression**: Scatter plot of duration vs accuracy with Ordinary Least Squares (OLS) linear regression ($y = mx + b$) and $R^2$ goodness-of-fit.
-- **Temporal Habit Analysis**:
-  - **Time of Day**: 24-hour distribution of test count, accuracy %, and speed (morning vs afternoon vs late night).
-  - **Weekend vs. Weekday**: Side-by-side comparison metrics showing whether relaxed weekend sessions yield better accuracy.
-- **Searchable Test History Table**: Filterable and sortable log of all tests with direct review links to `https://www.101weiqi.com/guan/result/{number}/{guanid}/`.
-- **Easy Ingestion & Bookmarklet**:
-  - Drag-and-drop `.json` file upload or direct text paste.
-  - Automatic deduplication by `guanid` so importing multiple exports merges seamlessly without duplicates.
-  - Built-in one-click bookmarklet script to copy test records directly from 101weiqi (`https://www.101weiqi.com/guan/my/`) to your clipboard.
+- **Dual-Platform Architecture**: Switch seamlessly between **101weiqi** and **Tsumego Hero** via the navbar switcher, each maintaining independent local storage, KPIs, and specialized analytics.
+- **100% Client-Side & Private**: All parsing, metrics, clustering, and storage run locally in your browser (`localStorage`). No database, server, or cloud account required.
+- **Pre-Loaded Sample Datasets**: Ships with pre-loaded sample datasets for both 101weiqi (394 checkpoint challenge tests) and Tsumego Hero (500 problem solves across 9 collections) for immediate out-of-the-box exploration.
+
+### 101weiqi Analytics
+- **KPI Overview Cards**: Total tests, problems, overall accuracy %, pass rate %, average seconds per problem/test, active practice days, and difficulty progression.
+- **Dual-Axis Timeline**: 7-test rolling accuracy line + individual test scores alongside solving speed (seconds per problem), with an interactive timeline brush slider.
+- **Difficulty Progression Milestones**: Tracks the exact date you first cleared each rank difficulty (15k → 7k) and how many attempts it took to break through.
+- **Speed Milestones & Personal Bests by Rank**: Tracks personal best speed records per difficulty, seconds shaved off, and tests/days spent breaking each record, plus golden diamond PB badges.
+- **Speed vs. Accuracy Correlation & Regression**: Scatter plot of duration vs accuracy with Ordinary Least Squares (OLS) linear regression ($y = mx + b$) and $R^2$.
+- **Temporal Habit Analysis**: 24-hour distribution of test count and weekend vs weekday metrics.
+- **Searchable Test History Table**: Filterable log with direct review links to 101weiqi.
+
+### Tsumego Hero Analytics
+- **Elo Rating Trajectory & Daily Volume**: High-resolution rating progression curve overlaid with daily solve volume intensity.
+- **Automated Training Session Detection**: Clusters consecutive solves into distinct training sessions (breaks > 15 min), calculating session duration, problem volume, and pace.
+- **Recognition Cadence & Pacing**: Classifies practice into Speed Blitz (<20s/prob), Steady Reading (20–60s), and Deep Calculation (>60s) grind sessions.
+- **Collection Mastery & Clean-Rate Ladder**: Ranks all tackled books and collections by first-try flawless rate (0 misplays) and average misplay count.
+- **Practice Consistency & Active Hours**: 24-hour distribution showing training volume and clean rate by time of day.
+- **Solve History Log**: Chronological table of solves with collection name, problem #, misplays, rating updates, and direct links to Tsumego Hero problems and sets.
+
+### 1-Click Scrapers & Importers
+- **101weiqi**: One-click bookmarklet to copy test records directly from `https://www.101weiqi.com/guan/my/`.
+- **Tsumego Hero**: Multi-page auto-fetching bookmarklet for `https://tsumego-hero.com/users/solveHistory/` that automatically crawls all paginated records in the background and copies the full JSON in ~1 second.
+- **Drag-and-Drop Ingestion**: Supports `.json` files and saved `.html` pages. Automatically detects the data format and switches to the corresponding platform.
 
 ---
 

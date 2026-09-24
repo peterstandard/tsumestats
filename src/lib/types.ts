@@ -195,4 +195,95 @@ export interface SpeedMilestoneSummary {
   pbGuanidMap: Map<number, SpeedRecordMilestone>;
 }
 
+export type ActivePlatform = '101weiqi' | 'tsumegohero';
+
+// ==================== Tsumego Hero Types ====================
+
+export interface HeroRawRecord {
+  set: string;
+  setUrl?: string | null;
+  tsumego: string;
+  probUrl?: string | null;
+  solved: boolean;
+  misplays: number;
+  rating: number;
+  xp: number;
+  date: string; // "YYYY-MM-DD HH:MM:SS"
+}
+
+export interface ProcessedHeroRecord extends HeroRawRecord {
+  id: string;
+  timestamp: number; // Epoch ms
+  epochSeconds: number;
+  dateObj: Date;
+  dateStr: string; // YYYY-MM-DD
+  timeStr: string; // HH:mm
+  formattedDate: string; // e.g. "Jul 15, 2026, 12:44"
+  hourOfDay: number;
+  dayOfWeek: number;
+  dayName: string;
+  isClean: boolean; // misplays === 0
+  timeSincePrevSeconds: number | null;
+}
+
+export interface HeroTrainingSession {
+  id: string;
+  sessionIndex: number;
+  startTime: Date;
+  endTime: Date;
+  startTimestamp: number;
+  endTimestamp: number;
+  dateStr: string;
+  formattedDate: string;
+  durationSeconds: number;
+  durationMinutes: number;
+  problemsCount: number;
+  cleanCount: number;
+  cleanRatePct: number;
+  avgPaceSeconds: number; // durationSeconds / problemsCount
+  primarySet: string;
+  setsList: string[];
+  startRating: number;
+  endRating: number;
+  ratingChange: number;
+  xpGained: number;
+  records: ProcessedHeroRecord[];
+}
+
+export interface HeroSetStat {
+  setName: string;
+  setUrl?: string | null;
+  totalCount: number;
+  cleanCount: number;
+  misplayCount: number;
+  cleanPct: number;
+  avgMisplays: number;
+  minRating: number;
+  maxRating: number;
+  lastPracticedDate: string;
+}
+
+export interface HeroKpiStats {
+  totalSolves: number;
+  cleanSolves: number;
+  cleanRatePct: number;
+  totalMisplays: number;
+  totalSessions: number;
+  avgSessionDurationMin: number;
+  avgPaceSeconds: number;
+  currentRating: number;
+  peakRating: number;
+  lowestRating: number;
+  totalXp: number;
+  setsCount: number;
+  activeDaysCount: number;
+}
+
+export interface HeroFilterState {
+  datePreset: 'all' | '7d' | '30d' | '60d';
+  setFilter: string | 'all';
+  misplayFilter: 'all' | 'clean' | 'misplay';
+  searchQuery: string;
+}
+
 
