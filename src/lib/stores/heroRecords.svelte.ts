@@ -13,7 +13,8 @@ import {
   clusterHeroSessions,
   computeHeroKpis,
   computeHeroSetStats,
-  computeHeroHourlyHabits
+  computeHeroHourlyHabits,
+  computeHeroDayOfWeekHabits
 } from '$lib/utils/heroRecords';
 import { SAMPLE_HERO_RECORDS } from '$lib/data/sampleHero';
 
@@ -86,6 +87,9 @@ function createHeroStore() {
   // Derived hourly habits
   let hourlyHabits = $derived(computeHeroHourlyHabits(filteredRecords));
 
+  // Derived day of week habits
+  let dayOfWeekHabits = $derived(computeHeroDayOfWeekHabits(filteredRecords));
+
   function init() {
     if (!browser || isInitialized) return;
     isInitialized = true;
@@ -130,11 +134,13 @@ function createHeroStore() {
       throw new Error('No valid Tsumego Hero solve records found.');
     }
 
-    // Deduplicate against existing by date + set + problem
+    // Deduplicate against existing by date + set + problem (if real data was loaded; if demo, start fresh)
     const existingMap = new Map<string, HeroRawRecord>();
-    for (const r of rawRecords) {
-      const key = `${r.date}__${r.set}__${r.tsumego}`;
-      existingMap.set(key, r);
+    if (!isDemo) {
+      for (const r of rawRecords) {
+        const key = `${r.date}__${r.set}__${r.tsumego}`;
+        existingMap.set(key, r);
+      }
     }
 
     let added = 0;
@@ -190,6 +196,7 @@ function createHeroStore() {
     get kpis() { return kpis; },
     get setStats() { return setStats; },
     get hourlyHabits() { return hourlyHabits; },
+    get dayOfWeekHabits() { return dayOfWeekHabits; },
     init,
     importRecords,
     loadDemo,

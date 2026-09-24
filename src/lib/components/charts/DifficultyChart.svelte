@@ -164,7 +164,7 @@
   });
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 shadow-xs">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 shadow-xs overflow-hidden">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
     <div>
       <h3 class="text-sm font-bold text-[#3D2A1F]">Performance by Rank (Kyu / Dan)</h3>

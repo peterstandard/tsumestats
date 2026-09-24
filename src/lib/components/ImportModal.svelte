@@ -60,13 +60,17 @@
 
     try {
       if (isHeroContent) {
+        const wasDemo = heroStore.isDemo;
         const res = heroStore.importRecords(content);
         platformStore.setPlatform('tsumegohero');
-        importSuccess = `Successfully imported ${res.total} Tsumego Hero solves${fileName ? ` from ${fileName}` : ''} (${res.added} new solves merged)!`;
+        const detail = wasDemo ? 'demo dataset replaced' : `${res.added} new solves merged`;
+        importSuccess = `Successfully imported ${res.total} Tsumego Hero solves${fileName ? ` from ${fileName}` : ''} (${detail})!`;
       } else {
+        const wasDemo = recordsStore.isDemo;
         const res = recordsStore.importRecords(content);
         platformStore.setPlatform('101weiqi');
-        importSuccess = `Successfully imported ${res.total} 101weiqi test records${fileName ? ` from ${fileName}` : ''} (${res.added} new records merged)!`;
+        const detail = wasDemo ? 'demo dataset replaced' : `${res.added} new records merged`;
+        importSuccess = `Successfully imported ${res.total} 101weiqi test records${fileName ? ` from ${fileName}` : ''} (${detail})!`;
       }
       jsonText = '';
       setTimeout(() => {

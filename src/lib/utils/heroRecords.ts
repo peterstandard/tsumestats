@@ -425,3 +425,35 @@ export function computeHeroHourlyHabits(records: ProcessedHeroRecord[]) {
 
   return hours;
 }
+
+export function computeHeroDayOfWeekHabits(records: ProcessedHeroRecord[]) {
+  const days = [
+    { dayIndex: 1, label: 'Mon', count: 0, cleanCount: 0, cleanPct: 0 },
+    { dayIndex: 2, label: 'Tue', count: 0, cleanCount: 0, cleanPct: 0 },
+    { dayIndex: 3, label: 'Wed', count: 0, cleanCount: 0, cleanPct: 0 },
+    { dayIndex: 4, label: 'Thu', count: 0, cleanCount: 0, cleanPct: 0 },
+    { dayIndex: 5, label: 'Fri', count: 0, cleanCount: 0, cleanPct: 0 },
+    { dayIndex: 6, label: 'Sat', count: 0, cleanCount: 0, cleanPct: 0 },
+    { dayIndex: 0, label: 'Sun', count: 0, cleanCount: 0, cleanPct: 0 }
+  ];
+
+  const map = new Map<number, typeof days[0]>();
+  for (const d of days) {
+    map.set(d.dayIndex, d);
+  }
+
+  for (const r of records) {
+    const entry = map.get(r.dayOfWeek);
+    if (entry) {
+      entry.count++;
+      if (r.isClean) entry.cleanCount++;
+    }
+  }
+
+  for (const d of days) {
+    d.cleanPct = d.count > 0 ? Math.round((d.cleanCount / d.count) * 1000) / 10 : 0;
+  }
+
+  return days;
+}
+

@@ -139,7 +139,7 @@
       },
       legend: {
         top: 0,
-        right: 10,
+        left: 'center',
         data: ['First Passed Rank', 'Attempts to First Pass'],
         textStyle: { color: '#3D2A1F', fontSize: 11 }
       },
@@ -296,7 +296,7 @@
   }
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-2xl p-5 shadow-xs space-y-4">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-2xl p-5 shadow-xs space-y-4 overflow-hidden">
   <!-- Header & Toolbar -->
   <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 border-b border-[#D6BA96]/60 pb-3">
     <div>

@@ -638,7 +638,7 @@
   });
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 shadow-xs space-y-3">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 shadow-xs space-y-3 overflow-hidden">
   <!-- Card Header -->
   <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
     <div>

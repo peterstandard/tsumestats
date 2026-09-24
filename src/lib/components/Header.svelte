@@ -16,11 +16,10 @@
   import { APP_VERSION } from '$lib/version';
 
   interface Props {
-    onOpenImport: () => void;
-    onOpenBookmarklet: () => void;
+    onOpenImport: (initialTab?: 'import' | 'bookmarklet') => void;
   }
 
-  let { onOpenImport, onOpenBookmarklet }: Props = $props();
+  let { onOpenImport }: Props = $props();
 
   let showConfirmClear = $state(false);
 
@@ -118,19 +117,9 @@
         </span>
       {/if}
 
-      <!-- Bookmarklet Helper -->
+      <!-- Import Data (opens to bookmarklet tab if on demo data, or direct import if real data) -->
       <button
-        onclick={onOpenBookmarklet}
-        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border border-[#D6BA96] bg-[#FDF5E6] hover:bg-[#F4E7CE] text-[#3D2A1F] transition-colors cursor-pointer shadow-xs"
-        title="Get the scraper bookmarklet"
-      >
-        <Bookmark class="w-3.5 h-3.5 text-[#8B5E3C]" />
-        Bookmarklet
-      </button>
-
-      <!-- Import JSON -->
-      <button
-        onclick={onOpenImport}
+        onclick={() => onOpenImport(isDemoActive ? 'bookmarklet' : 'import')}
         class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold {isWeiqi ? 'bg-[#88C13F] hover:bg-[#78ab37]' : 'bg-[#8052cf] hover:bg-[#6f42b8]'} text-white transition-colors cursor-pointer shadow-sm"
       >
         <Upload class="w-3.5 h-3.5" />

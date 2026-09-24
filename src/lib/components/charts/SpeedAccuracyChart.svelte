@@ -176,7 +176,7 @@
   });
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 shadow-xs">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 shadow-xs overflow-hidden">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
     <div>
       <h3 class="text-sm font-bold text-[#3D2A1F] flex items-center gap-1.5">

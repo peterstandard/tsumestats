@@ -98,16 +98,32 @@
               if (val >= 75) return '#F59E0B';
               return '#EF4444';
             },
-            borderRadius: [0, 4, 4, 0]
+            borderRadius: [0, 4, 4, 0],
+            cursor: 'pointer'
           },
+          cursor: 'pointer',
           barMaxWidth: 20
         }
       ]
     };
   });
+
+  function handleChartClick(params: any) {
+    if (!params) return;
+    const sorted = [...heroStore.setStats].reverse();
+    const stat = sorted[params.dataIndex];
+    const setName = stat ? stat.setName : params.name;
+    if (setName) {
+      heroStore.filter.setFilter = setName;
+      const el = document.getElementById('hero-history-table');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 sm:p-5 shadow-2xs space-y-3">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 sm:p-5 shadow-2xs space-y-3 overflow-hidden">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-2">
       <div class="w-7 h-7 rounded-lg bg-[#88C13F]/15 text-[#88C13F] flex items-center justify-center font-bold">
@@ -116,13 +132,16 @@
       <div>
         <h3 class="text-sm font-bold text-[#3D2A1F]">Collection Mastery & Clean-Rate Ladder</h3>
         <p class="text-[11px] text-[#5e4537]">
-          First-try flawless rate (0 misplays) across books, revealing relative collection difficulty
+          First-try flawless rate (0 misplays) across books — click any bar to filter problem history below
         </p>
       </div>
     </div>
+    <span class="text-[11px] text-[#8052cf] font-medium bg-[#8052cf]/10 px-2.5 py-1 rounded-full hidden sm:inline-block">
+      Click bar to filter problems
+    </span>
   </div>
 
   <div class="h-72 sm:h-80 w-full">
-    <EChart options={chartOption} />
+    <EChart options={chartOption} onchartclick={handleChartClick} />
   </div>
 </div>

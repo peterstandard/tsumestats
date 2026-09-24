@@ -61,15 +61,15 @@
       },
       legend: {
         data: ['Elo Rating', 'Daily Volume'],
-        right: 16,
+        left: 'center',
         top: 0,
         textStyle: { color: '#5e4537', fontSize: 11 }
       },
       grid: {
-        left: 45,
-        right: 45,
-        top: 35,
-        bottom: 50,
+        left: 50,
+        right: 50,
+        top: 40,
+        bottom: 65,
         containLabel: true
       },
       xAxis: {
@@ -103,8 +103,8 @@
           type: 'slider',
           start: 0,
           end: 100,
-          bottom: 0,
-          height: 20,
+          bottom: 10,
+          height: 18,
           borderColor: '#D6BA96',
           fillerColor: 'rgba(128, 82, 207, 0.15)',
           handleStyle: { color: '#8052cf' }
@@ -156,7 +156,7 @@
   });
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 sm:p-5 shadow-2xs space-y-3">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-xl p-4 sm:p-5 shadow-2xs space-y-3 overflow-hidden">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-2">
       <div class="w-7 h-7 rounded-lg bg-[#8052cf]/15 text-[#8052cf] flex items-center justify-center font-bold">

@@ -40,8 +40,8 @@
     heroStore.init();
   });
 
-  function openImport() {
-    importInitialTab = 'import';
+  function openImport(tab?: 'import' | 'bookmarklet') {
+    importInitialTab = tab === 'bookmarklet' ? 'bookmarklet' : 'import';
     isImportOpen = true;
   }
 
@@ -58,7 +58,7 @@
 
 <div class="min-h-screen bg-[#FDF5E6] text-[#3D2A1F] flex flex-col">
   <!-- Navbar -->
-  <Header onOpenImport={openImport} onOpenBookmarklet={openBookmarklet} />
+  <Header onOpenImport={openImport} />
 
   <!-- Main Dashboard -->
   <main class="max-w-7xl w-full mx-auto px-4 sm:px-8 py-6 grow space-y-6">
@@ -84,7 +84,7 @@
               Load Sample Dataset
             </button>
             <button
-              onclick={openImport}
+              onclick={() => openImport('import')}
               class="w-full sm:w-auto px-5 py-2.5 bg-[#8B5E3C] hover:bg-[#6e472a] text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
             >
               <Upload class="w-4 h-4" />
@@ -150,7 +150,7 @@
               Load Sample Dataset
             </button>
             <button
-              onclick={openImport}
+              onclick={() => openImport('import')}
               class="w-full sm:w-auto px-5 py-2.5 bg-[#8B5E3C] hover:bg-[#6e472a] text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center justify-center gap-2"
             >
               <Upload class="w-4 h-4" />

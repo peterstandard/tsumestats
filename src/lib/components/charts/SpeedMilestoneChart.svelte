@@ -152,7 +152,7 @@
         },
         legend: {
           top: 0,
-          right: 10,
+          left: 'center',
           data: ['Record Speed (s/prob)', barMetric === 'tests' ? 'Tests to Beat' : 'Days to Beat'],
           textStyle: { color: '#3D2A1F', fontSize: 11 }
         },
@@ -436,7 +436,7 @@
   }
 </script>
 
-<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-2xl p-5 shadow-xs space-y-4">
+<div class="bg-[#FAF0DA] border border-[#D6BA96] rounded-2xl p-5 shadow-xs space-y-4 overflow-hidden">
   <!-- Card Header & Rank Selector -->
   <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 border-b border-[#D6BA96]/60 pb-3">
     <div>

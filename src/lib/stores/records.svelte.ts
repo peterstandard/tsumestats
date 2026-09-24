@@ -118,10 +118,12 @@ function createRecordsStore() {
       throw new Error('No valid 101weiqi test records found in input.');
     }
 
-    // Deduplicate against existing
+    // Deduplicate against existing (if real data was already loaded; if demo, start fresh)
     const existingMap = new Map<number, WeiqiRawRecord>();
-    for (const r of rawRecords) {
-      existingMap.set(r.guanid, r);
+    if (!isDemo) {
+      for (const r of rawRecords) {
+        existingMap.set(r.guanid, r);
+      }
     }
 
     let added = 0;
