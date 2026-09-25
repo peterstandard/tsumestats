@@ -38,3 +38,7 @@ personal_*.json
 tsumego.com/
 *.html.bak
 
+# Local Deployment Scripts
+deploy.sh
+scripts/deploy.sh
+
